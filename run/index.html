@@ -33,8 +33,8 @@ async function getData(url) {
   return response.json();
 }
 
-const stim = await getData('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json');
-console.log({stim })
+const stim = getData('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json');
+console.log(stim )
 
 
 function make_sp_trial(itemID, cond, sentence) {
