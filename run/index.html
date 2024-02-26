@@ -4,7 +4,6 @@
         <title>Maze sentence repetition demo</title>
         <script src="https://unpkg.com/jspsych@7.2.3"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
-        <script type="text/javascript" src="./stimlist.json"></script>
         <link rel="stylesheet" href="https://unpkg.com/jspsych@7.2.3/css/jspsych.css">
         <style>
         .jspsych-display-element {
@@ -28,6 +27,12 @@
     </head>
     <body></body>
 <script>
+
+
+    
+fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
 function make_sp_trial(itemID, cond, sentence) {
   var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
@@ -83,6 +88,7 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
           }
         }
   };
+
   var endsent= {
         type: jsPsychHtmlKeyboardResponse,
         choices: [' '],
