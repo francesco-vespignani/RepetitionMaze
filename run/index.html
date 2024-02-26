@@ -28,13 +28,14 @@
     <body></body>
 <script>
 
-async function getData(url) {
-  const response = await fetch(url);
-  return response.json();
-}
 
-const stim = getData('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json');
-console.log(stim )
+async function getData() {
+            let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json')
+            let stim = await response.json()
+            console.log(stim)
+    }
+
+getData()
 
 
 function make_sp_trial(itemID, cond, sentence) {
