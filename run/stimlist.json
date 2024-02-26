@@ -1,4 +1,3 @@
-var stim = [
 {"item": "it001", 
 "cond": "and", 
 "s1": "Ho ridipinto la casa e il garage è ancora da fare.", 
@@ -14,4 +13,3 @@ var stim = [
 "s1": "Mi piacciono gli Husky ma soprattutto i cani.", 
 "s2": "Vu garatenta tri Uvamo mo pavarullone u bide."
 }
-];
