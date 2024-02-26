@@ -32,11 +32,10 @@
 async function getData() {
             let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json')
             let stim = await response.json()
-            console.log(stim)
-    }
+}
 
 getData()
-
+console.log(stim)
 
 function make_sp_trial(itemID, cond, sentence) {
   var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
