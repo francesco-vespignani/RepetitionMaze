@@ -28,11 +28,14 @@
     <body></body>
 <script>
 
+async function getData(url) {
+  const response = await fetch(url);
+  return response.json();
+}
 
-    
-fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+const stim = await getData('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json');
+console.log({stim })
+
 
 function make_sp_trial(itemID, cond, sentence) {
   var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
