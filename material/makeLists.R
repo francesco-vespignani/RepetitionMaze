@@ -15,12 +15,20 @@ cat('', file=readMeMD, append=F)
 allitemsMD =  "allitems.md"
 cat('', file=allitemsMD, append=F)
 
+#  create readme file
+
+cat('# Items and Lists for RepeatitionMaze Experiment', file = readMeMD, append=T)
+cat('The file *composed.csv* contains ...', file = readMeMD, append=T)
+cat('*allitems* contains all items for easy visualization', file = readMeMD, append=T)
+cat('*material.json* contains all lists for jsPsych', file = readMeMD, append=T)
+
+
 # read the hand-composed material
 
 d = read.csv('composed.csv', header=F)
 
-cat('# Items and Lists for RepeatitionMaze Experiment', file = readMeMD, append=T)
-cat('The file *composed.csv* contains ...', file = readMeMD, append=T)
+# create pretty item lists
+
 
 colnames(d) = c('item','cond','sentence','wp','word','nl','distgramm','distword','distpseudo','disnw')
 
@@ -47,11 +55,17 @@ for (i in levels(d$item)) {
    }
 }
 
-#dei 38 item li assegno a tre gruppi casuali da 12 e ne scarto 2 
-gr = data.frame(item = sample(it), group=c(rep('G1',12),rep('G2',12),rep('G3',12), NA,NA))
-it = levels(out$item)
 
-#creo tre liste a quadrato latino
+# use pandoc (in linux)
+
+system('pandoc -s -o ./allitems.pdf --from=markdown+pipe_tables ./allitems.md')
+system('pandoc -s -o ./allitems.html --from=markdown+pipe_tables ./allitems.md')
+
+# create 3 groups of 12 items and 2 practice items 
+it = levels(out$item)
+gr = data.frame(item = sample(it), group=c(rep('G1',12),rep('G2',12),rep('G3',12), rep('prac',2)))
+
+# create 3 lists in a square latin design and save item's assignment in  a csv file
 
 lists = data.frame(
 	cond= rep(c('regular','semv', 'syntv'), 3), 
@@ -60,6 +74,13 @@ lists = data.frame(
 	)
 m = merge(lists,gr)
 h = merge(out,m)
+
+s = subset(h, select=c(item,group,list,cond))
+write.csv(s[order(s$group, s$item),], file='lists.csv', row.names=F)
+
+
+# create hierarchical structure with different lists as a function of 
+# different distracters in the maze task
 
 alllists = list()
 tmp = list()
@@ -102,5 +123,5 @@ for (l in c('listA','listB','listC') ) {
 
 alllists[['nw']] = tmp
 
-cat(toJSON(alllists, pretty=TRUE), file='stimall.json')
+cat(toJSON(alllists, pretty=TRUE), file='material.json')
 
