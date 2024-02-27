@@ -2,7 +2,6 @@
 title: Maze Task Material
 ---
 
-   |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 101|**regular**|I|leopardi|cacciano|il|facocero|in|coppia.|
 101|*D-gramm*|L'|acrobata|schiverà|un|fioretto|di|scatto.|
