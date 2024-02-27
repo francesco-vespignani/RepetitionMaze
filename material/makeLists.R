@@ -17,10 +17,10 @@ cat('', file=allitemsMD, append=F)
 
 #  create readme file
 
-cat('# Items and Lists for RepeatitionMaze Experiment', file = readMeMD, append=T)
-cat('The file *composed.csv* contains ...', file = readMeMD, append=T)
-cat('*allitems* contains all items for easy visualization', file = readMeMD, append=T)
-cat('*material.json* contains all lists for jsPsych', file = readMeMD, append=T)
+cat('# Items and Lists for RepeatitionMaze Experiment\n\n', file = readMeMD, append=T)
+cat('The file *composed.csv* contains ... \n', file = readMeMD, append=T)
+cat('*allitems* contains all items for easy visualization\n', file = readMeMD, append=T)
+cat('*material.json* contains all lists for jsPsych\n', file = readMeMD, append=T)
 
 
 # read the hand-composed material
