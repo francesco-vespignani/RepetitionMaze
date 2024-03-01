@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Maze sentence repetition demo</title>
+        <title>Maze sentence repetition task</title>
         <script src="https://unpkg.com/jspsych@7.2.3"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
+        <script src="https://unpkg.com/@jspsych/plugin-instructions@1.1.1"></script>
         <link rel="stylesheet" href="https://unpkg.com/jspsych@7.2.3/css/jspsych.css">
         <style>
         .jspsych-display-element {
@@ -12,8 +13,8 @@
             line-height: 1.6em;
         }
         p#istr {
-            color: blue;
-            font-size: 16px;
+            color: red;
+            font-size: 18px;
         }
         p#istrR {
             color: red;
@@ -28,18 +29,15 @@
     <body></body>
 <script>
 
+async function createExperiment(){
 
-await function getData() {
-            let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/run/stimlist.json')
-            let stim = await response.json()
-}
-
-getData()
-console.log(stim)
-
-function make_sp_trial(itemID, cond, sentence) {
+  function make_sp_trial(itemID, cond, sentence) {
   var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
   var stimulus_sequence = [] //empty stimulus sequence to start
+  stimulus_sequence.push({
+      'stimulus': '+',
+      'data' : {'item':itemID,'cond':cond,'type': 'selfpaced','wp':-1, 'words': 'fix', 'corrkey': ' '} 
+  })
   for (let wp=0; wp<sentence_as_word_list.length; wp++) {
     var word = sentence_as_word_list[wp];
     var responses = [' ']; 
@@ -80,14 +78,20 @@ function make_maze_trial(itemID, cond, sentence1,sentence2) {
 function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
   var interrep= {
         type: jsPsychHtmlKeyboardResponse,
-        choices: ['J', 'F'],
+        choices: [' '],
         stimulus: function(){
-          if(anyerror){
-              anyerror=false;
-              return " <p id='istrR'>Errore! Quando sei pronto a riprovare premi J o F.</p>"; // the parameter value has to be returned from the function
+          if(anyerror>0){
+              console.log(anyerror)
+              n = anyerror;
+              anyerror =0;
+              if (n>1) {
+                return " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione. Quando sei prontə a riprovare premi spazio.</p>"; 
+              } else {
+                return " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione. Quando sei prontəa riprovare premi spazio.</p>"; // the parameter value has to be returned from the function
+              } 
             } else {
-              anyerror=false;
-              return " <p id='istrG''>Bravo! Quando sei pronto a ripetere ancora premi J o F.</p>"; // the parameter value has to be returned from the function
+              return " <p id='istrG''>Quando sei prontə a ripetere ancora la stessa frase premi spazio.</p>"; // the parameter value has to be returned from the function
+              anyerror = 0;
           }
         }
   };
@@ -95,15 +99,17 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
   var endsent= {
         type: jsPsychHtmlKeyboardResponse,
         choices: [' '],
-        stimulus: " <p id='istr'>Con questa frase abbiamo finito, quando sei pronto per la prossima premi spazio.</p>"
+        stimulus: " <p id='istr'>Con questa frase abbiamo finito, quando sei prontə per la prossima premi spazio.</p>"
   }
+  
   var startrep= {
         type: jsPsychHtmlKeyboardResponse,
-        choices: ['F','J'],
-        stimulus: " <p id='istr'>Posiziona le dita sui tasti F e J e quando sei pronto per ripetere premine uno a caso.</p>"
+        choices: [' '],
+        stimulus: " <p id='istr'>Posiziona le dita sui tasti F e J e quando sei prontə per ripetere premi spazio.</p>"
   }
+
   var timel =[];
-  var anyerror = false;
+  var anyerror = 0;
   var sp = {
       type: jsPsychHtmlKeyboardResponse,
       choices: [' '],
@@ -124,48 +130,95 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
       if (!jsPsych.pluginAPI.compareKeys(data.response, data.corrkey)) {
         //jsPsych.endCurrentTimeline();
         data.correct=false;
-        anyerror = true;
+        anyerror = anyerror + 1;
         }
       },
     };
     timel.push(mazesent);
     if(i<(nrep-1)) {
-        timel.push(interrep);
+      timel.push(interrep);
     } else {
-        timel.push(endsent);
+      timel.push(interrep);
+      timel.push(endsent);
     }
 }
-    
-return timel 
+return timel;
 }
 
-var welcome = {
+var instructions = {
+    type: jsPsychInstructions,
+    button_label_previous: "Indietro",
+    button_label_next: "Avanti",
+    pages: [
+    'Ciao, grazie per partecipare a questa ricerca!' +
+    '<br>' + 
+    'Questa prova durerà XX minuti.' +
+    '<br>' + 
+    'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
+    'senza distrazioni nel modo più accurato e veloce possibile',
+
+    'Ogni prova consiste di due fasi' +
+    '<br>' + 
+    'FASE 1: vedrai delle frasi che dovrai leggere, saranno presentate una parola alla volta,'+
+    'per procedere dovrai premere la <b>BARRA SPAZIATRICE</b>' +
+    '<br>' + 
+    'FASE 2: vedrai una sequenza di coppie di parole, una sulla destra e una sulla sinistra' +
+    'e dovrai scegliere le parole che formano la frase appena letta,' +
+    'premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra)',
+    'Fase 1: lettura' +
+    '<br>' + 
+    '<p align="center"><iframe src="image.html" width=680pt height=600pt></iframe></p>'
+    ],
+    show_clickable_nav: true
+}
+
+
+var startnow = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: ` 
-  <p id='istr'>In questo esperimento dovrai memorizzare delle frasi per rievocarle correttamente. </p>
-  <p id='istr'>Dopo aver letto la frase ti verranno presentate in sequenza coppie parole, una a destra e una a sinistra di una croce di fissazione. </p>
-  <p id='istr'>Una delle due deve essere scelta per riprodurre la frase letta. </p>
-  <p id='istr'>Per ogni coppia premi il tasto F per scegliere la parola di destra, il tasto J per scegliere la parola di sinistra. </p>
-  <p id='istr'>Ti verrà richiesto di rievocare ogni farse coinque volte di seguito, cerca di essere accuirato e veloce. </p>   `
+  <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `
 };
 
 
-var timeline= [welcome];
+  let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/material/material.json');
+  let alllists = await response.json();
 
-for (let si=0; si<stim.length; si++) {
-    var h = make_maze_block (stim[si].item, stim[si].cond, stim[si].s1, stim[si].s2, 5);
+  var distr = 'nw';
+  var list = 'listA';
+  var rep = 5;
+  var casual = false;
+
+
+  stim = alllists[distr][list];
+  var n = stim.length;
+
+  var indexes = Array.from(Array(stim.length).keys());
+  if (casual) {
+    indexes = jsPsych.randomization.repeat(indexes, 1);
+  }
+
+  var timeline= [instructions];
+  timeline.push(startnow);
+  
+  for (let si=0; si<n; si++) {
+    var tmp = stim[indexes[si]];
+    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep);
     timeline = timeline.concat(h);
+  }
+
+
+  var jsPsych = initJsPsych({
+    use_webaudio: false,
+    on_finish: function(){
+      jsPsych.data.displayData();
+    }
+  });
+
+  jsPsych.run(timeline);
 }
 
+createExperiment();
 
-var jsPsych = initJsPsych({
-  use_webaudio: false,
-  on_finish: function(){
-    jsPsych.data.displayData();
-  }
-});
-
-jsPsych.run(timeline);
 
 </script>
 </html>
