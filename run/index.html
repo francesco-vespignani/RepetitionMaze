@@ -5,6 +5,7 @@
         <script src="https://unpkg.com/jspsych@7.2.3"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
         <script src="https://unpkg.com/@jspsych/plugin-instructions@1.1.1"></script>
+        <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
         <link rel="stylesheet" href="https://unpkg.com/jspsych@7.2.3/css/jspsych.css">
         <style>
         .jspsych-display-element {
@@ -30,6 +31,9 @@
 <script>
 
 async function createExperiment(){
+
+
+  //  funzioni per creare i maze trials
 
   function make_sp_trial(itemID, cond, sentence) {
   var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
@@ -145,6 +149,59 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
 return timel;
 }
 
+  // start jsPsych
+
+  var jsPsych = initJsPsych({
+    use_webaudio: false,
+    on_finish: function(){
+      //jsPsych.data.displayData();
+    }
+  });
+
+  // load material from github
+  
+  let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/material/material.json');
+  let alllists = await response.json();
+  
+
+  // set default parameters and query from url params
+
+  var distr = 'nw';
+  var list = 'listA';
+  var rep = 5;
+  var casual = true;
+  var id = null; 
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  if (urlParams.has('list')) {
+    list = urlParams.get('list');
+  }
+  if (urlParams.has('distr')) {
+    distr = urlParams.get('distr');
+  }
+  if (urlParams.has('rep')) {
+    rep = urlParams.get('rep');
+  }
+  if (urlParams.has('casual')) {
+    casual = urlParams.get('casual');
+  }
+  if (urlParams.has('id')) {
+    id = urlParams.get('id');
+  }  
+
+
+  stim = alllists[distr][list];
+  var n = stim.length;
+  //  MAKE IT SHORTER FOR TEST 
+  var n = 2;
+
+  var indexes = Array.from(Array(stim.length).keys());
+  if (casual) {
+    indexes = jsPsych.randomization.repeat(indexes, 1);
+  }
+//  timeline per istruzioni e pratica
+  
 var instructions = {
     type: jsPsychInstructions,
     button_label_previous: "Indietro",
@@ -156,7 +213,6 @@ var instructions = {
     '<br>' + 
     'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
     'senza distrazioni nel modo più accurato e veloce possibile',
-
     'Ogni prova consiste di due fasi' +
     '<br>' + 
     'FASE 1: vedrai delle frasi che dovrai leggere, saranno presentate una parola alla volta,'+
@@ -167,37 +223,33 @@ var instructions = {
     'premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra)',
     'Fase 1: lettura' +
     '<br>' + 
-    '<p align="center"><iframe src="image.html" width=680pt height=600pt></iframe></p>'
+    '<p align="center"><iframe src="selfpaced.html" width="670" height="600" style="border:none;""></iframe></p>',
+    'Fase 2: ripetizione' +
+    '<br>' + 
+    '<p align="center"><iframe src="maze_'+distr+'.html" width="670" height="600" style="border:none;""></iframe></p>',
+    'La Fase 2 sarà ripetuta più volte per ogni singola frase.' +
+    '<br>' + 
+    'Alcune frasi contengono errori ma vanno ripetute così come viste.' +
+    '<br>' + 
+    'Prima di iniziare con l\'esperimento ci sarà una breve pratica. ',
     ],
     show_clickable_nav: true
 }
 
-
 var startnow = {
   type: jsPsychHtmlKeyboardResponse,
+  choices: [' '],
   stimulus: ` 
   <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `
 };
 
 
-  let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/material/material.json');
-  let alllists = await response.json();
 
-  var distr = 'nw';
-  var list = 'listA';
-  var rep = 5;
-  var casual = false;
+  // start timeline
 
+  var timeline= [];
 
-  stim = alllists[distr][list];
-  var n = stim.length;
-
-  var indexes = Array.from(Array(stim.length).keys());
-  if (casual) {
-    indexes = jsPsych.randomization.repeat(indexes, 1);
-  }
-
-  var timeline= [instructions];
+  timeline.push(instructions);
   timeline.push(startnow);
   
   for (let si=0; si<n; si++) {
@@ -205,21 +257,27 @@ var startnow = {
     var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep);
     timeline = timeline.concat(h);
   }
+ 
+  var subject_id = null;
+  if (id==null) {
+    subject_id = jsPsych.randomization.randomID(10);
+  } else  {
+    subject_id = 'url_'+id;
+  }
 
-
-  var jsPsych = initJsPsych({
-    use_webaudio: false,
-    on_finish: function(){
-      jsPsych.data.displayData();
-    }
-  });
+  const filename = `${subject_id}.csv`;
+  const save_data = {
+    type: jsPsychPipe,
+    action: "save",
+    experiment_id: "uF6LUPwFJwxW",
+    filename: filename,
+    data_string: ()=>jsPsych.data.get().addToAll({id:id, distr: distr, list: list, casual:casual, rep:rep}).csv()
+  };
+  timeline.push(save_data);
 
   jsPsych.run(timeline);
 }
-
 createExperiment();
-
 
 </script>
 </html>
-

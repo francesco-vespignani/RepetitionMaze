@@ -1560,7 +1560,6 @@
 </svg>
 
 <script>
-
    var gray = "#cfcfcfff";
    var green = "#3dae45ff";
    var parola  = document.getElementById("parola");
@@ -1568,41 +1567,40 @@
    parola.style.textAnchor="middle";
    var space = document.getElementById("keySpace");
    space.style.fill=gray;
+   var j = document.getElementById("keyJ");
+   j.style.fill=gray;
+   var f = document.getElementById("keyF");
+   f.style.fill=gray;
 
-
-   function animate(word) {
+   function changeWord(word) {
       parola.textContent=word;
    }
 
-   function pressSpace() {
-      space.style.fill=green;
+   function pressButton(b) {
+      b.style.fill=green;
    }
    
-   function releaseSpace() {
-      space.style.fill=gray;
+   function releaseButton(b) {
+      b.style.fill=gray;
       parola.textContent='';
    }
-
-
-
    const press = 200;
    var time = 800;
    var dur = 800;
    
-   var sentence = [{'word': '+', 'dur': 100},
-                   {'word': 'UN', 'dur': 400},
-                   {'word': 'CANE', 'dur': 500},
-                   {'word': 'CORRE', 'dur': 600},
-                   {'word': 'NEL', 'dur': 450},
-                   {'word': 'PRATO.', 'dur': 800},
+   var sentence = [{'word': '+', 'dur': 100, 'key': space},
+                  {'word': 'UN + KN', 'dur': 400, 'key':f},
+                  {'word': 'CANE + STWO', 'dur': 600, 'key':f},
+                  {'word': 'PPROT + CORRE', 'dur': 520, 'key':j},
+                  {'word': 'NEL + VRT', 'dur': 680, 'key':f},
+                  {'word': 'NPLOX. + PRATO.', 'dur': 300, 'key':f},
                   ];
 
-   console.log(sentence)
    time = 800;
    for (let i = 0; i < sentence.length; i++) {
-      setTimeout(animate, time, sentence[i].word, sentence[i].dur);
-      setTimeout(pressSpace, time+sentence[i].dur);
-      setTimeout(releaseSpace, time+sentence[i].dur+press);
+      setTimeout(changeWord, time, sentence[i].word, sentence[i].dur,  sentence[i].key);
+      setTimeout(pressButton, time+sentence[i].dur, sentence[i].key);
+      setTimeout(releaseButton, time+sentence[i].dur+press, sentence[i].key);
       time = time+sentence[i].dur+press;
    }
 
