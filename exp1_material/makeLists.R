@@ -83,9 +83,9 @@ h_exp = merge(out,m_exp)
 h_pract = merge(out,m_pract)
 
 s_exp = subset(h_exp, select=c(item,group,list,cond))
-write.csv(s[order(s_exp$group, s_exp$item),], file='exp_lists.csv', row.names=F)
-s_exp = subset(h_pract, select=c(item,group,list,cond))
-write.csv(s[order(s_pract$group, s_pract$item),], file='pract_lists.csv', row.names=F)
+write.csv(s_exp[order(s_exp$group, s_exp$item),], file='exp_lists.csv', row.names=F)
+s_pract = subset(h_pract, select=c(item,group,list,cond))
+write.csv(s_pract[order(s_pract$group, s_pract$item),], file='pract_lists.csv', row.names=F)
 
 # create hierarchical structure with different lists as a function of 
 # different distracters in the maze task
@@ -94,14 +94,15 @@ write.csv(s[order(s_pract$group, s_pract$item),], file='pract_lists.csv', row.na
 alllists = list()
 
 for (cond in c('gramm', 'word','pseudo','nw')) { 
+   tmp = list()
 	for (l in c('listA','listB','listC') ) {
-		exp =  h_exp[,which(colnames(h_exp) %in% c('item','cond','sentence', cond))]
-		colnames(exp)[3]='s1'
-		colnames(exp)[4]='s2'
-		pract =  h_pract[,which(colnames(h_pract) %in% c('item','cond','sentence', cond))]
-		colnames(pract)[3]='s1'
-		colnames(pract)[4]='s2'
-		tmp[[l]] = list('exp' = exp, 'pract' = pract )
+		expi =  h_exp[h_exp$list==l ,which(colnames(h_exp) %in% c('item','cond','sentence', cond))]
+		colnames(expi)[3]='s1'
+		colnames(expi)[4]='s2'
+		practi =  h_pract[h_pract$list==l ,which(colnames(h_pract) %in% c('item','cond','sentence', cond))]
+		colnames(practi)[3]='s1'
+		colnames(practi)[4]='s2'
+		tmp[[l]] = list('exp' = expi, 'pract' = practi )
 	}
 	alllists[[cond]] = tmp
 }
