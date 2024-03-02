@@ -37,36 +37,36 @@ async function createExperiment(){
   //  funzioni per creare i maze trials
 
   function make_sp_trial(itemID, cond, sentence) {
-  var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
-  var stimulus_sequence = [] //empty stimulus sequence to start
-  stimulus_sequence.push({
+    var sentence_as_word_list = sentence.split(" ") //split the sentence at spaces
+    var stimulus_sequence = [] //empty stimulus sequence to start
+    stimulus_sequence.push({
       'stimulus': '+',
       'data' : {'item':itemID,'cond':cond,'type': 'selfpaced','wp':-1, 'words': 'fix', 'corrkey': ' '} 
-  })
-  for (let wp=0; wp<sentence_as_word_list.length; wp++) {
-    var word = sentence_as_word_list[wp];
-    var responses = [' ']; 
-    stimulus_sequence.push({
-      'stimulus': word,
-      'data' : {'item':itemID,'cond':cond,'type': 'selfpaced','wp':wp, 'words': word, 'corrkey': ' '} 
-    }) //add that word in the required format
-  }
-  return stimulus_sequence
- };
+    })
+    for (let wp=0; wp<sentence_as_word_list.length; wp++) {
+      var word = sentence_as_word_list[wp];
+      var responses = [' ']; 
+      stimulus_sequence.push({
+        'stimulus': word,
+        'data' : {'item':itemID,'cond':cond,'type': 'selfpaced','wp':wp, 'words': word, 'corrkey': ' '} 
+      }) //add that word in the required format
+    }
+    return stimulus_sequence
+  };
 
-function make_maze_trial(itemID, cond, sentence1,sentence2) {
-  var sentence1_as_word_list = sentence1.split(" ") //split the sentence at spaces
-  var sentence2_as_word_list = sentence2.split(" ") //split the sentence at spaces
-  var stimulus_sequence = [] //empty stimulus sequence to start
-  for (let wp=0; wp<sentence1_as_word_list.length; wp++) {
-    var pair = [sentence1_as_word_list[wp], sentence2_as_word_list[wp]];
-    var correct = 0;
-    var responses = ['F', 'J'];
-    if (Math.random()<0.5) {
+  function make_maze_trial(itemID, cond, sentence1,sentence2) {
+    var sentence1_as_word_list = sentence1.split(" ") //split the sentence at spaces
+    var sentence2_as_word_list = sentence2.split(" ") //split the sentence at spaces
+    var stimulus_sequence = [] //empty stimulus sequence to start
+    for (let wp=0; wp<sentence1_as_word_list.length; wp++) {
+      var pair = [sentence1_as_word_list[wp], sentence2_as_word_list[wp]];
+      var correct = 0;
+      var responses = ['F', 'J'];
+      if (Math.random()<0.5) {
         pair = [sentence2_as_word_list[wp], sentence1_as_word_list[wp]];
         correct =1;
-    } 
-    stimulus_sequence.push({'stimulus':`
+      } 
+      stimulus_sequence.push({'stimulus':`
         <table border="0" width="500">
         <tr>
             <td style="text-align: center; width: 40%; vertical-align: middle;"> `+ pair[0]+`</td>
@@ -82,23 +82,22 @@ function make_maze_trial(itemID, cond, sentence1,sentence2) {
 
 function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
   var interrep= {
-        type: jsPsychHtmlKeyboardResponse,
-        choices: [' '],
-        stimulus: function(){
-          if(anyerror>0){
-              console.log(anyerror)
-              n = anyerror;
-              anyerror =0;
-              if (n>1) {
-                return " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione. Quando sei prontə a riprovare premi spazio.</p>"; 
-              } else {
-                return " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione. Quando sei prontəa riprovare premi spazio.</p>"; // the parameter value has to be returned from the function
-              } 
-            } else {
-              return " <p id='istrG''>Quando sei prontə a ripetere ancora la stessa frase premi spazio.</p>"; // the parameter value has to be returned from the function
-              anyerror = 0;
-          }
-        }
+    type: jsPsychHtmlKeyboardResponse,
+    choices: [' '],
+    stimulus: function(){
+      if(anyerror>0){
+        n = anyerror;
+        anyerror =0;
+        if (n>1) {
+          return " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione. Quando sei prontə a riprovare premi spazio.</p>"; 
+        } else {
+          return " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione. Quando sei prontəa riprovare premi spazio.</p>"; // the parameter value has to be returned from the function
+        } 
+      } else {
+        return " <p id='istrG''>Quando sei prontə a ripetere ancora la stessa frase premi spazio.</p>"; // the parameter value has to be returned from the function
+        anyerror = 0;
+      }
+    }
   };
 
   var endsent= {
@@ -133,22 +132,22 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
       on_finish: function(data) {
         data.correct=true;
       if (!jsPsych.pluginAPI.compareKeys(data.response, data.corrkey)) {
-        //jsPsych.endCurrentTimeline();
         data.correct=false;
         anyerror = anyerror + 1;
-        }
+        // uncomment this to end repetition on errors
+        // jsPsych.endCurrentTimeline();
+      }
       },
     };
     timel.push(mazesent);
     if(i<(nrep-1)) {
       timel.push(interrep);
     } else {
-      timel.push(interrep);
       timel.push(endsent);
     }
-}
-return timel;
-}
+  }
+  return timel;
+  }
 
   // start jsPsych
 
@@ -191,8 +190,9 @@ return timel;
     id = urlParams.get('id');
   }  
 
+  //  select list and condition
 
-  stim = alllists[distr][list];
+  stim = alllists[distr][list]['exp'];
   var n = stim.length;
   //  MAKE IT SHORTER FOR TEST 
   var n = 2;
@@ -201,9 +201,10 @@ return timel;
   if (casual) {
     indexes = jsPsych.randomization.repeat(indexes, 1);
   }
-//  timeline per istruzioni e pratica
   
-var instructions = {
+  //  timeline for instructions and practice
+  
+  var instructions = {
     type: jsPsychInstructions,
     button_label_previous: "Indietro",
     button_label_next: "Avanti",
@@ -238,47 +239,27 @@ var instructions = {
     ' altrimenti i tuoi dati saranno persi',
     ],
     show_clickable_nav: true
-}
-
-var startnow = {
-  type: jsPsychHtmlKeyboardResponse,
-  choices: [' '],
-  stimulus: ` 
-  <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `
-};
-
-var datasaved = {
-  type: jsPsychHtmlKeyboardResponse,
-  choices: [' '],
-  stimulus: ` 
-  <p id='istr'> I dati sono stati svalvati, ora puoi chiudere la finestra del browser. Grazie! </p>   `
-};
-
-var enter_fullscreen = {
-  type: jsPsychFullscreen,
-  fullscreen_mode: true
-}
-
-var exit_fullscreen = {
-  type: jsPsychFullscreen,
-  fullscreen_mode: false,
-  delay_after: 0
-}
-
-  // start timeline
-
-  var timeline= [];
-
-  timeline.push(enter_fullscreen);
-  timeline.push(instructions);
-  timeline.push(startnow);
-  
-  for (let si=0; si<n; si++) {
-    var tmp = stim[indexes[si]];
-    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep);
-    timeline = timeline.concat(h);
   }
- 
+
+  var startnow = {
+    type: jsPsychHtmlKeyboardResponse,
+    choices: [' '],
+    stimulus: ` 
+    <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `
+  };
+
+  var enter_fullscreen = {
+    type: jsPsychFullscreen,
+    fullscreen_mode: true
+  }
+
+  var exit_fullscreen = {
+    type: jsPsychFullscreen,
+    fullscreen_mode: false,
+    delay_after: 0
+  }
+  //  create filename and save data element
+
   var subject_id = null;
   if (id==null) {
     subject_id = jsPsych.randomization.randomID(10);
@@ -294,12 +275,38 @@ var exit_fullscreen = {
     filename: filename,
     data_string: ()=>jsPsych.data.get().addToAll({id:id, distr: distr, list: list, casual:casual, rep:rep}).csv()
   };
+
+  const datasaved = {
+    type: jsPsychHtmlKeyboardResponse,
+    choices: [' '],
+    stimulus: ` 
+    <p id='istr'> I dati sono stati svalvati, ora puoi chiudere la finestra del browser. Grazie! </p>   `
+  };
+
+
+  // create and fill main experiment timeline
+
+  var timeline= [];
+
+  timeline.push(enter_fullscreen);
+  timeline.push(instructions);
+  timeline.push(startnow);
+  
+  for (let si=0; si<n; si++) {
+    var tmp = stim[indexes[si]];
+    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep);
+    timeline = timeline.concat(h);
+  }
+ 
   timeline.push(save_data);
   timeline.push(exit_fullscreen);
   timeline.push(datasaved);
 
+  //  run it
+
   jsPsych.run(timeline);
 }
+
 createExperiment();
 
 </script>
