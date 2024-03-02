@@ -5,6 +5,7 @@
         <script src="https://unpkg.com/jspsych@7.2.3"></script>
         <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
         <script src="https://unpkg.com/@jspsych/plugin-instructions@1.1.1"></script>
+        <script src="https://unpkg.com/@jspsych/plugin-fullscreen@1.1.1"></script>
         <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
         <link rel="stylesheet" href="https://unpkg.com/jspsych@7.2.3/css/jspsych.css">
         <style>
@@ -212,15 +213,15 @@ var instructions = {
     'Questa prova durerà XX minuti.' +
     '<br>' + 
     'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
-    'senza distrazioni nel modo più accurato e veloce possibile',
+    ' senza distrazioni nel modo più accurato e veloce possibile',
     'Ogni prova consiste di due fasi' +
     '<br>' + 
     'FASE 1: vedrai delle frasi che dovrai leggere, saranno presentate una parola alla volta,'+
-    'per procedere dovrai premere la <b>BARRA SPAZIATRICE</b>' +
+    ' per procedere dovrai premere la <b>BARRA SPAZIATRICE</b>' +
     '<br>' + 
     'FASE 2: vedrai una sequenza di coppie di parole, una sulla destra e una sulla sinistra' +
-    'e dovrai scegliere le parole che formano la frase appena letta,' +
-    'premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra)',
+    ' e dovrai scegliere le parole che formano la frase appena letta,' +
+    ' premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra)',
     'Fase 1: lettura' +
     '<br>' + 
     '<p align="center"><iframe src="selfpaced.html" width="670" height="600" style="border:none;""></iframe></p>',
@@ -231,7 +232,10 @@ var instructions = {
     '<br>' + 
     'Alcune frasi contengono errori ma vanno ripetute così come viste.' +
     '<br>' + 
-    'Prima di iniziare con l\'esperimento ci sarà una breve pratica. ',
+    'Prima di iniziare con l\'esperimento ci sarà una breve pratica. ' +
+    '<br>' +
+    'Non chiudere il browser o ricaricare la pagina web fino a quando l\'esperimento non è finito' +
+    ' altrimenti i tuoi dati saranno persi',
     ],
     show_clickable_nav: true
 }
@@ -243,12 +247,29 @@ var startnow = {
   <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `
 };
 
+var datasaved = {
+  type: jsPsychHtmlKeyboardResponse,
+  choices: [' '],
+  stimulus: ` 
+  <p id='istr'> I dati sono stati svalvati, ora puoi chiudere la finestra del browser. Grazie! </p>   `
+};
 
+var enter_fullscreen = {
+  type: jsPsychFullscreen,
+  fullscreen_mode: true
+}
+
+var exit_fullscreen = {
+  type: jsPsychFullscreen,
+  fullscreen_mode: false,
+  delay_after: 0
+}
 
   // start timeline
 
   var timeline= [];
 
+  timeline.push(enter_fullscreen);
   timeline.push(instructions);
   timeline.push(startnow);
   
@@ -274,6 +295,8 @@ var startnow = {
     data_string: ()=>jsPsych.data.get().addToAll({id:id, distr: distr, list: list, casual:casual, rep:rep}).csv()
   };
   timeline.push(save_data);
+  timeline.push(exit_fullscreen);
+  timeline.push(datasaved);
 
   jsPsych.run(timeline);
 }

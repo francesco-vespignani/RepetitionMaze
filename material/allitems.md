@@ -5,7 +5,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 101|**regular**|I|leopardi|cacciano|il|facocero|in|coppia.|
-101|*D-gramm*|L'|acrobata|schiverà|un|fioretto|di|scatto.|
+101|*D-gramm*|L|acrobata|schiverà|un|fioretto|di|scatto.|
 101|*D-salad*|O|chioccia|scartano|un|ingoiati|di|merito.|
 101|*D-pseudo*|U|stafando|massitro|co|schitigo|fe|cerico.|
 101|*D-nonwrd*|G|iatorwar|dalwglwj|fg|brvrbzyl|tp|vxpsne.|
@@ -13,7 +13,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 101|**semv**|I|leopardi|bevono|il|facocero|in|coppia.|
-101|*D-gramm*|L'|aviatore|audace|va|esibendo|la|ferita.|
+101|*D-gramm*|L|aviatore|audace|va|esibendo|la|ferita.|
 101|*D-salad*|O|mancanze|canali|la|riemerso|ho|girare.|
 101|*D-pseudo*|U|tondente|plerma|ro|glisarno|to|grunfo.|
 101|*D-nonwrd*|R|tsngiwox|dnjdji|fm|cwfnlclp|rp|civhbh.|
@@ -700,7 +700,7 @@ title: Maze Task Material
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
-130|**regular**|Lo|scrittore|presenta|il|libro|in|TV.|
+130|**regular**|Lo|scrittore|minaccia|il|libro|in|tv.|
 130|*D-gramm*|Il|giocatore|desidera|un|fondo|di|tè.|
 130|*D-salad*|Il|richiesto|sapevano|mi|piedi|di|va.|
 130|*D-pseudo*|Ri|scidonchi|chisemme|pi|sagga|ge|ri.|
@@ -708,7 +708,7 @@ title: Maze Task Material
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
-130|**semv**|Lo|scrittore|minaccia|il|libro|in|TV.|
+130|**semv**|Lo|scrittore|minaccia|il|libro|in|tv.|
 130|*D-gramm*|La|sicurezza|contiene|un|senso|di|te.|
 130|*D-salad*|Da|giocavano|licenzia|se|primo|la|ne.|
 130|*D-pseudo*|Pa|mercotto|piracchia|ve|talma|ni|ge.|
@@ -716,7 +716,7 @@ title: Maze Task Material
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
-130|**syntv**|Lo|scrittore|presenta|la|libro|in|TV.|
+130|**syntv**|Lo|scrittore|minaccia|il|libro|in|tv.|
 130|*D-gramm*|Il|guerriero|tuttavia|ha|paura|di|te.|
 130|*D-salad*|Un|femminile|orgoglio|di|pezzo|ho|fa.|
 130|*D-pseudo*|Be|tramitole|ossorità|pi|tanno|ba|ge.|
@@ -913,4 +913,28 @@ title: Maze Task Material
 138|*D-salad*|Una|inciampato|storia|di|controllando|per|euro.|
 138|*D-pseudo*|Sen|tognolette|pratto|ri|allegnamessi|eta|defi.|
 138|*D-nonwrd*|Gbf|hjfbdqznpy|rdzqpa|rx|tuvgomcrznav|zmq|ytpo.|
+
+   |      |   |   |   |   |   |   |   |
+:-:|-----:|:--|:--|:--|:--|:--|:--|:--|
+139|**regular**|Il|pompiere|spegne|il|fuoco|senza|paura.|
+139|*D-gramm*|La|reporter|scrive|un|libro|sullo|stato.|
+139|*D-salad*|In|riposati|ghetto|un|passo|porta|scusa.|
+139|*D-pseudo*|Gi|porriere|svotto|pa|ameti|billa|sanco.|
+139|*D-nonwrd*|Sr|eirndfit|edcjpw|vk|fwme|jvscp|qwqck.|
+
+   |      |   |   |   |   |   |   |   |
+:-:|-----:|:--|:--|:--|:--|:--|:--|:--|
+139|**semv**|Il|pompiere|salva|il|fuoco|senza|paura.|
+139|*D-gramm*|Un|tassista|guida|di|notte|nella|città.|
+139|*D-salad*|Ho|sostanze|sposo|lo|resto|morte|testa.|
+139|*D-pseudo*|Fo|rempinta|masco|ga|bemmi|efeno|calpa.|
+139|*D-nonwrd*|Rg|xpenygdl|vbnft|hg|dmdse|flprr|dpghh.|
+
+   |      |   |   |   |   |   |   |   |
+:-:|-----:|:--|:--|:--|:--|:--|:--|:--|
+139|**syntv**|Il|pompiere|spegne|la|fuoco|senza|paura.|
+139|*D-gramm*|Lo|sportivo|scatta|di|corsa|sulla|pista.|
+139|*D-salad*|Un|giornate|stacco|di|dimmi|quasi|cuore.|
+139|*D-pseudo*|Bi|soggenti|scenga|pe|tammi|arere|morpo.|
+139|*D-nonwrd*|Bv|cefcqeyi|cpqyeb|pg|ebpbo|spvll|kpwbl.|
 

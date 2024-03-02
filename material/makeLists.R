@@ -61,9 +61,14 @@ for (i in levels(d$item)) {
 system('pandoc -s -o ./allitems.pdf --from=markdown+pipe_tables ./allitems.md')
 system('pandoc -s -o ./allitems.html --from=markdown+pipe_tables ./allitems.md')
 
-# create 3 groups of 12 items and 2 practice items 
+# create 3 groups of 12 exp items and 3 practice items (specifiyed) 
+
 it = levels(out$item)
-gr = data.frame(item = sample(it), group=c(rep('G1',12),rep('G2',12),rep('G3',12), rep('prac',2)))
+pract = c("139", "130", "131")
+exp = it[!(it %in% pract)]
+
+gr_pract = data.frame(item = sample(pract), group=c(rep('G1',1),rep('G2',1),rep('G3',1)))
+gr_exp = data.frame(item = sample(exp), group=c(rep('G1',12),rep('G2',12),rep('G3',12)))
 
 # create 3 lists in a square latin design and save item's assignment in  a csv file
 
@@ -72,56 +77,34 @@ lists = data.frame(
 	group = c('G1','G2','G3', 'G2','G3','G1', 'G3','G1','G2'),
 	list = c(rep('listA',3), rep('listB',3), rep('listC',3))  
 	)
-m = merge(lists,gr)
-h = merge(out,m)
+m_exp = merge(lists,gr_exp)
+m_pract = merge(lists,gr_pract)
+h_exp = merge(out,m_exp)
+h_pract = merge(out,m_pract)
 
-s = subset(h, select=c(item,group,list,cond))
-write.csv(s[order(s$group, s$item),], file='lists.csv', row.names=F)
-
+s_exp = subset(h_exp, select=c(item,group,list,cond))
+write.csv(s[order(s_exp$group, s_exp$item),], file='exp_lists.csv', row.names=F)
+s_exp = subset(h_pract, select=c(item,group,list,cond))
+write.csv(s[order(s_pract$group, s_pract$item),], file='pract_lists.csv', row.names=F)
 
 # create hierarchical structure with different lists as a function of 
 # different distracters in the maze task
 
+
 alllists = list()
-tmp = list()
-for (l in c('listA','listB','listC') ) {
-	tt = subset(h, list==l, select =c(item, cond,sentence, gramm))
-	colnames(tt)[3]='s1'
-	colnames(tt)[4]='s2'
-	tmp[[l]] =tt
+
+for (cond in c('gramm', 'word','pseudo','nw')) { 
+	for (l in c('listA','listB','listC') ) {
+		exp =  h_exp[,which(colnames(h_exp) %in% c('item','cond','sentence', cond))]
+		colnames(exp)[3]='s1'
+		colnames(exp)[4]='s2'
+		pract =  h_pract[,which(colnames(h_pract) %in% c('item','cond','sentence', cond))]
+		colnames(pract)[3]='s1'
+		colnames(pract)[4]='s2'
+		tmp[[l]] = list('exp' = exp, 'pract' = pract )
+	}
+	alllists[[cond]] = tmp
 }
 
-alllists[['gramm']] = tmp
-
-tmp = list()
-for (l in c('listA','listB','listC') ) {
-	tt = subset(h, list==l, select =c(item, cond,sentence, word))
-	colnames(tt)[3]='s1'
-	colnames(tt)[4]='s2'
-	tmp[[l]] =tt
-}
-
-alllists[['word']] = tmp
-
-tmp = list()
-for (l in c('listA','listB','listC') ) {
-	tt = subset(h, list==l, select =c(item, cond,sentence, pseudo))
-	colnames(tt)[3]='s1'
-	colnames(tt)[4]='s2'
-	tmp[[l]] =tt
-}
-
-alllists[['pseudo']] = tmp
-
-tmp = list()
-for (l in c('listA','listB','listC') ) {
-	tt = subset(h, list==l, select =c(item, cond,sentence, nw))
-	colnames(tt)[3]='s1'
-	colnames(tt)[4]='s2'
-	tmp[[l]] =tt
-}
-
-alllists[['nw']] = tmp
-
-cat(toJSON(alllists, pretty=TRUE), file='material.json')
+cat(toJSON(alllists, pretty=TRUE), file='material.json', append=FALSE)
 
