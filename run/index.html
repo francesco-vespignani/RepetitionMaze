@@ -158,12 +158,11 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var distr = 'nw';
   const lists = ['listA', 'listB', 'listC'];
   var list = lists[jsPsych.randomization.randomInt(0, 2)];
-  console.log(list);
   var nrep = 5;
   var casual = true;
   var id = null; 
   var n = null;
-  const testing = true;
+  var testing = true;
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
