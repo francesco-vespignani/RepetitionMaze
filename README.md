@@ -40,13 +40,13 @@ For each run two files are saved, one with practice data  and one with experimen
 
 If you are and Italian motherlanguage speaker between 18 and 30 years old and would like to partecipate to the real experiment follow one of these links (from the easier to more difficult), changing **list id (CHANGEME)** in the browser after opening the link belows:
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=nw&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=nw&testing=false)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=nw&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=nw&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=pseudo&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=pseudo&testing=false)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=pseudo&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=pseudo&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=word&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=word&testing=false)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=word&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=word&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&testing=false)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=gramm&testing=false)
 
 Data will be automatically saved in this ofs component:
 
