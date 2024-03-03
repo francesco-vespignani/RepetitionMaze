@@ -33,7 +33,6 @@
 
 async function createExperiment(){
 
-
   //  funzioni per creare i maze trials
 
   function make_sp_trial(itemID, cond, sentence) {
@@ -41,7 +40,7 @@ async function createExperiment(){
     var stimulus_sequence = [] //empty stimulus sequence to start
     stimulus_sequence.push({
       'stimulus': '+',
-      'data' : {'item':itemID,'cond':cond,'type': 'selfpaced','wp':-1, 'words': 'fix', 'corrkey': ' '} 
+      'data' : {'item':itemID,'cond':cond,'type': 'selfpaced','wp':-1, 'words': '+', 'corrkey': ' '} 
     })
     for (let wp=0; wp<sentence_as_word_list.length; wp++) {
       var word = sentence_as_word_list[wp];
@@ -80,8 +79,8 @@ async function createExperiment(){
  };
 
 
-function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
-  var interrep= {
+function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
+  const interrep= {
     type: jsPsychHtmlKeyboardResponse,
     choices: [' '],
     stimulus: function(){
@@ -97,19 +96,22 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
         return " <p id='istrG''>Quando sei prontə a ripetere ancora la stessa frase premi spazio.</p>"; // the parameter value has to be returned from the function
         anyerror = 0;
       }
-    }
+    },
+    data: {type: 'break', log_type: log_type},
   };
 
-  var endsent= {
+  const endsent= {
         type: jsPsychHtmlKeyboardResponse,
         choices: [' '],
-        stimulus: " <p id='istr'>Con questa frase abbiamo finito, quando sei prontə per la prossima premi spazio.</p>"
+        stimulus: " <p id='istr'>Con questa frase abbiamo finito, quando sei prontə per la prossima premi spazio.</p>",
+        data: {type: 'break', log_type: log_type},
   }
   
-  var startrep= {
+  const startrep= {
         type: jsPsychHtmlKeyboardResponse,
         choices: [' '],
-        stimulus: " <p id='istr'>Posiziona le dita sui tasti F e J e quando sei prontə per ripetere premi spazio.</p>"
+        stimulus: " <p id='istr'>Posiziona le dita sui tasti F e J e quando sei prontə per ripetere premi spazio.</p>",
+        data: {type: 'break', log_type: log_type},
   }
 
   var timel =[];
@@ -119,7 +121,7 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
       choices: [' '],
       timeline: make_sp_trial(itemID, cond, sentence1),
       on_finish: function(data) {
-        data.correct=true;
+        data.log_type=log_type;
       }
   };
   timel.push(sp);
@@ -131,6 +133,8 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
       timeline: make_maze_trial(itemID, cond, sentence1, sentence2),
       on_finish: function(data) {
         data.correct=true;
+        data.rep = i + 1;
+        data.log_type=log_type;
       if (!jsPsych.pluginAPI.compareKeys(data.response, data.corrkey)) {
         data.correct=false;
         anyerror = anyerror + 1;
@@ -153,14 +157,14 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
 
   var jsPsych = initJsPsych({
     use_webaudio: false,
-    on_finish: function(){
-      //jsPsych.data.displayData();
-    }
+  //  on_finish: function(){
+  //    jsPsych.data.displayData();
+  //  }
   });
 
   // load material from github
   
-  let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/material/material.json');
+  let response = await fetch('https://raw.githubusercontent.com/francesco-vespignani/RepetitionMaze/main/exp1_material/material.json');
   let alllists = await response.json();
   
 
@@ -191,12 +195,10 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
   }  
 
   //  select list and condition
+ 
   pract = alllists[distr][list]['pract'];
   stim = alllists[distr][list]['exp'];
-  var n = stim.length;
-  //  MAKE IT SHORTER FOR TEST 
-  var n = 2;
-
+ 
   var indexes = Array.from(Array(stim.length).keys());
   if (casual) {
     indexes = jsPsych.randomization.repeat(indexes, 1);
@@ -204,86 +206,121 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
   
   //  timeline for instructions and practice
   
-  var instructions = {
-    type: jsPsychInstructions,
-    button_label_previous: "Indietro",
-    button_label_next: "Avanti",
-    pages: [
-    'Ciao, grazie per partecipare a questa ricerca!' +
-    '<br>' + 
-    'Questa prova durerà XX minuti.' +
-    '<br>' + 
-    'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
-    ' senza distrazioni nel modo più accurato e veloce possibile',
-    'Ogni prova consiste di due fasi' +
-    '<br>' + 
-    'FASE 1: vedrai delle frasi che dovrai leggere, saranno presentate una parola alla volta,'+
-    ' per procedere dovrai premere la <b>BARRA SPAZIATRICE</b>' +
-    '<br>' + 
-    'FASE 2: vedrai una sequenza di coppie di parole, una sulla destra e una sulla sinistra' +
-    ' e dovrai scegliere le parole che formano la frase appena letta,' +
-    ' premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra)',
-    'Fase 1: lettura' +
-    '<br>' + 
-    '<p align="center"><iframe src="selfpaced.html" width="670" height="600" style="border:none;""></iframe></p>',
-    'Fase 2: ripetizione' +
-    '<br>' + 
-    '<p align="center"><iframe src="maze_'+distr+'.html" width="670" height="600" style="border:none;""></iframe></p>',
-    'La Fase 2 sarà ripetuta più volte per ogni singola frase.' +
-    '<br>' + 
-    'Alcune frasi contengono errori ma vanno ripetute così come viste.' +
-    '<br>' + 
-    'Prima di iniziare con l\'esperimento ci sarà una breve pratica. ' +
-    '<br>' +
-    'Non chiudere il browser o ricaricare la pagina web fino a quando l\'esperimento non è finito' +
-    ' altrimenti i tuoi dati saranno persi',
-    ],
-    show_clickable_nav: true
-  }
+    const instructions = {
+      type: jsPsychInstructions,
+      button_label_previous: "Indietro",
+      button_label_next: "Avanti",
+      pages: [
+        'Ciao, grazie per partecipare a questa ricerca!' +
+        '<br>' + 
+        'Questa prova durerà XX minuti.' +
+        '<br>' + 
+        'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
+        ' senza distrazioni nel modo più accurato e veloce possibile',
+        'Ogni prova consiste di due fasi' +
+        '<br>' + 
+        'FASE 1: vedrai delle frasi che dovrai leggere, saranno presentate una parola alla volta,'+
+        ' per procedere dovrai premere la <b>BARRA SPAZIATRICE</b>' +
+        '<br>' + 
+        'FASE 2: vedrai una sequenza di coppie di parole, una sulla destra e una sulla sinistra' +
+        ' e dovrai scegliere le parole che formano la frase appena letta,' +
+        ' premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra)',
+        'Fase 1: lettura' +
+        '<br>' + 
+        '<p align="center"><iframe src="selfpaced.html" width="670" height="600" style="border:none;""></iframe></p>',
+        'Fase 2: ripetizione' +
+        '<br>' + 
+        '<p align="center"><iframe src="maze_'+distr+'.html" width="670" height="600" style="border:none;""></iframe></p>',
+        'La Fase 2 sarà ripetuta più volte per ogni singola frase.' +
+        '<br>' + 
+        'Alcune frasi contengono errori ma vanno ripetute così come viste.' +
+        '<br>' + 
+        'Prima di iniziare con l\'esperimento ci sarà una breve pratica. ' +
+        '<br>' +
+        'Non chiudere il browser o ricaricare la pagina web fino a quando l\'esperimento non è finito' +
+        ' altrimenti i tuoi dati saranno persi',
+      ],
+      show_clickable_nav: true,
+      data: {type: 'break', log_type: 'practice'},
+    }
 
   const startpract = {
     type: jsPsychHtmlKeyboardResponse,
     choices: [' '],
     stimulus: ` 
-    <p id='istr'>Premi spazio per iniziare una breve pratica. Nella maggior parte dei browser puoi modificare la dimensione dei font con Ctrl+ Ctrl-. </p>   `
+      <p id='istr'>Premi spazio per iniziare una breve pratica.`+
+      `<br>` + 
+      `Nella maggior parte dei browser puoi modificare la dimensione dei font con Ctrl+ Ctrl-. </p>`,
+    data: {type: 'break', log_type: 'practice'},
   };
 
   const startexp = {
     type: jsPsychHtmlKeyboardResponse,
     choices: [' '],
     stimulus: ` 
-    <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `
+    <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `,
+    data: {type: 'break', log_type: 'practice'},
   };
 
-  var enter_fullscreen = {
+  const enter_fullscreen = {
     type: jsPsychFullscreen,
     message: '<p> Premendo il pulsante continua l\'esperimento passerà in modalità schermo intero. </p>',
     button_label: 'Continua', 
     fullscreen_mode: true
   }
 
-  var exit_fullscreen = {
+  const exit_fullscreen = {
     type: jsPsychFullscreen,
     fullscreen_mode: false,
-    delay_after: 0
+    delay_after: 0,
   }
+
   //  create filename and save data element
 
   var subject_id = null;
+
   if (id==null) {
     subject_id = jsPsych.randomization.randomID(10);
   } else  {
     subject_id = 'url_'+id;
   }
 
-  const filename = `${subject_id}.csv`;
-  const save_data = {
+  const fileexp = `exp_${subject_id}.csv`;
+  const filepract = `pract_${subject_id}.csv`;
+  console.log(fileexp)
+  console.log(filepract)
+
+  var save_pract = {
     type: jsPsychPipe,
     action: "save",
     experiment_id: "uF6LUPwFJwxW",
-    filename: filename,
-    data_string: ()=>jsPsych.data.get().addToAll({id:id, distr: distr, list: list, casual:casual, rep:rep}).csv()
+    filename: filepract,
+    data_string: ()=>jsPsych.data.get().
+      addToAll({id:id, distr: distr, list: list, casual:casual, rep:rep}).
+      filter({log_type: 'practice'}).
+      ignore('stimulus').
+      ignore('internal_node_id').
+      ignore('trial_type').
+      ignore('log_type').
+      csv()
   };
+
+  var save_exp = {
+    type: jsPsychPipe,
+    action: "save",
+    experiment_id: "uF6LUPwFJwxW",
+    filename: fileexp,
+    data_string: ()=>jsPsych.data.get().
+      addToAll({id:id, distr: distr, list: list, casual:casual, nrep:rep}).
+      filter({log_type: 'experiment'}).
+      ignore('stimulus').
+      ignore('internal_node_id').
+      ignore('trial_type').
+      ignore('log_type').
+      csv()
+  };
+
+
 
   const datasaved = {
     type: jsPsychHtmlKeyboardResponse,
@@ -292,32 +329,38 @@ function make_maze_block(itemID,cond,sentence1,sentence2,nrep) {
     <p id='istr'> I dati sono stati svalvati, ora puoi chiudere la finestra del browser. Grazie! </p>   `
   };
 
-
   // create and fill main experiment timeline
 
   var timeline= [];
-
   timeline.push(enter_fullscreen);
   timeline.push(instructions);
   timeline.push(startpract);
-  console.log(pract)
+  
   for (let si=0; si<pract.length; si++) {
     var tmp = pract[si];
-    console.log(si);
-    console.log(tmp);
-    
-    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep);
+    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep, 'practice');
     timeline = timeline.concat(h);
   }
- 
+
+  timeline.push(save_pract);
   timeline.push(startexp);
-  timeline.push(save_data);
+  
+  // uncomment to have full experiment
+  // for (let si=0; si<stim.length; si++) {
+  for (let si=0; si<2; si++) {
+    var tmp = stim[indexes[si]];
+    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep, 'experiment');
+    timeline = timeline.concat(h);
+  }
+
+  timeline.push(save_exp);
   timeline.push(exit_fullscreen);
   timeline.push(datasaved);
 
   //  run it
 
   jsPsych.run(timeline);
+
 }
 
 createExperiment();

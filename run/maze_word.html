@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
+<!DOCTYPE html>
+<html>
+<body>
+   <svg
    width="474.077pt"
    height="370.32913pt"
    version="1.1"
@@ -1556,3 +1558,53 @@
        x="295.1069"
        y="62.858582">UN</tspan></text>
 </svg>
+
+<script>
+   var gray = "#cfcfcfff";
+   var green = "#3dae45ff";
+   var parola  = document.getElementById("parola");
+   parola.textContent='+';
+   parola.style.textAnchor="middle";
+   var space = document.getElementById("keySpace");
+   space.style.fill=gray;
+   var j = document.getElementById("keyJ");
+   j.style.fill=gray;
+   var f = document.getElementById("keyF");
+   f.style.fill=gray;
+
+   function changeWord(word) {
+      parola.textContent=word;
+   }
+
+   function pressButton(b) {
+      b.style.fill=green;
+   }
+   
+   function releaseButton(b) {
+      b.style.fill=gray;
+      parola.textContent='';
+   }
+   const press = 200;
+   var time = 800;
+   var dur = 800;
+   
+   var sentence = [{'word': '+', 'dur': 100, 'key': space},
+                  {'word': 'UN + DA', 'dur': 400, 'key':f},
+                  {'word': 'CANE + VAGA', 'dur': 600, 'key':f},
+                  {'word': 'PANNA + CORRE', 'dur': 520, 'key':j},
+                  {'word': 'NEL + UNA', 'dur': 680, 'key':f},
+                  {'word': 'RESTO. + PRATO.', 'dur': 300, 'key':f},
+                  ];
+
+   time = 800;
+   for (let i = 0; i < sentence.length; i++) {
+      setTimeout(changeWord, time, sentence[i].word, sentence[i].dur,  sentence[i].key);
+      setTimeout(pressButton, time+sentence[i].dur, sentence[i].key);
+      setTimeout(releaseButton, time+sentence[i].dur+press, sentence[i].key);
+      time = time+sentence[i].dur+press;
+   }
+
+</script>
+
+</body>
+</html>
