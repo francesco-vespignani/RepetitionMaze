@@ -73,7 +73,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
         if (n>1) {
           return " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione. Quando sei prontə a riprovare premi spazio.</p>"; 
         } else {
-          return " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione. Quando sei prontəa riprovare premi spazio.</p>"; // the parameter value has to be returned from the function
+          return " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione. Quando sei prontə a riprovare premi spazio.</p>"; // the parameter value has to be returned from the function
         } 
       } else {
         return " <p id='istrG''>Quando sei prontə a ripetere ancora la stessa frase premi spazio.</p>"; // the parameter value has to be returned from the function
@@ -156,11 +156,14 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   // set default parameters and query from url params
 
   var distr = 'nw';
-  var list = 'listA';
+  const lists = ['listA', 'listB', 'listC'];
+  var list = lists[jsPsych.randomization.randomInt(0, 2)];
+  console.log(list);
   var nrep = 5;
   var casual = true;
   var id = null; 
   var n = null;
+  const testing = true;
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -181,6 +184,9 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   }  
   if (urlParams.has('n')) {
     n = urlParams.get('n');
+  }  
+  if (urlParams.has('testing')) {
+    testing = urlParams.get('testing');
   }  
 
   //  select list and condition
@@ -281,7 +287,13 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var save_pract = {
     type: jsPsychPipe,
     action: "save",
-    experiment_id: "uF6LUPwFJwxW",
+    experiment_id: function(){
+      if(testing){
+        return "uF6LUPwFJwxW" 
+      } else {
+        return "40TBkMVAzRJD"
+      }
+    }.
     filename: filepract,
     data_string: ()=>jsPsych.data.get().
       addToAll({id:id, distr: distr, list: list, casual:casual, nrep:nrep}).
@@ -292,7 +304,13 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var save_exp = {
     type: jsPsychPipe,
     action: "save",
-    experiment_id: "uF6LUPwFJwxW",
+    experiment_id: function(){
+      if(testing){
+        return "uF6LUPwFJwxW" 
+      } else {
+        return "40TBkMVAzRJD"
+      }
+    }.
     filename: fileexp,
     data_string: ()=>jsPsych.data.get().
       addToAll({id:id, distr: distr, list: list, casual:casual, nrep:nrep}).

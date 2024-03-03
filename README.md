@@ -8,13 +8,11 @@ todo
 
 ## Material
 
-todo
-
 [Exp1 material](https://francesco-vespignani.github.io/RepetitionMaze/exp1_material/allitems.html)
 
 ##  Test the experiment
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=john&distr=pseudo&list=listB&casual=false&nrep=3&n=2](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=john&distr=pseudo&list=listB&casual=false&nrep=3&n=2)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=john&distr=pseudo&list=listB&casual=false&nrep=3&n=2](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=john&distr=pseudo&list=listB&casual=false&nrep=3&n=2&testing=true)
 
 Available url parameters (if missing default will be used):
 
@@ -22,13 +20,15 @@ Available url parameters (if missing default will be used):
 
 - dist, type of distracters. Available values are nw (nonwords), pseudo (pseudowords), word (word salad), gramm (grammatical sentences). Default is nw.
 
-- list, one of three lists. Available values ara listA listB listC, default listA;
+- list, one of three lists. Available values ara listA listB listC, default a random list.
 
 - casual, if items are presented randomly. Available values are true and false. Default is true.
 
 - nrep, number of maze repetitions for each item. Available values are positive integers. Default is 5.
 
-- n, number experimental items to make the experiment shoprter for testing. Available values are positive integers below 36. Default is null (all 36 items)
+- n, number experimental items to make the experiment shoprter for testing. Available values are positive integers below 36. Default is null (all 36 items).
+
+- testing, is it a test of the software? Allowed values true false. Default is true.
 
 Data will be automatically saved in this ofs component:
 
@@ -38,16 +38,18 @@ For each run two files are saved, one with practice data  and one with experimen
 
 ##  Participate
 
-If you are and Italian motherlanguage speaker between 18 and 30 years old and would like to partecipate to the real experiment follow one of these links (from the easier to more difficult), changing list and id in the browser after opening the link belows:
+If you are and Italian motherlanguage speaker between 18 and 30 years old and would like to partecipate to the real experiment follow one of these links (from the easier to more difficult), changing **list id (CHANGEME)** in the browser after opening the link belows:
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=nw&list=listA&casual=true](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=nw&list=listA&casual=true)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=nw&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=nw&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=pseudo&list=listA&casual=true](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=pseudo&list=listA&casual=true)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=pseudo&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=pseudo&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=word&list=listA&casual=true](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=word&list=listA&casual=true)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=word&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=word&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&list=listA&casual=true](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&list=listA&casual=true)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&testing=false)
 
+Data will be automatically saved in this ofs component:
 
+[https://osf.io/568sh/?view_only=](https://osf.io/568sh/?view_only=)
 
 
