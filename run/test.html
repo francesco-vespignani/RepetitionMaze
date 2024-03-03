@@ -15,7 +15,7 @@
             line-height: 1.6em;
         }
         p#istr {
-            color: red;
+            color: darkblue;
             font-size: 18px;
         }
         p#istrR {
@@ -172,9 +172,10 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
 
   var distr = 'nw';
   var list = 'listA';
-  var rep = 5;
+  var nrep = 5;
   var casual = true;
   var id = null; 
+  var n = null;
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -184,14 +185,17 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   if (urlParams.has('distr')) {
     distr = urlParams.get('distr');
   }
-  if (urlParams.has('rep')) {
-    rep = urlParams.get('rep');
+  if (urlParams.has('nrep')) {
+    nrep = urlParams.get('nrep');
   }
   if (urlParams.has('casual')) {
     casual = urlParams.get('casual');
   }
   if (urlParams.has('id')) {
     id = urlParams.get('id');
+  }  
+  if (urlParams.has('n')) {
+    n = urlParams.get('n');
   }  
 
   //  select list and condition
@@ -294,12 +298,8 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     experiment_id: "uF6LUPwFJwxW",
     filename: filepract,
     data_string: ()=>jsPsych.data.get().
-      addToAll({id:id, distr: distr, list: list, casual:casual, rep:rep}).
+      addToAll({id:id, distr: distr, list: list, casual:casual, nrep:nrep}).
       filter({log_type: 'practice'}).
-      ignore('stimulus').
-      ignore('internal_node_id').
-      ignore('trial_type').
-      ignore('log_type').
       csv()
   };
 
@@ -309,7 +309,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     experiment_id: "uF6LUPwFJwxW",
     filename: fileexp,
     data_string: ()=>jsPsych.data.get().
-      addToAll({id:id, distr: distr, list: list, casual:casual, nrep:rep}).
+      addToAll({id:id, distr: distr, list: list, casual:casual, nrep:nrep}).
       filter({log_type: 'experiment'}).
       ignore('stimulus').
       ignore('internal_node_id').
@@ -336,18 +336,20 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   
   for (let si=0; si<pract.length; si++) {
     var tmp = pract[si];
-    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep, 'practice');
+    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, nrep, 'practice');
     timeline = timeline.concat(h);
   }
 
   timeline.push(save_pract);
   timeline.push(startexp);
   
-  // uncomment to have full experiment
-  // for (let si=0; si<stim.length; si++) {
-  for (let si=0; si<2; si++) {
+  if (n==null) {
+    n = stim.length
+  }
+
+  for (let si=0; si<n; si++) {
     var tmp = stim[indexes[si]];
-    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, rep, 'experiment');
+    var h = make_maze_block (tmp.item, tmp.cond, tmp.s1, tmp.s2, nrep, 'experiment');
     timeline = timeline.concat(h);
   }
 
