@@ -46,7 +46,7 @@ If you are and Italian motherlanguage speaker between 18 and 30 years old and wo
 
 [https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=word&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=word&testing=false)
 
-[https://francesco-vespignani.github.io/RepetitionMaze/run/?id=CHANGEME&distr=gramm&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=gramm&testing=false)
+[https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=gramm&testing=false](https://francesco-vespignani.github.io/RepetitionMaze/run/?distr=gramm&testing=false)
 
 Data will be automatically saved in this ofs component:
 
