@@ -1,0 +1,38 @@
+@import url(https://db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular);
+
+.jspsych-content {
+  max-width: 80%; 
+}
+
+.jspsych-display-element {
+    font-family: 'DINOT-Regular';
+    font-size: 25px;
+    line-height: 1.6em;
+}
+
+.jspsych-btn {
+    color: darkblue;
+    border-color: darkblue;
+}
+
+.maze {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 32px;
+}
+
+.selfpaced {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 32px;
+}
+
+p#istr {
+    color: darkblue;
+}
+
+p#istrR {
+    color: red;
+}
+
+p#istrG {
+    color: green;
+}
