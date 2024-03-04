@@ -77,7 +77,6 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
         } 
       } else {
         return " <p id='istrG''>Quando sei prontə a ripetere ancora la stessa frase premi spazio.</p>"; // the parameter value has to be returned from the function
-        anyerror = 0;
       }
     },
     data: {type: 'break', log_type: log_type},
@@ -86,7 +85,19 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   const endsent= {
         type: jsPsychHtmlKeyboardResponse,
         choices: [' '],
-        stimulus: " <p id='istr'>Con questa frase abbiamo finito, quando sei prontə per la prossima premi spazio.</p>",
+        stimulus: function(){
+          if(anyerror>0){
+          n = anyerror;
+          anyerror =0;
+          var out = "";
+          if (n>1) {
+            out = " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione.</p>"; 
+          } else {
+            out = " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione.";
+            } 
+          } 
+          return out + "<p id='istr'>Con questa frase abbiamo finito, quando sei prontə per la prossima premi spazio.</p>";
+        },
         data: {type: 'break', log_type: log_type},
   }
   
@@ -162,7 +173,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var casual = true;
   var id = null; 
   var n = null;
-  var testing = true;
+  var repo = "pilot";
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -184,9 +195,9 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   if (urlParams.has('n')) {
     n = urlParams.get('n');
   }  
-  if (urlParams.has('testing')) {
-    testing = urlParams.get('testing');
-  }  
+  if (urlParams.has('repo')) {
+    repo = urlParams.get('repo');
+  }
 
   //  select list and condition
  
@@ -207,7 +218,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
       pages: [
         '<p id="istr"> Ciao, grazie per partecipare a questa ricerca!' +
         '<br>' + 
-        'Questa prova durerà XX minuti.' +
+        'Questa prova durerà circa 30 minuti.' +
         '<br>' + 
         'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
         ' senza distrazioni nel modo più accurato e veloce possibile </p>',
@@ -252,8 +263,24 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   const startexp = {
     type: jsPsychHtmlKeyboardResponse,
     choices: [' '],
-    stimulus: ` 
-    <p id='istr'>Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>   `,
+    stimulus:  function() {
+      if (saverror.success == true) {
+        return "<p id='istr'> I dati della pratica sono stati svalvati ("+
+          subject_id + ")" +
+          "<br>" + 
+          "Ora inizia l'esperimento vero e proprio, premi spazio per iniziare, buon lavoro! </p>";
+      } else {
+        return "<p id='istrR'> I dati della pratica non sono stati salvati." +
+          "<br>" + 
+          "Error:" + saverror.error +
+          "<br>" + 
+          "Message:" + saverror.message +
+          "<br>" + 
+          "Puoi iniziare l'esperimento vero e proprio, ma anche questi dati non saranno probabilmente salvati." +
+          "<br>" + 
+          "Premi spazio per continuare, buon lavoro! </p>";
+      }
+    },
     data: {type: 'break', log_type: 'practice'},
   };
 
@@ -275,19 +302,20 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var subject_id = null;
 
   if (id==null) {
-    subject_id = jsPsych.randomization.randomID(10);
+    subject_id = 'IDP' + jsPsych.randomization.randomID(10);
   } else  {
-    subject_id = 'URL'+id;
+    subject_id = 'IDU'+id;
   }
 
   const fileexp = `exp_${subject_id}.csv`;
   const filepract = `pract_${subject_id}.csv`;
-
+  var saverror = {success: true, error: null, message: null};
+  
   var save_pract = {
     type: jsPsychPipe,
     action: "save",
     experiment_id: function(){
-      if(testing=='false'){
+      if(repo=='pilot'){
         return "40TBkMVAzRJD"
       } else {
         return "uF6LUPwFJwxW" 
@@ -297,14 +325,19 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     data_string: ()=>jsPsych.data.get().
       addToAll({id:id, distr: distr, list: list, casual:casual, nrep:nrep}).
       filter({log_type: 'practice'}).
-      csv()
+      csv(),
+    on_finish: function(data) {
+      saverror.success = data.success;
+      saverror.error = data.result.error;
+      saverror.message = data.result.message;
+    },
   };
 
   var save_exp = {
     type: jsPsychPipe,
     action: "save",
     experiment_id: function(){
-      if(testing=='false'){
+      if(repo=='pilot'){
         return "40TBkMVAzRJD"
       } else {
         return "uF6LUPwFJwxW" 
@@ -318,14 +351,32 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
       ignore('internal_node_id').
       ignore('trial_type').
       ignore('log_type').
-      csv()
+      csv(),
+    on_finish: function(data) {
+      saverror.success = data.success;
+      saverror.error = data.result.error;
+      saverror.message = data.result.message;
+    },
   };
 
   const datasaved = {
     type: jsPsychHtmlKeyboardResponse,
     choices: [' '],
-    stimulus: ` 
-    <p id='istr'> I dati sono stati svalvati, ora puoi chiudere la finestra del browser. Grazie! </p>   `
+    stimulus: function() {
+      if (saverror.success == true) {
+        return "<p id='istr'> I dati sono stati salvati ("+
+          subject_id +
+          "), ora puoi chiudere la finestra del browser. Grazie! </p>";
+      } else {
+        return "<p id='istrR'> I dati non sono stati salvati." +
+          "<br>" + 
+          "Error:" + saverror.error +
+          "<br>" + 
+          "Message:" + saverror.message +
+          "<br>" + 
+          "Ora puoi chiudere la finestra del browser. Grazie! </p>";
+      }
+    },
   };
 
   // create and fill main experiment timeline
@@ -342,6 +393,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   }
 
   timeline.push(save_pract);
+  
   timeline.push(startexp);
   
   if (n==null) {
