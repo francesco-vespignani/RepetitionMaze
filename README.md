@@ -52,4 +52,12 @@ Data will be automatically saved in this ofs component (pilot):
 
 [https://osf.io/568sh/?view_only=](https://osf.io/568sh/?view_only=)
 
+##  Funding
+
+This work has been funded by the research project REPLAI (Repetition Experiments as Probes on Linguistics Analysis and Integration). MIUR PRIN-2022 - 2022JT5N3J as a part of NextGenerationEU of the European commission.
+
+[<img src="logo/nextgeneu_en.jpg">](https://next-generation-eu.europa.eu/index_en)
+
+
+
 
