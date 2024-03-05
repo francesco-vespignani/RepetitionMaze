@@ -4,9 +4,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "regular",
-          "s1": "I leopardi cacciano il facocero in coppia.",
-          "s2": "L acrobata schiverà un fioretto di scatto."
+          "cond": "syntv",
+          "s1": "I leopardi cacciano la facocero in coppia.",
+          "s2": "A casaccio sparerai al veterano di sabato."
         },
         {
           "item": "102",
@@ -16,15 +16,15 @@
         },
         {
           "item": "103",
-          "cond": "regular",
-          "s1": "Il camionista guida il furgone nella nebbia.",
-          "s2": "La parrocchia rende la giovane molto timida."
+          "cond": "syntv",
+          "s1": "Il camionista guida la furgone nella nebbia.",
+          "s2": "La condannata tiene lo sguardo sulle nuvole."
         },
         {
           "item": "104",
-          "cond": "syntv",
-          "s1": "Il cane morde il catena con rabbia.",
-          "s2": "La nave invia un nobile non famoso."
+          "cond": "regular",
+          "s1": "Il cane morde la catena con rabbia.",
+          "s2": "La pace apra al legame tra popoli."
         },
         {
           "item": "105",
@@ -58,51 +58,51 @@
         },
         {
           "item": "110",
-          "cond": "regular",
-          "s1": "Il falegname martella il chiodo con forza.",
-          "s2": "La sostituta imparava la scheda più volte."
+          "cond": "semv",
+          "s1": "Il falegname critica il chiodo con forza.",
+          "s2": "Un dittatore grattava la regina del mondo."
         },
         {
           "item": "111",
-          "cond": "syntv",
-          "s1": "Il gatto mangia il quaglia in giardino.",
-          "s2": "La magia bianca si celebra di continuo."
+          "cond": "semv",
+          "s1": "Il gatto rompe la quaglia in giardino.",
+          "s2": "La banda trovò le collane di domenica."
         },
         {
           "item": "112",
-          "cond": "regular",
-          "s1": "Il macellaio taglia il fegato di maiale.",
-          "s2": "La celebrità scrive al leader in carica."
+          "cond": "syntv",
+          "s1": "Il macellaio taglia la fegato di maiale.",
+          "s2": "Un meccanico finirà di pulire il motore."
         },
         {
           "item": "113",
-          "cond": "semv",
-          "s1": "Il militare lucida il capo di Stato.",
-          "s2": "La proposta intima la farò se Posso."
+          "cond": "syntv",
+          "s1": "Il militare scorta la capo di Stato.",
+          "s2": "La felicità fatica ad aver un Detto."
         },
         {
           "item": "114",
-          "cond": "regular",
-          "s1": "Il pagliaccio saluta il pubblico al circo.",
-          "s2": "Un truffatore scopre la sorpresa di lusso."
+          "cond": "syntv",
+          "s1": "Il pagliaccio saluta la pubblico al circo.",
+          "s2": "La cavalleria scorta un sergente in villa."
         },
         {
           "item": "115",
-          "cond": "syntv",
-          "s1": "Il pittore vende la quadro molto costoso.",
-          "s2": "La suocera getta un nastro tutto bagnato."
+          "cond": "semv",
+          "s1": "Il pittore versa il quadro molto costoso.",
+          "s2": "La nobile amerà un attore senza dignità."
         },
         {
           "item": "116",
-          "cond": "semv",
-          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
-          "s2": "La dottoressa adorava un massaggio in boutique."
+          "cond": "regular",
+          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
+          "s2": "La differenza aumenta il conflitto in sinagoga."
         },
         {
           "item": "117",
-          "cond": "semv",
-          "s1": "Il postino ripete la posta a mezzogiorno.",
-          "s2": "Un ingenuo lavava il tetto e ringraziava."
+          "cond": "regular",
+          "s1": "Il postino ritira la posta a mezzogiorno.",
+          "s2": "La ribelle scelga un socio o arriveranno."
         },
         {
           "item": "118",
@@ -112,9 +112,9 @@
         },
         {
           "item": "119",
-          "cond": "regular",
-          "s1": "Il ragazzo lancia il sasso nello stagno.",
-          "s2": "La signora impara un testo dagli orfani."
+          "cond": "semv",
+          "s1": "Il ragazzo saluta il sasso nello stagno.",
+          "s2": "La polizia bruciò la veste della nemica."
         },
         {
           "item": "120",
@@ -130,9 +130,9 @@
         },
         {
           "item": "122",
-          "cond": "semv",
-          "s1": "La commessa incassa la bottega nel pomeriggio.",
-          "s2": "Un donatore copriva il reddito dei professori."
+          "cond": "syntv",
+          "s1": "La commessa apre il bottega nel pomeriggio.",
+          "s2": "Il commando beve le bevande dei poliziotti."
         },
         {
           "item": "123",
@@ -142,9 +142,9 @@
         },
         {
           "item": "124",
-          "cond": "semv",
-          "s1": "La gazzella bruca il cucciolo allo zoo.",
-          "s2": "Lo scultore adorò la cantante come dea."
+          "cond": "regular",
+          "s1": "La gazzella partorisce il cucciolo allo zoo.",
+          "s2": "Le donzelle guardavano un marinaio bere gin."
         },
         {
           "item": "125",
@@ -160,33 +160,33 @@
         },
         {
           "item": "127",
-          "cond": "regular",
-          "s1": "La papera mangia il pane nel lago.",
-          "s2": "Un chicco ottimo di riso gli darà."
+          "cond": "semv",
+          "s1": "La papera attraversa il pane nel lago.",
+          "s2": "Il tenore conosceva la spia che morì."
         },
         {
           "item": "128",
-          "cond": "syntv",
-          "s1": "La pensionata ritira il pensione in posta.",
-          "s2": "Il misantropo tirerà un cassetto al prete."
+          "cond": "regular",
+          "s1": "La pensionata ritira la pensione in posta.",
+          "s2": "Un farmacista assume il compagno di liceo."
         },
         {
           "item": "129",
-          "cond": "regular",
-          "s1": "La psicologa prescrive il sedativo al paziente.",
-          "s2": "Il fornitore rassicura un mercante in  stazione."
+          "cond": "syntv",
+          "s1": "La psicologa prescrive la sedativo al paziente.",
+          "s2": "Il venditore rivenderà un catalogo di berretti."
         },
         {
           "item": "132",
-          "cond": "syntv",
-          "s1": "Un falco osserva il preda dal cielo.",
-          "s2": "La virtù conduce un padre nel cielo."
+          "cond": "semv",
+          "s1": "Un falco arruffa la preda dal cielo.",
+          "s2": "Il razzo squassa il circo con forza."
         },
         {
           "item": "133",
-          "cond": "semv",
-          "s1": "Un meccanico scrive la ruota della macchina.",
-          "s2": "Il guerriero spinge il drago molto indietro."
+          "cond": "regular",
+          "s1": "Un meccanico cambia la ruota della macchina.",
+          "s2": "Un individuo faceva il gesto anche parlando."
         },
         {
           "item": "134",
@@ -196,27 +196,27 @@
         },
         {
           "item": "135",
-          "cond": "semv",
-          "s1": "Un uomo conta la cintura in auto.",
-          "s2": "Il loro liceo ha sospeso il film."
+          "cond": "syntv",
+          "s1": "Un uomo allaccia il cintura in auto.",
+          "s2": "Le cose emettono un profumo di sera."
         },
         {
           "item": "136",
-          "cond": "syntv",
-          "s1": "Un vitello beve la latte della madre.",
-          "s2": "La finanza apre un liceo tutto nuovo."
+          "cond": "regular",
+          "s1": "Un vitello beve il latte della madre.",
+          "s2": "Il sovrano crea la spada nella notte."
         },
         {
           "item": "137",
-          "cond": "syntv",
-          "s1": "Una scimmia graffia il schiena della compagna.",
-          "s2": "Nel settore fornirò un compito detto standard."
+          "cond": "regular",
+          "s1": "Una scimmia graffia la schiena della compagna.",
+          "s2": "Per lottare ricatta il padrone nella galleria."
         },
         {
           "item": "138",
-          "cond": "syntv",
-          "s1": "Uno spettatore guarda il trasmissione con noia.",
-          "s2": "Nel pomeriggio stiamo al supermercato del capo."
+          "cond": "semv",
+          "s1": "Uno spettatore fornisce la trasmissione con noia.",
+          "s2": "Gli psichiatri scrivono al responsabile del faro."
         }
       ],
       "pract": [
@@ -244,9 +244,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "syntv",
-          "s1": "I leopardi cacciano la facocero in coppia.",
-          "s2": "A casaccio sparerai al veterano di sabato."
+          "cond": "semv",
+          "s1": "I leopardi bevono il facocero in coppia.",
+          "s2": "L aviatore audace va esibendo la ferita."
         },
         {
           "item": "102",
@@ -256,15 +256,15 @@
         },
         {
           "item": "103",
-          "cond": "syntv",
-          "s1": "Il camionista guida la furgone nella nebbia.",
-          "s2": "La condannata tiene lo sguardo sulle nuvole."
+          "cond": "semv",
+          "s1": "Il camionista mangia il furgone nella nebbia.",
+          "s2": "La presidenza prenda un collega dalle camere."
         },
         {
           "item": "104",
-          "cond": "semv",
-          "s1": "Il cane beve la catena con rabbia.",
-          "s2": "La luce vidi al tempio del morale."
+          "cond": "syntv",
+          "s1": "Il cane morde il catena con rabbia.",
+          "s2": "La nave invia un nobile non famoso."
         },
         {
           "item": "105",
@@ -298,51 +298,51 @@
         },
         {
           "item": "110",
-          "cond": "syntv",
-          "s1": "Il falegname martella la chiodo con forza.",
-          "s2": "La poveretta rovesciò un budino sul letto."
+          "cond": "regular",
+          "s1": "Il falegname martella il chiodo con forza.",
+          "s2": "La sostituta imparava la scheda più volte."
         },
         {
           "item": "111",
-          "cond": "semv",
-          "s1": "Il gatto rompe la quaglia in giardino.",
-          "s2": "La banda trovò le collane di domenica."
+          "cond": "regular",
+          "s1": "Il gatto mangia la quaglia in giardino.",
+          "s2": "La sposa prende un lampone di montagna."
         },
         {
           "item": "112",
-          "cond": "syntv",
-          "s1": "Il macellaio taglia la fegato di maiale.",
-          "s2": "Un meccanico finirà di pulire il motore."
+          "cond": "semv",
+          "s1": "Il macellaio affila il fegato di maiale.",
+          "s2": "Un musicista sbarca in Africa un lunedì."
         },
         {
           "item": "113",
-          "cond": "regular",
-          "s1": "Il militare scorta il capo di Stato.",
-          "s2": "Un giornale scrive un dato su Tutti."
+          "cond": "semv",
+          "s1": "Il militare lucida il capo di Stato.",
+          "s2": "La proposta intima la farò se Posso."
         },
         {
           "item": "114",
-          "cond": "syntv",
-          "s1": "Il pagliaccio saluta la pubblico al circo.",
-          "s2": "La cavalleria scorta un sergente in villa."
+          "cond": "semv",
+          "s1": "Il pagliaccio suona il pubblico al circo.",
+          "s2": "Se cercherete tanto la paziente lo saprò."
         },
         {
           "item": "115",
-          "cond": "semv",
-          "s1": "Il pittore versa il quadro molto costoso.",
-          "s2": "La nobile amerà un attore senza dignità."
+          "cond": "regular",
+          "s1": "Il pittore vende il quadro molto costoso.",
+          "s2": "La bussola serve al saggio delle colline."
         },
         {
           "item": "116",
-          "cond": "regular",
-          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
-          "s2": "La differenza aumenta il conflitto in sinagoga."
+          "cond": "syntv",
+          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
+          "s2": "Un colonnello giudica le copertine in sequenza."
         },
         {
           "item": "117",
-          "cond": "regular",
-          "s1": "Il postino ritira la posta a mezzogiorno.",
-          "s2": "La ribelle scelga un socio o arriveranno."
+          "cond": "syntv",
+          "s1": "Il postino ritira il posta a mezzogiorno.",
+          "s2": "Un critico ripete di amare i particolari."
         },
         {
           "item": "118",
@@ -352,9 +352,9 @@
         },
         {
           "item": "119",
-          "cond": "syntv",
-          "s1": "Il ragazzo lancia la sasso nello stagno.",
-          "s2": "Lo avrebbe pagato in perle senza valore."
+          "cond": "regular",
+          "s1": "Il ragazzo lancia il sasso nello stagno.",
+          "s2": "La signora impara un testo dagli orfani."
         },
         {
           "item": "120",
@@ -370,9 +370,9 @@
         },
         {
           "item": "122",
-          "cond": "regular",
-          "s1": "La commessa apre la bottega nel pomeriggio.",
-          "s2": "Il prodigio dava un brivido già conosciuto."
+          "cond": "semv",
+          "s1": "La commessa incassa la bottega nel pomeriggio.",
+          "s2": "Un donatore copriva il reddito dei professori."
         },
         {
           "item": "123",
@@ -382,9 +382,9 @@
         },
         {
           "item": "124",
-          "cond": "regular",
-          "s1": "La gazzella partorisce il cucciolo allo zoo.",
-          "s2": "Le donzelle guardavano un marinaio bere gin."
+          "cond": "syntv",
+          "s1": "La gazzella partorisce la cucciolo allo zoo.",
+          "s2": "Il mecenate intervenga al discorso come può."
         },
         {
           "item": "125",
@@ -400,33 +400,33 @@
         },
         {
           "item": "127",
-          "cond": "syntv",
-          "s1": "La papera mangia la pane nel lago.",
-          "s2": "Un pedone libera un lupo dal filo."
+          "cond": "regular",
+          "s1": "La papera mangia il pane nel lago.",
+          "s2": "Un chicco ottimo di riso gli darà."
         },
         {
           "item": "128",
-          "cond": "semv",
-          "s1": "La pensionata rammenda la pensione in posta.",
-          "s2": "Il dominicano umilierà il compagno di cella."
+          "cond": "syntv",
+          "s1": "La pensionata ritira il pensione in posta.",
+          "s2": "Il misantropo tirerà un cassetto al prete."
         },
         {
           "item": "129",
-          "cond": "syntv",
-          "s1": "La psicologa prescrive la sedativo al paziente.",
-          "s2": "Il venditore rivenderà un catalogo di berretti."
+          "cond": "semv",
+          "s1": "La psicologa accoglie il sedativo al paziente.",
+          "s2": "Il supplente visitava la piramide in pubblico."
         },
         {
           "item": "132",
-          "cond": "semv",
-          "s1": "Un falco arruffa la preda dal cielo.",
-          "s2": "Il razzo squassa il circo con forza."
+          "cond": "regular",
+          "s1": "Un falco osserva la preda dal cielo.",
+          "s2": "La volpe ammazza un verme nel campo."
         },
         {
           "item": "133",
-          "cond": "regular",
-          "s1": "Un meccanico cambia la ruota della macchina.",
-          "s2": "Un individuo faceva il gesto anche parlando."
+          "cond": "syntv",
+          "s1": "Un meccanico cambia il ruota della macchina.",
+          "s2": "Il fotografo mostra un carro molto migliore."
         },
         {
           "item": "134",
@@ -436,27 +436,27 @@
         },
         {
           "item": "135",
-          "cond": "regular",
-          "s1": "Un uomo allaccia la cintura in auto.",
-          "s2": "La vita colorerà di lacrime le foto."
+          "cond": "semv",
+          "s1": "Un uomo conta la cintura in auto.",
+          "s2": "Il loro liceo ha sospeso il film."
         },
         {
           "item": "136",
-          "cond": "semv",
-          "s1": "Un vitello rumina il latte della madre.",
-          "s2": "La cognata comprò le carte dagli altri."
+          "cond": "syntv",
+          "s1": "Un vitello beve la latte della madre.",
+          "s2": "La finanza apre un liceo tutto nuovo."
         },
         {
           "item": "137",
-          "cond": "semv",
-          "s1": "Una scimmia mangia la schiena della compagna.",
-          "s2": "Gli uccelli volano di mattina sulla capitale."
+          "cond": "syntv",
+          "s1": "Una scimmia graffia il schiena della compagna.",
+          "s2": "Nel settore fornirò un compito detto standard."
         },
         {
           "item": "138",
-          "cond": "semv",
-          "s1": "Uno spettatore fornisce la trasmissione con noia.",
-          "s2": "Gli psichiatri scrivono al responsabile del faro."
+          "cond": "regular",
+          "s1": "Uno spettatore guarda la trasmissione con noia.",
+          "s2": "Gli estremisti vorrei in collegamento per poco."
         }
       ],
       "pract": [
@@ -484,9 +484,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "semv",
-          "s1": "I leopardi bevono il facocero in coppia.",
-          "s2": "L aviatore audace va esibendo la ferita."
+          "cond": "regular",
+          "s1": "I leopardi cacciano il facocero in coppia.",
+          "s2": "L acrobata schiverà un fioretto di scatto."
         },
         {
           "item": "102",
@@ -496,15 +496,15 @@
         },
         {
           "item": "103",
-          "cond": "semv",
-          "s1": "Il camionista mangia il furgone nella nebbia.",
-          "s2": "La presidenza prenda un collega dalle camere."
+          "cond": "regular",
+          "s1": "Il camionista guida il furgone nella nebbia.",
+          "s2": "La parrocchia rende la giovane molto timida."
         },
         {
           "item": "104",
-          "cond": "regular",
-          "s1": "Il cane morde la catena con rabbia.",
-          "s2": "La pace apra al legame tra popoli."
+          "cond": "semv",
+          "s1": "Il cane beve la catena con rabbia.",
+          "s2": "La luce vidi al tempio del morale."
         },
         {
           "item": "105",
@@ -538,51 +538,51 @@
         },
         {
           "item": "110",
-          "cond": "semv",
-          "s1": "Il falegname critica il chiodo con forza.",
-          "s2": "Un dittatore grattava la regina del mondo."
+          "cond": "syntv",
+          "s1": "Il falegname martella la chiodo con forza.",
+          "s2": "La poveretta rovesciò un budino sul letto."
         },
         {
           "item": "111",
-          "cond": "regular",
-          "s1": "Il gatto mangia la quaglia in giardino.",
-          "s2": "La sposa prende un lampone di montagna."
+          "cond": "syntv",
+          "s1": "Il gatto mangia il quaglia in giardino.",
+          "s2": "La magia bianca si celebra di continuo."
         },
         {
           "item": "112",
-          "cond": "semv",
-          "s1": "Il macellaio affila il fegato di maiale.",
-          "s2": "Un musicista sbarca in Africa un lunedì."
+          "cond": "regular",
+          "s1": "Il macellaio taglia il fegato di maiale.",
+          "s2": "La celebrità scrive al leader in carica."
         },
         {
           "item": "113",
-          "cond": "syntv",
-          "s1": "Il militare scorta la capo di Stato.",
-          "s2": "La felicità fatica ad aver un Detto."
+          "cond": "regular",
+          "s1": "Il militare scorta il capo di Stato.",
+          "s2": "Un giornale scrive un dato su Tutti."
         },
         {
           "item": "114",
-          "cond": "semv",
-          "s1": "Il pagliaccio suona il pubblico al circo.",
-          "s2": "Se cercherete tanto la paziente lo saprò."
+          "cond": "regular",
+          "s1": "Il pagliaccio saluta il pubblico al circo.",
+          "s2": "Un truffatore scopre la sorpresa di lusso."
         },
         {
           "item": "115",
-          "cond": "regular",
-          "s1": "Il pittore vende il quadro molto costoso.",
-          "s2": "La bussola serve al saggio delle colline."
+          "cond": "syntv",
+          "s1": "Il pittore vende la quadro molto costoso.",
+          "s2": "La suocera getta un nastro tutto bagnato."
         },
         {
           "item": "116",
-          "cond": "syntv",
-          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
-          "s2": "Un colonnello giudica le copertine in sequenza."
+          "cond": "semv",
+          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
+          "s2": "La dottoressa adorava un massaggio in boutique."
         },
         {
           "item": "117",
-          "cond": "syntv",
-          "s1": "Il postino ritira il posta a mezzogiorno.",
-          "s2": "Un critico ripete di amare i particolari."
+          "cond": "semv",
+          "s1": "Il postino ripete la posta a mezzogiorno.",
+          "s2": "Un ingenuo lavava il tetto e ringraziava."
         },
         {
           "item": "118",
@@ -592,9 +592,9 @@
         },
         {
           "item": "119",
-          "cond": "semv",
-          "s1": "Il ragazzo saluta il sasso nello stagno.",
-          "s2": "La polizia bruciò la veste della nemica."
+          "cond": "syntv",
+          "s1": "Il ragazzo lancia la sasso nello stagno.",
+          "s2": "Lo avrebbe pagato in perle senza valore."
         },
         {
           "item": "120",
@@ -610,9 +610,9 @@
         },
         {
           "item": "122",
-          "cond": "syntv",
-          "s1": "La commessa apre il bottega nel pomeriggio.",
-          "s2": "Il commando beve le bevande dei poliziotti."
+          "cond": "regular",
+          "s1": "La commessa apre la bottega nel pomeriggio.",
+          "s2": "Il prodigio dava un brivido già conosciuto."
         },
         {
           "item": "123",
@@ -622,9 +622,9 @@
         },
         {
           "item": "124",
-          "cond": "syntv",
-          "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Il mecenate intervenga al discorso come può."
+          "cond": "semv",
+          "s1": "La gazzella bruca il cucciolo allo zoo.",
+          "s2": "Lo scultore adorò la cantante come dea."
         },
         {
           "item": "125",
@@ -640,33 +640,33 @@
         },
         {
           "item": "127",
-          "cond": "semv",
-          "s1": "La papera attraversa il pane nel lago.",
-          "s2": "Il tenore conosceva la spia che morì."
+          "cond": "syntv",
+          "s1": "La papera mangia la pane nel lago.",
+          "s2": "Un pedone libera un lupo dal filo."
         },
         {
           "item": "128",
-          "cond": "regular",
-          "s1": "La pensionata ritira la pensione in posta.",
-          "s2": "Un farmacista assume il compagno di liceo."
+          "cond": "semv",
+          "s1": "La pensionata rammenda la pensione in posta.",
+          "s2": "Il dominicano umilierà il compagno di cella."
         },
         {
           "item": "129",
-          "cond": "semv",
-          "s1": "La psicologa accoglie il sedativo al paziente.",
-          "s2": "Il supplente visitava la piramide in pubblico."
+          "cond": "regular",
+          "s1": "La psicologa prescrive il sedativo al paziente.",
+          "s2": "Il fornitore rassicura un mercante in  stazione."
         },
         {
           "item": "132",
-          "cond": "regular",
-          "s1": "Un falco osserva la preda dal cielo.",
-          "s2": "La volpe ammazza un verme nel campo."
+          "cond": "syntv",
+          "s1": "Un falco osserva il preda dal cielo.",
+          "s2": "La virtù conduce un padre nel cielo."
         },
         {
           "item": "133",
-          "cond": "syntv",
-          "s1": "Un meccanico cambia il ruota della macchina.",
-          "s2": "Il fotografo mostra un carro molto migliore."
+          "cond": "semv",
+          "s1": "Un meccanico scrive la ruota della macchina.",
+          "s2": "Il guerriero spinge il drago molto indietro."
         },
         {
           "item": "134",
@@ -676,27 +676,27 @@
         },
         {
           "item": "135",
-          "cond": "syntv",
-          "s1": "Un uomo allaccia il cintura in auto.",
-          "s2": "Le cose emettono un profumo di sera."
+          "cond": "regular",
+          "s1": "Un uomo allaccia la cintura in auto.",
+          "s2": "La vita colorerà di lacrime le foto."
         },
         {
           "item": "136",
-          "cond": "regular",
-          "s1": "Un vitello beve il latte della madre.",
-          "s2": "Il sovrano crea la spada nella notte."
+          "cond": "semv",
+          "s1": "Un vitello rumina il latte della madre.",
+          "s2": "La cognata comprò le carte dagli altri."
         },
         {
           "item": "137",
-          "cond": "regular",
-          "s1": "Una scimmia graffia la schiena della compagna.",
-          "s2": "Per lottare ricatta il padrone nella galleria."
+          "cond": "semv",
+          "s1": "Una scimmia mangia la schiena della compagna.",
+          "s2": "Gli uccelli volano di mattina sulla capitale."
         },
         {
           "item": "138",
-          "cond": "regular",
-          "s1": "Uno spettatore guarda la trasmissione con noia.",
-          "s2": "Gli estremisti vorrei in collegamento per poco."
+          "cond": "syntv",
+          "s1": "Uno spettatore guarda il trasmissione con noia.",
+          "s2": "Nel pomeriggio stiamo al supermercato del capo."
         }
       ],
       "pract": [
@@ -726,9 +726,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "regular",
-          "s1": "I leopardi cacciano il facocero in coppia.",
-          "s2": "O chioccia scartano un ingoiati di merito."
+          "cond": "syntv",
+          "s1": "I leopardi cacciano la facocero in coppia.",
+          "s2": "O presunte esibirsi un giubbino se rimane."
         },
         {
           "item": "102",
@@ -738,15 +738,15 @@
         },
         {
           "item": "103",
-          "cond": "regular",
-          "s1": "Il camionista guida il furgone nella nebbia.",
-          "s2": "La coincidono tiene di potesse visto unirti."
+          "cond": "syntv",
+          "s1": "Il camionista guida la furgone nella nebbia.",
+          "s2": "Un tolleranza finta un credimi padre iniziò."
         },
         {
           "item": "104",
-          "cond": "syntv",
-          "s1": "Il cane morde il catena con rabbia.",
-          "s2": "Un luce bullo di averci hai salire."
+          "cond": "regular",
+          "s1": "Il cane morde la catena con rabbia.",
+          "s2": "Di voce agita il sporca sul eccomi."
         },
         {
           "item": "105",
@@ -780,51 +780,51 @@
         },
         {
           "item": "110",
-          "cond": "regular",
-          "s1": "Il falegname martella il chiodo con forza.",
-          "s2": "La parallelo nominano un intero hai paura."
+          "cond": "semv",
+          "s1": "Il falegname critica il chiodo con forza.",
+          "s2": "La ricominci venirmi un matura cui sotto."
         },
         {
           "item": "111",
-          "cond": "syntv",
-          "s1": "Il gatto mangia il quaglia in giardino.",
-          "s2": "La starò capace un atterri lo potreste."
+          "cond": "semv",
+          "s1": "Il gatto rompe la quaglia in giardino.",
+          "s2": "Un dillo gomme il negherà ho traffico."
         },
         {
           "item": "112",
-          "cond": "regular",
-          "s1": "Il macellaio taglia il fegato di maiale.",
-          "s2": "Un cambiarmi urlare la fresco in flotta."
+          "cond": "syntv",
+          "s1": "Il macellaio taglia la fegato di maiale.",
+          "s2": "La ammettilo blocco lo chiusi se follia."
         },
         {
           "item": "113",
-          "cond": "semv",
-          "s1": "Il militare lucida il capo di Stato.",
-          "s2": "Un occhiali girate ai aver ho Molto."
+          "cond": "syntv",
+          "s1": "Il militare scorta la capo di Stato.",
+          "s2": "Un orecchie ferro su guanti in Prima."
         },
         {
           "item": "114",
-          "cond": "regular",
-          "s1": "Il pagliaccio saluta il pubblico al circo.",
-          "s2": "La coprifuoco favola un pericolo su viola."
+          "cond": "syntv",
+          "s1": "Il pagliaccio saluta la pubblico al circo.",
+          "s2": "Se trattenere titoli di sinistro ed quota."
         },
         {
           "item": "115",
-          "cond": "syntv",
-          "s1": "Il pittore vende la quadro molto costoso.",
-          "s2": "Un esplode tolga un esseri posso calmata."
+          "cond": "semv",
+          "s1": "Il pittore versa il quadro molto costoso.",
+          "s2": "Un dicesti palmo la brucia hanno cemento."
         },
         {
           "item": "116",
-          "cond": "semv",
-          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
-          "s2": "Un necessario poteste il fascicolo mi pugilato."
+          "cond": "regular",
+          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
+          "s2": "Un stamattina ironico di rimettere le chiudila."
         },
         {
           "item": "117",
-          "cond": "semv",
-          "s1": "Il postino ripete la posta a mezzogiorno.",
-          "s2": "La servita vivrai un vedrò o trattamento."
+          "cond": "regular",
+          "s1": "Il postino ritira la posta a mezzogiorno.",
+          "s2": "Un pallida monaci il creda e ascoltatemi."
         },
         {
           "item": "118",
@@ -834,9 +834,9 @@
         },
         {
           "item": "119",
-          "cond": "regular",
-          "s1": "Il ragazzo lancia il sasso nello stagno.",
-          "s2": "Un sentito angeli di panni tutto eccole."
+          "cond": "semv",
+          "s1": "Il ragazzo saluta il sasso nello stagno.",
+          "s2": "In insieme nausea un flebo sette abisso."
         },
         {
           "item": "120",
@@ -852,9 +852,9 @@
         },
         {
           "item": "122",
-          "cond": "semv",
-          "s1": "La commessa incassa la bottega nel pomeriggio.",
-          "s2": "Il notifica rullino un mettili lui colonnello."
+          "cond": "syntv",
+          "s1": "La commessa apre il bottega nel pomeriggio.",
+          "s2": "Il positive duri un scivola mai precedenti."
         },
         {
           "item": "123",
@@ -864,9 +864,9 @@
         },
         {
           "item": "124",
-          "cond": "semv",
-          "s1": "La gazzella bruca il cucciolo allo zoo.",
-          "s2": "Il evacuati amale un risparmi vale yen."
+          "cond": "regular",
+          "s1": "La gazzella partorisce il cucciolo allo zoo.",
+          "s2": "Un auspicio illuminerà la supplico odio fui."
         },
         {
           "item": "125",
@@ -882,33 +882,33 @@
         },
         {
           "item": "127",
-          "cond": "regular",
-          "s1": "La papera mangia il pane nel lago.",
-          "s2": "Il elogio angolo un pago chi dono."
+          "cond": "semv",
+          "s1": "La papera attraversa il pane nel lago.",
+          "s2": "Il patito lamentarti un coda sta olio."
         },
         {
           "item": "128",
-          "cond": "syntv",
-          "s1": "La pensionata ritira il pensione in posta.",
-          "s2": "Un schedatura staffe di andrebbe ha tazza."
+          "cond": "regular",
+          "s1": "La pensionata ritira la pensione in posta.",
+          "s2": "Un tettoniche lunare il immagine se sieda."
         },
         {
           "item": "129",
-          "cond": "regular",
-          "s1": "La psicologa prescrive il sedativo al paziente.",
-          "s2": "Un irrisolti inventori la avanzare ne carriera."
+          "cond": "syntv",
+          "s1": "La psicologa prescrive la sedativo al paziente.",
+          "s2": "Il riattacca foruncolo un collasso in figliolo."
         },
         {
           "item": "132",
-          "cond": "syntv",
-          "s1": "Un falco osserva il preda dal cielo.",
-          "s2": "Il copre versato lo corre sul zitto."
+          "cond": "semv",
+          "s1": "Un falco arruffa la preda dal cielo.",
+          "s2": "La scesa ridiedi di mensa per fondo."
         },
         {
           "item": "133",
-          "cond": "semv",
-          "s1": "Un meccanico scrive la ruota della macchina.",
-          "s2": "Il preavviso ferite di medio tutto cercando."
+          "cond": "regular",
+          "s1": "Un meccanico cambia la ruota della macchina.",
+          "s2": "Un economica finora la pozzo anche indietro."
         },
         {
           "item": "134",
@@ -918,27 +918,27 @@
         },
         {
           "item": "135",
-          "cond": "semv",
-          "s1": "Un uomo conta la cintura in auto.",
-          "s2": "Il sarà isola il entrano ha cosi."
+          "cond": "syntv",
+          "s1": "Un uomo allaccia il cintura in auto.",
+          "s2": "La anni esaudire di stavate ho vedi."
         },
         {
           "item": "136",
-          "cond": "syntv",
-          "s1": "Un vitello beve la latte della madre.",
-          "s2": "Di potersi lotta un genio fatto preso."
+          "cond": "regular",
+          "s1": "Un vitello beve il latte della madre.",
+          "s2": "Un scusato taci la venti pugno degli."
         },
         {
           "item": "137",
-          "cond": "syntv",
-          "s1": "Una scimmia graffia il schiena della compagna.",
-          "s2": "Per rifiuto ribolle di speravo tutto permetti."
+          "cond": "regular",
+          "s1": "Una scimmia graffia la schiena della compagna.",
+          "s2": "Per caspita sciarpe il cavalli detto litigare."
         },
         {
           "item": "138",
-          "cond": "syntv",
-          "s1": "Uno spettatore guarda il trasmissione con noia.",
-          "s2": "Una inciampato storia di controllando per euro."
+          "cond": "semv",
+          "s1": "Uno spettatore fornisce la trasmissione con noia.",
+          "s2": "Con manteniamo calcagna un dimenticherò non crea."
         }
       ],
       "pract": [
@@ -966,9 +966,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "syntv",
-          "s1": "I leopardi cacciano la facocero in coppia.",
-          "s2": "O presunte esibirsi un giubbino se rimane."
+          "cond": "semv",
+          "s1": "I leopardi bevono il facocero in coppia.",
+          "s2": "O mancanze canali la riemerso ho girare."
         },
         {
           "item": "102",
@@ -978,15 +978,15 @@
         },
         {
           "item": "103",
-          "cond": "syntv",
-          "s1": "Il camionista guida la furgone nella nebbia.",
-          "s2": "Un tolleranza finta un credimi padre iniziò."
+          "cond": "semv",
+          "s1": "Il camionista mangia il furgone nella nebbia.",
+          "s2": "Un sospendere ferita la seguire parte ometto."
         },
         {
           "item": "104",
-          "cond": "semv",
-          "s1": "Il cane beve la catena con rabbia.",
-          "s2": "Lo dirò cavi un tipico per sbagli."
+          "cond": "syntv",
+          "s1": "Il cane morde il catena con rabbia.",
+          "s2": "Un luce bullo di averci hai salire."
         },
         {
           "item": "105",
@@ -1020,51 +1020,51 @@
         },
         {
           "item": "110",
-          "cond": "syntv",
-          "s1": "Il falegname martella la chiodo con forza.",
-          "s2": "Un tropicale adotterà di ideali hai degli."
+          "cond": "regular",
+          "s1": "Il falegname martella il chiodo con forza.",
+          "s2": "La parallelo nominano un intero hai paura."
         },
         {
           "item": "111",
-          "cond": "semv",
-          "s1": "Il gatto rompe la quaglia in giardino.",
-          "s2": "Un dillo gomme il negherà ho traffico."
+          "cond": "regular",
+          "s1": "Il gatto mangia la quaglia in giardino.",
+          "s2": "Un farvi vecchi il seccare ma discorso."
         },
         {
           "item": "112",
-          "cond": "syntv",
-          "s1": "Il macellaio taglia la fegato di maiale.",
-          "s2": "La ammettilo blocco lo chiusi se follia."
+          "cond": "semv",
+          "s1": "Il macellaio affila il fegato di maiale.",
+          "s2": "La cristiani gasata un civile la offesa."
         },
         {
           "item": "113",
-          "cond": "regular",
-          "s1": "Il militare scorta il capo di Stato.",
-          "s2": "Di occupato sedile su auto mi Siamo."
+          "cond": "semv",
+          "s1": "Il militare lucida il capo di Stato.",
+          "s2": "Un occhiali girate ai aver ho Molto."
         },
         {
           "item": "114",
-          "cond": "syntv",
-          "s1": "Il pagliaccio saluta la pubblico al circo.",
-          "s2": "Se trattenere titoli di sinistro ed quota."
+          "cond": "semv",
+          "s1": "Il pagliaccio suona il pubblico al circo.",
+          "s2": "La pneumatici magia un suppongo ne leone."
         },
         {
           "item": "115",
-          "cond": "semv",
-          "s1": "Il pittore versa il quadro molto costoso.",
-          "s2": "Un dicesti palmo la brucia hanno cemento."
+          "cond": "regular",
+          "s1": "Il pittore vende il quadro molto costoso.",
+          "s2": "Un manderà prato la pancia anche fulmine."
         },
         {
           "item": "116",
-          "cond": "regular",
-          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
-          "s2": "Un stamattina ironico di rimettere le chiudila."
+          "cond": "syntv",
+          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
+          "s2": "La ovviamente andammo un succedono si iscritti."
         },
         {
           "item": "117",
-          "cond": "regular",
-          "s1": "Il postino ritira la posta a mezzogiorno.",
-          "s2": "Un pallida monaci il creda e ascoltatemi."
+          "cond": "syntv",
+          "s1": "Il postino ritira il posta a mezzogiorno.",
+          "s2": "La privati navale un dissi i adolescenti."
         },
         {
           "item": "118",
@@ -1074,9 +1074,9 @@
         },
         {
           "item": "119",
-          "cond": "syntv",
-          "s1": "Il ragazzo lancia la sasso nello stagno.",
-          "s2": "Un vediamo spinta di rompi avrai rovine."
+          "cond": "regular",
+          "s1": "Il ragazzo lancia il sasso nello stagno.",
+          "s2": "Un sentito angeli di panni tutto eccole."
         },
         {
           "item": "120",
@@ -1092,9 +1092,9 @@
         },
         {
           "item": "122",
-          "cond": "regular",
-          "s1": "La commessa apre la bottega nel pomeriggio.",
-          "s2": "Un batterti lire il buttano uno dovrebbero."
+          "cond": "semv",
+          "s1": "La commessa incassa la bottega nel pomeriggio.",
+          "s2": "Il notifica rullino un mettili lui colonnello."
         },
         {
           "item": "123",
@@ -1104,9 +1104,9 @@
         },
         {
           "item": "124",
-          "cond": "regular",
-          "s1": "La gazzella partorisce il cucciolo allo zoo.",
-          "s2": "Un auspicio illuminerà la supplico odio fui."
+          "cond": "syntv",
+          "s1": "La gazzella partorisce la cucciolo allo zoo.",
+          "s2": "Un unicorni bombolette lo corrotto aria ala."
         },
         {
           "item": "125",
@@ -1122,33 +1122,33 @@
         },
         {
           "item": "127",
-          "cond": "syntv",
-          "s1": "La papera mangia la pane nel lago.",
-          "s2": "Un mostrò angolo un ossa mai vice."
+          "cond": "regular",
+          "s1": "La papera mangia il pane nel lago.",
+          "s2": "Il elogio angolo un pago chi dono."
         },
         {
           "item": "128",
-          "cond": "semv",
-          "s1": "La pensionata rammenda la pensione in posta.",
-          "s2": "Un scartoffia adescava il colleghi se tasca."
+          "cond": "syntv",
+          "s1": "La pensionata ritira il pensione in posta.",
+          "s2": "Un schedatura staffe di andrebbe ha tazza."
         },
         {
           "item": "129",
-          "cond": "syntv",
-          "s1": "La psicologa prescrive la sedativo al paziente.",
-          "s2": "Il riattacca foruncolo un collasso in figliolo."
+          "cond": "semv",
+          "s1": "La psicologa accoglie il sedativo al paziente.",
+          "s2": "Un ippodromo finiscimi lo ostilità in edificio."
         },
         {
           "item": "132",
-          "cond": "semv",
-          "s1": "Un falco arruffa la preda dal cielo.",
-          "s2": "La scesa ridiedi di mensa per fondo."
+          "cond": "regular",
+          "s1": "Un falco osserva la preda dal cielo.",
+          "s2": "Il veste agnello un russa per mille."
         },
         {
           "item": "133",
-          "cond": "regular",
-          "s1": "Un meccanico cambia la ruota della macchina.",
-          "s2": "Un economica finora la pozzo anche indietro."
+          "cond": "syntv",
+          "s1": "Un meccanico cambia il ruota della macchina.",
+          "s2": "Lo assegnato calcio un gomma stato dovrebbe."
         },
         {
           "item": "134",
@@ -1158,27 +1158,27 @@
         },
         {
           "item": "135",
-          "cond": "regular",
-          "s1": "Un uomo allaccia la cintura in auto.",
-          "s2": "Il ecco scorrono un diretti lo dica."
+          "cond": "semv",
+          "s1": "Un uomo conta la cintura in auto.",
+          "s2": "Il sarà isola il entrano ha cosi."
         },
         {
           "item": "136",
-          "cond": "semv",
-          "s1": "Un vitello rumina il latte della madre.",
-          "s2": "Il abbassi pagaci un debba gatto avuto."
+          "cond": "syntv",
+          "s1": "Un vitello beve la latte della madre.",
+          "s2": "Di potersi lotta un genio fatto preso."
         },
         {
           "item": "137",
-          "cond": "semv",
-          "s1": "Una scimmia mangia la schiena della compagna.",
-          "s2": "Per mandata estate un vederla stato condotto."
+          "cond": "syntv",
+          "s1": "Una scimmia graffia il schiena della compagna.",
+          "s2": "Per rifiuto ribolle di speravo tutto permetti."
         },
         {
           "item": "138",
-          "cond": "semv",
-          "s1": "Uno spettatore fornisce la trasmissione con noia.",
-          "s2": "Con manteniamo calcagna un dimenticherò non crea."
+          "cond": "regular",
+          "s1": "Uno spettatore guarda la trasmissione con noia.",
+          "s2": "Per lanciatore dentro un intelligenti hai mise."
         }
       ],
       "pract": [
@@ -1206,9 +1206,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "semv",
-          "s1": "I leopardi bevono il facocero in coppia.",
-          "s2": "O mancanze canali la riemerso ho girare."
+          "cond": "regular",
+          "s1": "I leopardi cacciano il facocero in coppia.",
+          "s2": "O chioccia scartano un ingoiati di merito."
         },
         {
           "item": "102",
@@ -1218,15 +1218,15 @@
         },
         {
           "item": "103",
-          "cond": "semv",
-          "s1": "Il camionista mangia il furgone nella nebbia.",
-          "s2": "Un sospendere ferita la seguire parte ometto."
+          "cond": "regular",
+          "s1": "Il camionista guida il furgone nella nebbia.",
+          "s2": "La coincidono tiene di potesse visto unirti."
         },
         {
           "item": "104",
-          "cond": "regular",
-          "s1": "Il cane morde la catena con rabbia.",
-          "s2": "Di voce agita il sporca sul eccomi."
+          "cond": "semv",
+          "s1": "Il cane beve la catena con rabbia.",
+          "s2": "Lo dirò cavi un tipico per sbagli."
         },
         {
           "item": "105",
@@ -1260,51 +1260,51 @@
         },
         {
           "item": "110",
-          "cond": "semv",
-          "s1": "Il falegname critica il chiodo con forza.",
-          "s2": "La ricominci venirmi un matura cui sotto."
+          "cond": "syntv",
+          "s1": "Il falegname martella la chiodo con forza.",
+          "s2": "Un tropicale adotterà di ideali hai degli."
         },
         {
           "item": "111",
-          "cond": "regular",
-          "s1": "Il gatto mangia la quaglia in giardino.",
-          "s2": "Un farvi vecchi il seccare ma discorso."
+          "cond": "syntv",
+          "s1": "Il gatto mangia il quaglia in giardino.",
+          "s2": "La starò capace un atterri lo potreste."
         },
         {
           "item": "112",
-          "cond": "semv",
-          "s1": "Il macellaio affila il fegato di maiale.",
-          "s2": "La cristiani gasata un civile la offesa."
+          "cond": "regular",
+          "s1": "Il macellaio taglia il fegato di maiale.",
+          "s2": "Un cambiarmi urlare la fresco in flotta."
         },
         {
           "item": "113",
-          "cond": "syntv",
-          "s1": "Il militare scorta la capo di Stato.",
-          "s2": "Un orecchie ferro su guanti in Prima."
+          "cond": "regular",
+          "s1": "Il militare scorta il capo di Stato.",
+          "s2": "Di occupato sedile su auto mi Siamo."
         },
         {
           "item": "114",
-          "cond": "semv",
-          "s1": "Il pagliaccio suona il pubblico al circo.",
-          "s2": "La pneumatici magia un suppongo ne leone."
+          "cond": "regular",
+          "s1": "Il pagliaccio saluta il pubblico al circo.",
+          "s2": "La coprifuoco favola un pericolo su viola."
         },
         {
           "item": "115",
-          "cond": "regular",
-          "s1": "Il pittore vende il quadro molto costoso.",
-          "s2": "Un manderà prato la pancia anche fulmine."
+          "cond": "syntv",
+          "s1": "Il pittore vende la quadro molto costoso.",
+          "s2": "Un esplode tolga un esseri posso calmata."
         },
         {
           "item": "116",
-          "cond": "syntv",
-          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
-          "s2": "La ovviamente andammo un succedono si iscritti."
+          "cond": "semv",
+          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
+          "s2": "Un necessario poteste il fascicolo mi pugilato."
         },
         {
           "item": "117",
-          "cond": "syntv",
-          "s1": "Il postino ritira il posta a mezzogiorno.",
-          "s2": "La privati navale un dissi i adolescenti."
+          "cond": "semv",
+          "s1": "Il postino ripete la posta a mezzogiorno.",
+          "s2": "La servita vivrai un vedrò o trattamento."
         },
         {
           "item": "118",
@@ -1314,9 +1314,9 @@
         },
         {
           "item": "119",
-          "cond": "semv",
-          "s1": "Il ragazzo saluta il sasso nello stagno.",
-          "s2": "In insieme nausea un flebo sette abisso."
+          "cond": "syntv",
+          "s1": "Il ragazzo lancia la sasso nello stagno.",
+          "s2": "Un vediamo spinta di rompi avrai rovine."
         },
         {
           "item": "120",
@@ -1332,9 +1332,9 @@
         },
         {
           "item": "122",
-          "cond": "syntv",
-          "s1": "La commessa apre il bottega nel pomeriggio.",
-          "s2": "Il positive duri un scivola mai precedenti."
+          "cond": "regular",
+          "s1": "La commessa apre la bottega nel pomeriggio.",
+          "s2": "Un batterti lire il buttano uno dovrebbero."
         },
         {
           "item": "123",
@@ -1344,9 +1344,9 @@
         },
         {
           "item": "124",
-          "cond": "syntv",
-          "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Un unicorni bombolette lo corrotto aria ala."
+          "cond": "semv",
+          "s1": "La gazzella bruca il cucciolo allo zoo.",
+          "s2": "Il evacuati amale un risparmi vale yen."
         },
         {
           "item": "125",
@@ -1362,33 +1362,33 @@
         },
         {
           "item": "127",
-          "cond": "semv",
-          "s1": "La papera attraversa il pane nel lago.",
-          "s2": "Il patito lamentarti un coda sta olio."
+          "cond": "syntv",
+          "s1": "La papera mangia la pane nel lago.",
+          "s2": "Un mostrò angolo un ossa mai vice."
         },
         {
           "item": "128",
-          "cond": "regular",
-          "s1": "La pensionata ritira la pensione in posta.",
-          "s2": "Un tettoniche lunare il immagine se sieda."
+          "cond": "semv",
+          "s1": "La pensionata rammenda la pensione in posta.",
+          "s2": "Un scartoffia adescava il colleghi se tasca."
         },
         {
           "item": "129",
-          "cond": "semv",
-          "s1": "La psicologa accoglie il sedativo al paziente.",
-          "s2": "Un ippodromo finiscimi lo ostilità in edificio."
+          "cond": "regular",
+          "s1": "La psicologa prescrive il sedativo al paziente.",
+          "s2": "Un irrisolti inventori la avanzare ne carriera."
         },
         {
           "item": "132",
-          "cond": "regular",
-          "s1": "Un falco osserva la preda dal cielo.",
-          "s2": "Il veste agnello un russa per mille."
+          "cond": "syntv",
+          "s1": "Un falco osserva il preda dal cielo.",
+          "s2": "Il copre versato lo corre sul zitto."
         },
         {
           "item": "133",
-          "cond": "syntv",
-          "s1": "Un meccanico cambia il ruota della macchina.",
-          "s2": "Lo assegnato calcio un gomma stato dovrebbe."
+          "cond": "semv",
+          "s1": "Un meccanico scrive la ruota della macchina.",
+          "s2": "Il preavviso ferite di medio tutto cercando."
         },
         {
           "item": "134",
@@ -1398,27 +1398,27 @@
         },
         {
           "item": "135",
-          "cond": "syntv",
-          "s1": "Un uomo allaccia il cintura in auto.",
-          "s2": "La anni esaudire di stavate ho vedi."
+          "cond": "regular",
+          "s1": "Un uomo allaccia la cintura in auto.",
+          "s2": "Il ecco scorrono un diretti lo dica."
         },
         {
           "item": "136",
-          "cond": "regular",
-          "s1": "Un vitello beve il latte della madre.",
-          "s2": "Un scusato taci la venti pugno degli."
+          "cond": "semv",
+          "s1": "Un vitello rumina il latte della madre.",
+          "s2": "Il abbassi pagaci un debba gatto avuto."
         },
         {
           "item": "137",
-          "cond": "regular",
-          "s1": "Una scimmia graffia la schiena della compagna.",
-          "s2": "Per caspita sciarpe il cavalli detto litigare."
+          "cond": "semv",
+          "s1": "Una scimmia mangia la schiena della compagna.",
+          "s2": "Per mandata estate un vederla stato condotto."
         },
         {
           "item": "138",
-          "cond": "regular",
-          "s1": "Uno spettatore guarda la trasmissione con noia.",
-          "s2": "Per lanciatore dentro un intelligenti hai mise."
+          "cond": "syntv",
+          "s1": "Uno spettatore guarda il trasmissione con noia.",
+          "s2": "Una inciampato storia di controllando per euro."
         }
       ],
       "pract": [
@@ -1448,9 +1448,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "regular",
-          "s1": "I leopardi cacciano il facocero in coppia.",
-          "s2": "U stafando massitro co schitigo fe cerico."
+          "cond": "syntv",
+          "s1": "I leopardi cacciano la facocero in coppia.",
+          "s2": "U chiseggi ghicisso co proderra de algisi."
         },
         {
           "item": "102",
@@ -1460,15 +1460,15 @@
         },
         {
           "item": "103",
-          "cond": "regular",
-          "s1": "Il camionista guida il furgone nella nebbia.",
-          "s2": "Fi sertaghese zotto ri parosci bonfa rusama."
+          "cond": "syntv",
+          "s1": "Il camionista guida la furgone nella nebbia.",
+          "s2": "Pi ponzerelle millo en scetolo fenna racima."
         },
         {
           "item": "104",
-          "cond": "syntv",
-          "s1": "Il cane morde il catena con rabbia.",
-          "s2": "Ba odro atica ta trenci gra somina."
+          "cond": "regular",
+          "s1": "Il cane morde la catena con rabbia.",
+          "s2": "Pi guba minza el madile sal gabari."
         },
         {
           "item": "105",
@@ -1502,51 +1502,51 @@
         },
         {
           "item": "110",
-          "cond": "regular",
-          "s1": "Il falegname martella il chiodo con forza.",
-          "s2": "Co pinotipia peramoca ga stimpa epa clusa."
+          "cond": "semv",
+          "s1": "Il falegname critica il chiodo con forza.",
+          "s2": "Ta screcchio casteto ge bovesa cai dusse."
         },
         {
           "item": "111",
-          "cond": "syntv",
-          "s1": "Il gatto mangia il quaglia in giardino.",
-          "s2": "Ni ralsa strone ro frazali fi pantarma."
+          "cond": "semv",
+          "s1": "Il gatto rompe la quaglia in giardino.",
+          "s2": "To duzzo sulpe ni cettisa na apegnano."
         },
         {
           "item": "112",
-          "cond": "regular",
-          "s1": "Il macellaio taglia il fegato di maiale.",
-          "s2": "Pe gessofoni gicelo ri brinco co pafare."
+          "cond": "syntv",
+          "s1": "Il macellaio taglia la fegato di maiale.",
+          "s2": "Ra celibrale palire gi mamiso to biropo."
         },
         {
           "item": "113",
-          "cond": "semv",
-          "s1": "Il militare lucida il capo di Stato.",
-          "s2": "Pe presermo fadamo ei semo fi Drino."
+          "cond": "syntv",
+          "s1": "Il militare scorta la capo di Stato.",
+          "s2": "En benidera lonni de leta ol Dredo."
         },
         {
           "item": "114",
-          "cond": "regular",
-          "s1": "Il pagliaccio saluta il pubblico al circo.",
-          "s2": "Gi stallidire scogno to scravani mo nonti."
+          "cond": "syntv",
+          "s1": "Il pagliaccio saluta la pubblico al circo.",
+          "s2": "Ri ellenibile banoli gi festardo pi scapo."
         },
         {
           "item": "115",
-          "cond": "syntv",
-          "s1": "Il pittore vende la quadro molto costoso.",
-          "s2": "Ni netechi cinza co rogani grimo adesici."
+          "cond": "semv",
+          "s1": "Il pittore versa il quadro molto costoso.",
+          "s2": "Ba polesca cripe go brinfo trila neorumo."
         },
         {
           "item": "116",
-          "cond": "semv",
-          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
-          "s2": "Pi cammitrani fomenne ro gomarello el famarghe."
+          "cond": "regular",
+          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
+          "s2": "Bo gordavente argessi gi sambanica fi sfimande."
         },
         {
           "item": "117",
-          "cond": "semv",
-          "s1": "Il postino ripete la posta a mezzogiorno.",
-          "s2": "Gi lodelli sodica pi larni u prendettica."
+          "cond": "regular",
+          "s1": "Il postino ritira la posta a mezzogiorno.",
+          "s2": "Bo robulla darega co tanca u seciantilla."
         },
         {
           "item": "118",
@@ -1556,9 +1556,9 @@
         },
         {
           "item": "119",
-          "cond": "regular",
-          "s1": "Il ragazzo lancia il sasso nello stagno.",
-          "s2": "Ga fetollo nuppio en rorra doffa plosto."
+          "cond": "semv",
+          "s1": "Il ragazzo saluta il sasso nello stagno.",
+          "s2": "Ro tamento prighe ci damia rinna agachi."
         },
         {
           "item": "120",
@@ -1574,9 +1574,9 @@
         },
         {
           "item": "122",
-          "cond": "semv",
-          "s1": "La commessa incassa la bottega nel pomeriggio.",
-          "s2": "To sefiline bistasi ge lubenta ado tropessone."
+          "cond": "syntv",
+          "s1": "La commessa apre il bottega nel pomeriggio.",
+          "s2": "Pi spregona bami ca vardisa sen pretomante."
         },
         {
           "item": "123",
@@ -1586,9 +1586,9 @@
         },
         {
           "item": "124",
-          "cond": "semv",
-          "s1": "La gazzella bruca il cucciolo allo zoo.",
-          "s2": "Ro salvonte norco bi degliare otta eme."
+          "cond": "regular",
+          "s1": "La gazzella partorisce il cucciolo allo zoo.",
+          "s2": "Ra pograsci sarricante ca invosita erdo ado."
         },
         {
           "item": "125",
@@ -1604,33 +1604,33 @@
         },
         {
           "item": "127",
-          "cond": "regular",
-          "s1": "La papera mangia il pane nel lago.",
-          "s2": "Zi ganela redore ge coga omi rerà."
+          "cond": "semv",
+          "s1": "La papera attraversa il pane nel lago.",
+          "s2": "Ba purilo mantolasci ca vafe sal fiti."
         },
         {
           "item": "128",
-          "cond": "syntv",
-          "s1": "La pensionata ritira il pensione in posta.",
-          "s2": "Ba dellomendo cendra go seschera pe sagio."
+          "cond": "regular",
+          "s1": "La pensionata ritira la pensione in posta.",
+          "s2": "Co scramolone plange gi depacina fi ferna."
         },
         {
           "item": "129",
-          "cond": "regular",
-          "s1": "La psicologa prescrive il sedativo al paziente.",
-          "s2": "Ba ascandare bigiscada fi remolato bi teddando."
+          "cond": "syntv",
+          "s1": "La psicologa prescrive la sedativo al paziente.",
+          "s2": "Po stengando fallinoma fe allotone na tarniamo."
         },
         {
           "item": "132",
-          "cond": "syntv",
-          "s1": "Un falco osserva il preda dal cielo.",
-          "s2": "Ge velpo spercio ro tosce sio latre."
+          "cond": "semv",
+          "s1": "Un falco arruffa la preda dal cielo.",
+          "s2": "Vo richi pariola ri lagge opa tanio."
         },
         {
           "item": "133",
-          "cond": "semv",
-          "s1": "Un meccanico scrive la ruota della macchina.",
-          "s2": "Zi stellagni cischi ni trobo gello borlaghi."
+          "cond": "regular",
+          "s1": "Un meccanico cambia la ruota della macchina.",
+          "s2": "Ve mendatini chigna el regri sello prelasco."
         },
         {
           "item": "134",
@@ -1640,27 +1640,27 @@
         },
         {
           "item": "135",
-          "cond": "semv",
-          "s1": "Un uomo conta la cintura in auto.",
-          "s2": "Pa onne litta ca stevati pe voda."
+          "cond": "syntv",
+          "s1": "Un uomo allaccia il cintura in auto.",
+          "s2": "Pe lare lamecone ve pretavi du goro."
         },
         {
           "item": "136",
-          "cond": "syntv",
-          "s1": "Un vitello beve la latte della madre.",
-          "s2": "Ge solvare boci fi mutte onchi trugo."
+          "cond": "regular",
+          "s1": "Un vitello beve il latte della madre.",
+          "s2": "Be seggire megi de furai galma barma."
         },
         {
           "item": "137",
-          "cond": "syntv",
-          "s1": "Una scimmia graffia il schiena della compagna.",
-          "s2": "Opa mendira cammodo pi campelo stota sformila."
+          "cond": "regular",
+          "s1": "Una scimmia graffia la schiena della compagna.",
+          "s2": "Ofe menarri scennio pa gherne cobbe perterna."
         },
         {
           "item": "138",
-          "cond": "syntv",
-          "s1": "Uno spettatore guarda il trasmissione con noia.",
-          "s2": "Sen tognolette pratto ri allegnamessi eta defi."
+          "cond": "semv",
+          "s1": "Uno spettatore fornisce la trasmissione con noia.",
+          "s2": "Ofe attersillo tondicca ca cascalircelo par repo."
         }
       ],
       "pract": [
@@ -1688,9 +1688,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "syntv",
-          "s1": "I leopardi cacciano la facocero in coppia.",
-          "s2": "U chiseggi ghicisso co proderra de algisi."
+          "cond": "semv",
+          "s1": "I leopardi bevono il facocero in coppia.",
+          "s2": "U tondente plerma ro glisarno to grunfo."
         },
         {
           "item": "102",
@@ -1700,15 +1700,15 @@
         },
         {
           "item": "103",
-          "cond": "syntv",
-          "s1": "Il camionista guida la furgone nella nebbia.",
-          "s2": "Pi ponzerelle millo en scetolo fenna racima."
+          "cond": "semv",
+          "s1": "Il camionista mangia il furgone nella nebbia.",
+          "s2": "Ga megistrino pamigi zo pernito rusci folime."
         },
         {
           "item": "104",
-          "cond": "semv",
-          "s1": "Il cane beve la catena con rabbia.",
-          "s2": "Fi bala abbe en stogna fer beglia."
+          "cond": "syntv",
+          "s1": "Il cane morde il catena con rabbia.",
+          "s2": "Ba odro atica ta trenci gra somina."
         },
         {
           "item": "105",
@@ -1742,51 +1742,51 @@
         },
         {
           "item": "110",
-          "cond": "syntv",
-          "s1": "Il falegname martella la chiodo con forza.",
-          "s2": "Ri dalaterni locchimo ze grisca gri sipro."
+          "cond": "regular",
+          "s1": "Il falegname martella il chiodo con forza.",
+          "s2": "Co pinotipia peramoca ga stimpa epa clusa."
         },
         {
           "item": "111",
-          "cond": "semv",
-          "s1": "Il gatto rompe la quaglia in giardino.",
-          "s2": "To duzzo sulpe ni cettisa na apegnano."
+          "cond": "regular",
+          "s1": "Il gatto mangia la quaglia in giardino.",
+          "s2": "Pi brovo davari fi dossati ar sevverno."
         },
         {
           "item": "112",
-          "cond": "syntv",
-          "s1": "Il macellaio taglia la fegato di maiale.",
-          "s2": "Ra celibrale palire gi mamiso to biropo."
+          "cond": "semv",
+          "s1": "Il macellaio affila il fegato di maiale.",
+          "s2": "Ga namattera oscare fi porona ro fucere."
         },
         {
           "item": "113",
-          "cond": "regular",
-          "s1": "Il militare scorta il capo di Stato.",
-          "s2": "De dospando enniva ba muni vo Genno."
+          "cond": "semv",
+          "s1": "Il militare lucida il capo di Stato.",
+          "s2": "Pe presermo fadamo ei semo fi Drino."
         },
         {
           "item": "114",
-          "cond": "syntv",
-          "s1": "Il pagliaccio saluta la pubblico al circo.",
-          "s2": "Ri ellenibile banoli gi festardo pi scapo."
+          "cond": "semv",
+          "s1": "Il pagliaccio suona il pubblico al circo.",
+          "s2": "En pascatante dolla to prasinto ta rispe."
         },
         {
           "item": "115",
-          "cond": "semv",
-          "s1": "Il pittore versa il quadro molto costoso.",
-          "s2": "Ba polesca cripe go brinfo trila neorumo."
+          "cond": "regular",
+          "s1": "Il pittore vende il quadro molto costoso.",
+          "s2": "Pi fratende tisci ta lesoma treta seviaga."
         },
         {
           "item": "116",
-          "cond": "regular",
-          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
-          "s2": "Bo gordavente argessi gi sambanica fi sfimande."
+          "cond": "syntv",
+          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
+          "s2": "Ta arbitenevi ascarni co derimenno bi laberirà."
         },
         {
           "item": "117",
-          "cond": "regular",
-          "s1": "Il postino ritira la posta a mezzogiorno.",
-          "s2": "Bo robulla darega co tanca u seciantilla."
+          "cond": "syntv",
+          "s1": "Il postino ritira il posta a mezzogiorno.",
+          "s2": "Pe surendo oddace mu gaste u mellifascia."
         },
         {
           "item": "118",
@@ -1796,9 +1796,9 @@
         },
         {
           "item": "119",
-          "cond": "syntv",
-          "s1": "Il ragazzo lancia la sasso nello stagno.",
-          "s2": "Gi palisca sevaga bo trago varno lilema."
+          "cond": "regular",
+          "s1": "Il ragazzo lancia il sasso nello stagno.",
+          "s2": "Ga fetollo nuppio en rorra doffa plosto."
         },
         {
           "item": "120",
@@ -1814,9 +1814,9 @@
         },
         {
           "item": "122",
-          "cond": "regular",
-          "s1": "La commessa apre la bottega nel pomeriggio.",
-          "s2": "Ve baccheni sapa ni daspeno tan connesotti."
+          "cond": "semv",
+          "s1": "La commessa incassa la bottega nel pomeriggio.",
+          "s2": "To sefiline bistasi ge lubenta ado tropessone."
         },
         {
           "item": "123",
@@ -1826,9 +1826,9 @@
         },
         {
           "item": "124",
-          "cond": "regular",
-          "s1": "La gazzella partorisce il cucciolo allo zoo.",
-          "s2": "Ra pograsci sarricante ca invosita erdo ado."
+          "cond": "syntv",
+          "s1": "La gazzella partorisce la cucciolo allo zoo.",
+          "s2": "Bi pravisti alterisano pi lermella safe oti."
         },
         {
           "item": "125",
@@ -1844,33 +1844,33 @@
         },
         {
           "item": "127",
-          "cond": "syntv",
-          "s1": "La papera mangia la pane nel lago.",
-          "s2": "To sciote fenola ta asco ton lape."
+          "cond": "regular",
+          "s1": "La papera mangia il pane nel lago.",
+          "s2": "Zi ganela redore ge coga omi rerà."
         },
         {
           "item": "128",
-          "cond": "semv",
-          "s1": "La pensionata rammenda la pensione in posta.",
-          "s2": "Na cascopisce setadani vi basemalo ri renti."
+          "cond": "syntv",
+          "s1": "La pensionata ritira il pensione in posta.",
+          "s2": "Ba dellomendo cendra go seschera pe sagio."
         },
         {
           "item": "129",
-          "cond": "syntv",
-          "s1": "La psicologa prescrive la sedativo al paziente.",
-          "s2": "Po stengando fallinoma fe allotone na tarniamo."
+          "cond": "semv",
+          "s1": "La psicologa accoglie il sedativo al paziente.",
+          "s2": "Be baltiscia beccinato bi pernatto gu darmente."
         },
         {
           "item": "132",
-          "cond": "semv",
-          "s1": "Un falco arruffa la preda dal cielo.",
-          "s2": "Vo richi pariola ri lagge opa tanio."
+          "cond": "regular",
+          "s1": "Un falco osserva la preda dal cielo.",
+          "s2": "En isaca pagelie fe saddi noa freto."
         },
         {
           "item": "133",
-          "cond": "regular",
-          "s1": "Un meccanico cambia la ruota della macchina.",
-          "s2": "Ve mendatini chigna el regri sello prelasco."
+          "cond": "syntv",
+          "s1": "Un meccanico cambia il ruota della macchina.",
+          "s2": "Bi tonedisco roliga pi coghi nolla pratesco."
         },
         {
           "item": "134",
@@ -1880,27 +1880,27 @@
         },
         {
           "item": "135",
-          "cond": "regular",
-          "s1": "Un uomo allaccia la cintura in auto.",
-          "s2": "Bo supi roccente el dazzona cu ceso."
+          "cond": "semv",
+          "s1": "Un uomo conta la cintura in auto.",
+          "s2": "Pa onne litta ca stevati pe voda."
         },
         {
           "item": "136",
-          "cond": "semv",
-          "s1": "Un vitello rumina il latte della madre.",
-          "s2": "ga sarista gagota de asemi balta fiane."
+          "cond": "syntv",
+          "s1": "Un vitello beve la latte della madre.",
+          "s2": "Ge solvare boci fi mutte onchi trugo."
         },
         {
           "item": "137",
-          "cond": "semv",
-          "s1": "Una scimmia mangia la schiena della compagna.",
-          "s2": "Ser dattoni soline ta callege ferno patrallo."
+          "cond": "syntv",
+          "s1": "Una scimmia graffia il schiena della compagna.",
+          "s2": "Opa mendira cammodo pi campelo stota sformila."
         },
         {
           "item": "138",
-          "cond": "semv",
-          "s1": "Uno spettatore fornisce la trasmissione con noia.",
-          "s2": "Ofe attersillo tondicca ca cascalircelo par repo."
+          "cond": "regular",
+          "s1": "Uno spettatore guarda la trasmissione con noia.",
+          "s2": "Opa ghirratale tagoro en demmarandolo meo immi."
         }
       ],
       "pract": [
@@ -1928,9 +1928,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "semv",
-          "s1": "I leopardi bevono il facocero in coppia.",
-          "s2": "U tondente plerma ro glisarno to grunfo."
+          "cond": "regular",
+          "s1": "I leopardi cacciano il facocero in coppia.",
+          "s2": "U stafando massitro co schitigo fe cerico."
         },
         {
           "item": "102",
@@ -1940,15 +1940,15 @@
         },
         {
           "item": "103",
-          "cond": "semv",
-          "s1": "Il camionista mangia il furgone nella nebbia.",
-          "s2": "Ga megistrino pamigi zo pernito rusci folime."
+          "cond": "regular",
+          "s1": "Il camionista guida il furgone nella nebbia.",
+          "s2": "Fi sertaghese zotto ri parosci bonfa rusama."
         },
         {
           "item": "104",
-          "cond": "regular",
-          "s1": "Il cane morde la catena con rabbia.",
-          "s2": "Pi guba minza el madile sal gabari."
+          "cond": "semv",
+          "s1": "Il cane beve la catena con rabbia.",
+          "s2": "Fi bala abbe en stogna fer beglia."
         },
         {
           "item": "105",
@@ -1982,51 +1982,51 @@
         },
         {
           "item": "110",
-          "cond": "semv",
-          "s1": "Il falegname critica il chiodo con forza.",
-          "s2": "Ta screcchio casteto ge bovesa cai dusse."
+          "cond": "syntv",
+          "s1": "Il falegname martella la chiodo con forza.",
+          "s2": "Ri dalaterni locchimo ze grisca gri sipro."
         },
         {
           "item": "111",
-          "cond": "regular",
-          "s1": "Il gatto mangia la quaglia in giardino.",
-          "s2": "Pi brovo davari fi dossati ar sevverno."
+          "cond": "syntv",
+          "s1": "Il gatto mangia il quaglia in giardino.",
+          "s2": "Ni ralsa strone ro frazali fi pantarma."
         },
         {
           "item": "112",
-          "cond": "semv",
-          "s1": "Il macellaio affila il fegato di maiale.",
-          "s2": "Ga namattera oscare fi porona ro fucere."
+          "cond": "regular",
+          "s1": "Il macellaio taglia il fegato di maiale.",
+          "s2": "Pe gessofoni gicelo ri brinco co pafare."
         },
         {
           "item": "113",
-          "cond": "syntv",
-          "s1": "Il militare scorta la capo di Stato.",
-          "s2": "En benidera lonni de leta ol Dredo."
+          "cond": "regular",
+          "s1": "Il militare scorta il capo di Stato.",
+          "s2": "De dospando enniva ba muni vo Genno."
         },
         {
           "item": "114",
-          "cond": "semv",
-          "s1": "Il pagliaccio suona il pubblico al circo.",
-          "s2": "En pascatante dolla to prasinto ta rispe."
+          "cond": "regular",
+          "s1": "Il pagliaccio saluta il pubblico al circo.",
+          "s2": "Gi stallidire scogno to scravani mo nonti."
         },
         {
           "item": "115",
-          "cond": "regular",
-          "s1": "Il pittore vende il quadro molto costoso.",
-          "s2": "Pi fratende tisci ta lesoma treta seviaga."
+          "cond": "syntv",
+          "s1": "Il pittore vende la quadro molto costoso.",
+          "s2": "Ni netechi cinza co rogani grimo adesici."
         },
         {
           "item": "116",
-          "cond": "syntv",
-          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
-          "s2": "Ta arbitenevi ascarni co derimenno bi laberirà."
+          "cond": "semv",
+          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
+          "s2": "Pi cammitrani fomenne ro gomarello el famarghe."
         },
         {
           "item": "117",
-          "cond": "syntv",
-          "s1": "Il postino ritira il posta a mezzogiorno.",
-          "s2": "Pe surendo oddace mu gaste u mellifascia."
+          "cond": "semv",
+          "s1": "Il postino ripete la posta a mezzogiorno.",
+          "s2": "Gi lodelli sodica pi larni u prendettica."
         },
         {
           "item": "118",
@@ -2036,9 +2036,9 @@
         },
         {
           "item": "119",
-          "cond": "semv",
-          "s1": "Il ragazzo saluta il sasso nello stagno.",
-          "s2": "Ro tamento prighe ci damia rinna agachi."
+          "cond": "syntv",
+          "s1": "Il ragazzo lancia la sasso nello stagno.",
+          "s2": "Gi palisca sevaga bo trago varno lilema."
         },
         {
           "item": "120",
@@ -2054,9 +2054,9 @@
         },
         {
           "item": "122",
-          "cond": "syntv",
-          "s1": "La commessa apre il bottega nel pomeriggio.",
-          "s2": "Pi spregona bami ca vardisa sen pretomante."
+          "cond": "regular",
+          "s1": "La commessa apre la bottega nel pomeriggio.",
+          "s2": "Ve baccheni sapa ni daspeno tan connesotti."
         },
         {
           "item": "123",
@@ -2066,9 +2066,9 @@
         },
         {
           "item": "124",
-          "cond": "syntv",
-          "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Bi pravisti alterisano pi lermella safe oti."
+          "cond": "semv",
+          "s1": "La gazzella bruca il cucciolo allo zoo.",
+          "s2": "Ro salvonte norco bi degliare otta eme."
         },
         {
           "item": "125",
@@ -2084,33 +2084,33 @@
         },
         {
           "item": "127",
-          "cond": "semv",
-          "s1": "La papera attraversa il pane nel lago.",
-          "s2": "Ba purilo mantolasci ca vafe sal fiti."
+          "cond": "syntv",
+          "s1": "La papera mangia la pane nel lago.",
+          "s2": "To sciote fenola ta asco ton lape."
         },
         {
           "item": "128",
-          "cond": "regular",
-          "s1": "La pensionata ritira la pensione in posta.",
-          "s2": "Co scramolone plange gi depacina fi ferna."
+          "cond": "semv",
+          "s1": "La pensionata rammenda la pensione in posta.",
+          "s2": "Na cascopisce setadani vi basemalo ri renti."
         },
         {
           "item": "129",
-          "cond": "semv",
-          "s1": "La psicologa accoglie il sedativo al paziente.",
-          "s2": "Be baltiscia beccinato bi pernatto gu darmente."
+          "cond": "regular",
+          "s1": "La psicologa prescrive il sedativo al paziente.",
+          "s2": "Ba ascandare bigiscada fi remolato bi teddando."
         },
         {
           "item": "132",
-          "cond": "regular",
-          "s1": "Un falco osserva la preda dal cielo.",
-          "s2": "En isaca pagelie fe saddi noa freto."
+          "cond": "syntv",
+          "s1": "Un falco osserva il preda dal cielo.",
+          "s2": "Ge velpo spercio ro tosce sio latre."
         },
         {
           "item": "133",
-          "cond": "syntv",
-          "s1": "Un meccanico cambia il ruota della macchina.",
-          "s2": "Bi tonedisco roliga pi coghi nolla pratesco."
+          "cond": "semv",
+          "s1": "Un meccanico scrive la ruota della macchina.",
+          "s2": "Zi stellagni cischi ni trobo gello borlaghi."
         },
         {
           "item": "134",
@@ -2120,27 +2120,27 @@
         },
         {
           "item": "135",
-          "cond": "syntv",
-          "s1": "Un uomo allaccia il cintura in auto.",
-          "s2": "Pe lare lamecone ve pretavi du goro."
+          "cond": "regular",
+          "s1": "Un uomo allaccia la cintura in auto.",
+          "s2": "Bo supi roccente el dazzona cu ceso."
         },
         {
           "item": "136",
-          "cond": "regular",
-          "s1": "Un vitello beve il latte della madre.",
-          "s2": "Be seggire megi de furai galma barma."
+          "cond": "semv",
+          "s1": "Un vitello rumina il latte della madre.",
+          "s2": "Ga sarista gagota de asemi balta fiane."
         },
         {
           "item": "137",
-          "cond": "regular",
-          "s1": "Una scimmia graffia la schiena della compagna.",
-          "s2": "Ofe menarri scennio pa gherne cobbe perterna."
+          "cond": "semv",
+          "s1": "Una scimmia mangia la schiena della compagna.",
+          "s2": "Ser dattoni soline ta callege ferno patrallo."
         },
         {
           "item": "138",
-          "cond": "regular",
-          "s1": "Uno spettatore guarda la trasmissione con noia.",
-          "s2": "Opa ghirratale tagoro en demmarandolo meo immi."
+          "cond": "syntv",
+          "s1": "Uno spettatore guarda il trasmissione con noia.",
+          "s2": "Sen tognolette pratto ri allegnamessi eta defi."
         }
       ],
       "pract": [
@@ -2170,9 +2170,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "regular",
-          "s1": "I leopardi cacciano il facocero in coppia.",
-          "s2": "G iatorwar dalwglwj fg brvrbzyl tp vxpsne."
+          "cond": "syntv",
+          "s1": "I leopardi cacciano la facocero in coppia.",
+          "s2": "L wlqfdghi rlnetjde zb pklmrnky oc mslpqa."
         },
         {
           "item": "102",
@@ -2182,15 +2182,15 @@
         },
         {
           "item": "103",
-          "cond": "regular",
-          "s1": "Il camionista guida il furgone nella nebbia.",
-          "s2": "Wk adcnflqlom zteml hn rtqmtcf rzxsd myjasp."
+          "cond": "syntv",
+          "s1": "Il camionista guida la furgone nella nebbia.",
+          "s2": "Sy wqdsgfnvlj vclwg ry czgfitk efmsl msgflr."
         },
         {
           "item": "104",
-          "cond": "syntv",
-          "s1": "Il cane morde il catena con rabbia.",
-          "s2": "Fg cjci dcpkw sl oegham crr dwqcvk."
+          "cond": "regular",
+          "s1": "Il cane morde la catena con rabbia.",
+          "s2": "Dr lbqn wsxmp os nbtrrk pmg jpfrpl."
         },
         {
           "item": "105",
@@ -2224,51 +2224,51 @@
         },
         {
           "item": "110",
-          "cond": "regular",
-          "s1": "Il falegname martella il chiodo con forza.",
-          "s2": "Hf itrvbnmft fnlaerrp ur uhbvfr cjn sjndx."
+          "cond": "semv",
+          "s1": "Il falegname critica il chiodo con forza.",
+          "s2": "Kf rtfnsmuiw cmfhqlp sn meeppo keo crnir."
         },
         {
           "item": "111",
-          "cond": "syntv",
-          "s1": "Il gatto mangia il quaglia in giardino.",
-          "s2": "Xt sqkip vrnniu bn buosxq rv rvkbjrvh."
+          "cond": "semv",
+          "s1": "Il gatto rompe la quaglia in giardino.",
+          "s2": "Pl trcwx puonw wd cvdotnw qm ghqpdurn."
         },
         {
           "item": "112",
-          "cond": "regular",
-          "s1": "Il macellaio taglia il fegato di maiale.",
-          "s2": "Ot xayqkvdux prenfj dx ixhqvy yb twtbnn."
+          "cond": "syntv",
+          "s1": "Il macellaio taglia la fegato di maiale.",
+          "s2": "Cl hvttkjmdp fzmypc jy bdczck gl mkfrsr."
         },
         {
           "item": "113",
-          "cond": "semv",
-          "s1": "Il militare lucida il capo di Stato.",
-          "s2": "Hg qbuzdddr fnewlr fu xmhi eq Ugvre."
+          "cond": "syntv",
+          "s1": "Il militare scorta la capo di Stato.",
+          "s2": "Lm gbdnccur kgwapv cn mfar ds Wfhtr."
         },
         {
           "item": "114",
-          "cond": "regular",
-          "s1": "Il pagliaccio saluta il pubblico al circo.",
-          "s2": "Gk bltntkyhds ngwvce zl mdesezjh jm avvvn."
+          "cond": "syntv",
+          "s1": "Il pagliaccio saluta la pubblico al circo.",
+          "s2": "Hb fjmqaojljq kkvwyd mv pvggewvd lz vodtc."
         },
         {
           "item": "115",
-          "cond": "syntv",
-          "s1": "Il pittore vende la quadro molto costoso.",
-          "s2": "Jr dldmesj ceiud dr nvuroe mxfoe abrmrhu."
+          "cond": "semv",
+          "s1": "Il pittore versa il quadro molto costoso.",
+          "s2": "Gb acfspuo fgrnl rm xdrtgh alpnt accdfel."
         },
         {
           "item": "116",
-          "cond": "semv",
-          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
-          "s2": "Tr shyunvkqpr maqqqtt dw frhuasxrf zs vfkvmfdd."
+          "cond": "regular",
+          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
+          "s2": "Mx ljkcatixxm mxeiflq rb fflwirpsp eg fhqoruzm."
         },
         {
           "item": "117",
-          "cond": "semv",
-          "s1": "Il postino ripete la posta a mezzogiorno.",
-          "s2": "Pv rvbhvss llmkqk ty oithg r ppadercmjkj."
+          "cond": "regular",
+          "s1": "Il postino ritira la posta a mezzogiorno.",
+          "s2": "Wj eaiaaoh pnaylm dw wufvv g hbsekvntaao."
         },
         {
           "item": "118",
@@ -2278,9 +2278,9 @@
         },
         {
           "item": "119",
-          "cond": "regular",
-          "s1": "Il ragazzo lancia il sasso nello stagno.",
-          "s2": "Dr pnccqli iidfop vf iltat bnbnr mmfdkl."
+          "cond": "semv",
+          "s1": "Il ragazzo saluta il sasso nello stagno.",
+          "s2": "Wp nnoisqv lgzvwf sf gzdkr jdord bhumth."
         },
         {
           "item": "120",
@@ -2296,9 +2296,9 @@
         },
         {
           "item": "122",
-          "cond": "semv",
-          "s1": "La commessa incassa la bottega nel pomeriggio.",
-          "s2": "Vf bcsnlhrm vnamewt tg piiemaf rfr fhuwinjabh."
+          "cond": "syntv",
+          "s1": "La commessa apre il bottega nel pomeriggio.",
+          "s2": "Rg qokeijsd ujpl ej hiihwdr jna oqnfieeelm."
         },
         {
           "item": "123",
@@ -2308,9 +2308,9 @@
         },
         {
           "item": "124",
-          "cond": "semv",
-          "s1": "La gazzella bruca il cucciolo allo zoo.",
-          "s2": "Mt sqzszpko mxbsf kr zolsotdm gddu avz."
+          "cond": "regular",
+          "s1": "La gazzella partorisce il cucciolo allo zoo.",
+          "s2": "Mt endhypla noxgrksozj dc wmfpoddd alrj zgq."
         },
         {
           "item": "125",
@@ -2326,33 +2326,33 @@
         },
         {
           "item": "127",
-          "cond": "regular",
-          "s1": "La papera mangia il pane nel lago.",
-          "s2": "Hf fffwro uygebn nf kskp grt shxb."
+          "cond": "semv",
+          "s1": "La papera attraversa il pane nel lago.",
+          "s2": "Sf bvlaen mcnqurlkke ry ldjr wnj mlrp."
         },
         {
           "item": "128",
-          "cond": "syntv",
-          "s1": "La pensionata ritira il pensione in posta.",
-          "s2": "Xv uhbheqkkwm zxktlq nb gmlqqakl sw xzsad."
+          "cond": "regular",
+          "s1": "La pensionata ritira la pensione in posta.",
+          "s2": "Ks fykonhlpxs gvmrpl hk fdcjnitz df itmgw."
         },
         {
           "item": "129",
-          "cond": "regular",
-          "s1": "La psicologa prescrive il sedativo al paziente.",
-          "s2": "Vt wkmeiokii hprvnaxbo fn pdasopvu sc vvwdehbh."
+          "cond": "syntv",
+          "s1": "La psicologa prescrive la sedativo al paziente.",
+          "s2": "Sd wzlevqqgx rmhnrzgtt on wnwngzvu sj rwjvpbff."
         },
         {
           "item": "132",
-          "cond": "syntv",
-          "s1": "Un falco osserva il preda dal cielo.",
-          "s2": "Mw xlehv qscgcny nr nftak eck zdmrv."
+          "cond": "semv",
+          "s1": "Un falco arruffa la preda dal cielo.",
+          "s2": "Tb zmurn cpemfhl br mnsrr fdm slcnr."
         },
         {
           "item": "133",
-          "cond": "semv",
-          "s1": "Un meccanico scrive la ruota della macchina.",
-          "s2": "Lk znbvhtdct naeeid jv ngtrd pqlsn rsbptncc."
+          "cond": "regular",
+          "s1": "Un meccanico cambia la ruota della macchina.",
+          "s2": "Ae izytfgvrc bgaemr qs uyhev mkxcd dmehqolt."
         },
         {
           "item": "134",
@@ -2362,27 +2362,27 @@
         },
         {
           "item": "135",
-          "cond": "semv",
-          "s1": "Un uomo conta la cintura in auto.",
-          "s2": "Ms otnb wtgdy wk khscdgy nm ytwe."
+          "cond": "syntv",
+          "s1": "Un uomo allaccia il cintura in auto.",
+          "s2": "Rh rlih fhwpcsni ks cwnjodf kd gvbh."
         },
         {
           "item": "136",
-          "cond": "syntv",
-          "s1": "Un vitello beve la latte della madre.",
-          "s2": "Ml vwygiuh rcoi ek vvuh qvdcr iilsd."
+          "cond": "regular",
+          "s1": "Un vitello beve il latte della madre.",
+          "s2": "Zm ixruxhj bjln lu vuvrb vmrpj bprmk."
         },
         {
           "item": "137",
-          "cond": "syntv",
-          "s1": "Una scimmia graffia il schiena della compagna.",
-          "s2": "Gzy mgepalg fnheokp pw jndeyta krht acvjejgf."
+          "cond": "regular",
+          "s1": "Una scimmia graffia la schiena della compagna.",
+          "s2": "Jpd ozuulhq olwhip fr knegpta swfvk encjdkbt."
         },
         {
           "item": "138",
-          "cond": "syntv",
-          "s1": "Uno spettatore guarda il trasmissione con noia.",
-          "s2": "Gbf hjfbdqznpy rdzqpa rx tuvgomcrznav zmq ytpo."
+          "cond": "semv",
+          "s1": "Uno spettatore fornisce la trasmissione con noia.",
+          "s2": "Ljn xklstegaiu psjbftxk wb dhzwrsqgfne kxg gmfn."
         }
       ],
       "pract": [
@@ -2410,9 +2410,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "syntv",
-          "s1": "I leopardi cacciano la facocero in coppia.",
-          "s2": "L wlqfdghi rlnetjde zb pklmrnky oc mslpqa."
+          "cond": "semv",
+          "s1": "I leopardi bevono il facocero in coppia.",
+          "s2": "R tsngiwox dnjdji fm cwfnlclp rp civhbh."
         },
         {
           "item": "102",
@@ -2422,15 +2422,15 @@
         },
         {
           "item": "103",
-          "cond": "syntv",
-          "s1": "Il camionista guida la furgone nella nebbia.",
-          "s2": "Sy wqdsgfnvlj vclwg ry czgfitk efmsl msgflr."
+          "cond": "semv",
+          "s1": "Il camionista mangia il furgone nella nebbia.",
+          "s2": "Lv duhnceijnw zajekm rk mrtepdk svenr uthgnbj."
         },
         {
           "item": "104",
-          "cond": "semv",
-          "s1": "Il cane beve la catena con rabbia.",
-          "s2": "Iq onbj fyeh zk keldej atk omuahb."
+          "cond": "syntv",
+          "s1": "Il cane morde il catena con rabbia.",
+          "s2": "Fg cjci dcpkw sl oegham crr dwqcvk."
         },
         {
           "item": "105",
@@ -2464,51 +2464,51 @@
         },
         {
           "item": "110",
-          "cond": "syntv",
-          "s1": "Il falegname martella la chiodo con forza.",
-          "s2": "Sc wcergfbhu jcvdftwv dk qdverj sij eaxwrq."
+          "cond": "regular",
+          "s1": "Il falegname martella il chiodo con forza.",
+          "s2": "Hf itrvbnmft fnlaerrp ur uhbvfr cjn sjndx."
         },
         {
           "item": "111",
-          "cond": "semv",
-          "s1": "Il gatto rompe la quaglia in giardino.",
-          "s2": "Pl trcwx puonw wd cvdotnw qm ghqpdurn."
+          "cond": "regular",
+          "s1": "Il gatto mangia la quaglia in giardino.",
+          "s2": "Rh zzbxm eoaokb cj iieeksv hl vbghtyjl."
         },
         {
           "item": "112",
-          "cond": "syntv",
-          "s1": "Il macellaio taglia la fegato di maiale.",
-          "s2": "Cl hvttkjmdp fzmypc jy bdczck gl mkfrsr."
+          "cond": "semv",
+          "s1": "Il macellaio affila il fegato di maiale.",
+          "s2": "Pc gtrvdnaap umldiv ks qpdrbn tr zlpsmy."
         },
         {
           "item": "113",
-          "cond": "regular",
-          "s1": "Il militare scorta il capo di Stato.",
-          "s2": "Yh hnjsbebf kknfmy ud pblv gd Dflmk."
+          "cond": "semv",
+          "s1": "Il militare lucida il capo di Stato.",
+          "s2": "Hg qbuzdddr fnewlr fu xmhi eq Ugvre."
         },
         {
           "item": "114",
-          "cond": "syntv",
-          "s1": "Il pagliaccio saluta la pubblico al circo.",
-          "s2": "Hb fjmqaojljq kkvwyd mv pvggewvd lz vodtc."
+          "cond": "semv",
+          "s1": "Il pagliaccio suona il pubblico al circo.",
+          "s2": "Vd ehqifrokmm scwvf rl feiivwtg px cefcf."
         },
         {
           "item": "115",
-          "cond": "semv",
-          "s1": "Il pittore versa il quadro molto costoso.",
-          "s2": "Gb acfspuo fgrnl rm xdrtgh alpnt accdfel."
+          "cond": "regular",
+          "s1": "Il pittore vende il quadro molto costoso.",
+          "s2": "Ft cnehdxd ejufp wq ergdkg cirrm prkseem."
         },
         {
           "item": "116",
-          "cond": "regular",
-          "s1": "Il poliziotto allerta la pattuglia di rinforzo.",
-          "s2": "Mx ljkcatixxm mxeiflq rb fflwirpsp eg fhqoruzm."
+          "cond": "syntv",
+          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
+          "s2": "Kl ijetqfawmv ssrjdlp cd qslrrtngz dl lmcdeqqw."
         },
         {
           "item": "117",
-          "cond": "regular",
-          "s1": "Il postino ritira la posta a mezzogiorno.",
-          "s2": "Wj eaiaaoh pnaylm dw wufvv g hbsekvntaao."
+          "cond": "syntv",
+          "s1": "Il postino ritira il posta a mezzogiorno.",
+          "s2": "Nj edhtpqak ndoepa yw msleo q nnchepqaurk."
         },
         {
           "item": "118",
@@ -2518,9 +2518,9 @@
         },
         {
           "item": "119",
-          "cond": "syntv",
-          "s1": "Il ragazzo lancia la sasso nello stagno.",
-          "s2": "Oj lbxeaxh xnklla hk crrcw yspfv jmfphx."
+          "cond": "regular",
+          "s1": "Il ragazzo lancia il sasso nello stagno.",
+          "s2": "Dr pnccqli iidfop vf iltat bnbnr mmfdkl."
         },
         {
           "item": "120",
@@ -2536,9 +2536,9 @@
         },
         {
           "item": "122",
-          "cond": "regular",
-          "s1": "La commessa apre la bottega nel pomeriggio.",
-          "s2": "Ld rplkkqws sctf fn romgtql ndf mcnalqprgh."
+          "cond": "semv",
+          "s1": "La commessa incassa la bottega nel pomeriggio.",
+          "s2": "Vf bcsnlhrm vnamewt tg piiemaf rfr fhuwinjabh."
         },
         {
           "item": "123",
@@ -2548,9 +2548,9 @@
         },
         {
           "item": "124",
-          "cond": "regular",
-          "s1": "La gazzella partorisce il cucciolo allo zoo.",
-          "s2": "Mt endhypla noxgrksozj dc wmfpoddd alrj zgq."
+          "cond": "syntv",
+          "s1": "La gazzella partorisce la cucciolo allo zoo.",
+          "s2": "Ib ejxqkzvf xgplceuywlIl jy xzghlqvt fijc nzi."
         },
         {
           "item": "125",
@@ -2566,33 +2566,33 @@
         },
         {
           "item": "127",
-          "cond": "syntv",
-          "s1": "La papera mangia la pane nel lago.",
-          "s2": "Bl nckris nhjypo fk kofw ebr nlpw."
+          "cond": "regular",
+          "s1": "La papera mangia il pane nel lago.",
+          "s2": "Hf fffwro uygebn nf kskp grt shxb."
         },
         {
           "item": "128",
-          "cond": "semv",
-          "s1": "La pensionata rammenda la pensione in posta.",
-          "s2": "Rh mbgrfvyznq bdhbrtuw jc upfcethr rl sscfl."
+          "cond": "syntv",
+          "s1": "La pensionata ritira il pensione in posta.",
+          "s2": "Xv uhbheqkkwm zxktlq nb gmlqqakl sw xzsad."
         },
         {
           "item": "129",
-          "cond": "syntv",
-          "s1": "La psicologa prescrive la sedativo al paziente.",
-          "s2": "Sd wzlevqqgx rmhnrzgtt on wnwngzvu sj rwjvpbff."
+          "cond": "semv",
+          "s1": "La psicologa accoglie il sedativo al paziente.",
+          "s2": "Ov wfesdvany vdbhdnha ku wfuyszbk ox bbsvcczf."
         },
         {
           "item": "132",
-          "cond": "semv",
-          "s1": "Un falco arruffa la preda dal cielo.",
-          "s2": "Tb zmurn cpemfhl br mnsrr fdm slcnr."
+          "cond": "regular",
+          "s1": "Un falco osserva la preda dal cielo.",
+          "s2": "Uf ugsmw zvfnedt tb djqfv cjo lnkyk."
         },
         {
           "item": "133",
-          "cond": "regular",
-          "s1": "Un meccanico cambia la ruota della macchina.",
-          "s2": "Ae izytfgvrc bgaemr qs uyhev mkxcd dmehqolt."
+          "cond": "syntv",
+          "s1": "Un meccanico cambia il ruota della macchina.",
+          "s2": "Bh cnfheipqw dvflfe sm ealvr ltmyn wgdfvbks."
         },
         {
           "item": "134",
@@ -2602,27 +2602,27 @@
         },
         {
           "item": "135",
-          "cond": "regular",
-          "s1": "Un uomo allaccia la cintura in auto.",
-          "s2": "Qs etwg cvanempy fr vciwedl bt actt."
+          "cond": "semv",
+          "s1": "Un uomo conta la cintura in auto.",
+          "s2": "Ms otnb wtgdy wk khscdgy nm ytwe."
         },
         {
           "item": "136",
-          "cond": "semv",
-          "s1": "Un vitello rumina il latte della madre.",
-          "s2": "Bk rgdfoia ujmjwo vf abuny nukpm uokop."
+          "cond": "syntv",
+          "s1": "Un vitello beve la latte della madre.",
+          "s2": "Ml vwygiuh rcoi ek vvuh qvdcr iilsd."
         },
         {
           "item": "137",
-          "cond": "semv",
-          "s1": "Una scimmia mangia la schiena della compagna.",
-          "s2": "Rnt lamfqji retrtb kw jkwkxcs sikst cmrtdgao."
+          "cond": "syntv",
+          "s1": "Una scimmia graffia il schiena della compagna.",
+          "s2": "Gzy mgepalg fnheokp pw jndeyta krht acvjejgf."
         },
         {
           "item": "138",
-          "cond": "semv",
-          "s1": "Uno spettatore fornisce la trasmissione con noia.",
-          "s2": "Ljn xklstegaiu psjbftxk wb dhzwrsqgfne kxg gmfn."
+          "cond": "regular",
+          "s1": "Uno spettatore guarda la trasmissione con noia.",
+          "s2": "Vhd rmvocfwlkb nwdfes sb liezphjqgkol sjr rxds."
         }
       ],
       "pract": [
@@ -2650,9 +2650,9 @@
       "exp": [
         {
           "item": "101",
-          "cond": "semv",
-          "s1": "I leopardi bevono il facocero in coppia.",
-          "s2": "R tsngiwox dnjdji fm cwfnlclp rp civhbh."
+          "cond": "regular",
+          "s1": "I leopardi cacciano il facocero in coppia.",
+          "s2": "G iatorwar dalwglwj fg brvrbzyl tp vxpsne."
         },
         {
           "item": "102",
@@ -2662,15 +2662,15 @@
         },
         {
           "item": "103",
-          "cond": "semv",
-          "s1": "Il camionista mangia il furgone nella nebbia.",
-          "s2": "Lv duhnceijnw zajekm rk mrtepdk svenr uthgnbj."
+          "cond": "regular",
+          "s1": "Il camionista guida il furgone nella nebbia.",
+          "s2": "Wk adcnflqlom zteml hn rtqmtcf rzxsd myjasp."
         },
         {
           "item": "104",
-          "cond": "regular",
-          "s1": "Il cane morde la catena con rabbia.",
-          "s2": "Dr lbqn wsxmp os nbtrrk pmg jpfrpl."
+          "cond": "semv",
+          "s1": "Il cane beve la catena con rabbia.",
+          "s2": "Iq onbj fyeh zk keldej atk omuahb."
         },
         {
           "item": "105",
@@ -2704,51 +2704,51 @@
         },
         {
           "item": "110",
-          "cond": "semv",
-          "s1": "Il falegname critica il chiodo con forza.",
-          "s2": "Kf rtfnsmuiw cmfhqlp sn meeppo keo crnir."
+          "cond": "syntv",
+          "s1": "Il falegname martella la chiodo con forza.",
+          "s2": "Sc wcergfbhu jcvdftwv dk qdverj sij eaxwrq."
         },
         {
           "item": "111",
-          "cond": "regular",
-          "s1": "Il gatto mangia la quaglia in giardino.",
-          "s2": "Rh zzbxm eoaokb cj iieeksv hl vbghtyjl."
+          "cond": "syntv",
+          "s1": "Il gatto mangia il quaglia in giardino.",
+          "s2": "Xt sqkip vrnniu bn buosxq rv rvkbjrvh."
         },
         {
           "item": "112",
-          "cond": "semv",
-          "s1": "Il macellaio affila il fegato di maiale.",
-          "s2": "Pc gtrvdnaap umldiv ks qpdrbn tr zlpsmy."
+          "cond": "regular",
+          "s1": "Il macellaio taglia il fegato di maiale.",
+          "s2": "Ot xayqkvdux prenfj dx ixhqvy yb twtbnn."
         },
         {
           "item": "113",
-          "cond": "syntv",
-          "s1": "Il militare scorta la capo di Stato.",
-          "s2": "Lm gbdnccur kgwapv cn mfar ds Wfhtr."
+          "cond": "regular",
+          "s1": "Il militare scorta il capo di Stato.",
+          "s2": "Yh hnjsbebf kknfmy ud pblv gd Dflmk."
         },
         {
           "item": "114",
-          "cond": "semv",
-          "s1": "Il pagliaccio suona il pubblico al circo.",
-          "s2": "Vd ehqifrokmm scwvf rl feiivwtg px cefcf."
+          "cond": "regular",
+          "s1": "Il pagliaccio saluta il pubblico al circo.",
+          "s2": "Gk bltntkyhds ngwvce zl mdesezjh jm avvvn."
         },
         {
           "item": "115",
-          "cond": "regular",
-          "s1": "Il pittore vende il quadro molto costoso.",
-          "s2": "Ft cnehdxd ejufp wq ergdkg cirrm prkseem."
+          "cond": "syntv",
+          "s1": "Il pittore vende la quadro molto costoso.",
+          "s2": "Jr dldmesj ceiud dr nvuroe mxfoe abrmrhu."
         },
         {
           "item": "116",
-          "cond": "syntv",
-          "s1": "Il poliziotto allerta il pattuglia di rinforzo.",
-          "s2": "Kl ijetqfawmv ssrjdlp cd qslrrtngz dl lmcdeqqw."
+          "cond": "semv",
+          "s1": "Il poliziotto accende la pattuglia di rinforzo.",
+          "s2": "Tr shyunvkqpr maqqqtt dw frhuasxrf zs vfkvmfdd."
         },
         {
           "item": "117",
-          "cond": "syntv",
-          "s1": "Il postino ritira il posta a mezzogiorno.",
-          "s2": "Nj edhtpqak ndoepa yw msleo q nnchepqaurk."
+          "cond": "semv",
+          "s1": "Il postino ripete la posta a mezzogiorno.",
+          "s2": "Pv rvbhvss llmkqk ty oithg r ppadercmjkj."
         },
         {
           "item": "118",
@@ -2758,9 +2758,9 @@
         },
         {
           "item": "119",
-          "cond": "semv",
-          "s1": "Il ragazzo saluta il sasso nello stagno.",
-          "s2": "Wp nnoisqv lgzvwf sf gzdkr jdord bhumth."
+          "cond": "syntv",
+          "s1": "Il ragazzo lancia la sasso nello stagno.",
+          "s2": "Oj lbxeaxh xnklla hk crrcw yspfv jmfphx."
         },
         {
           "item": "120",
@@ -2776,9 +2776,9 @@
         },
         {
           "item": "122",
-          "cond": "syntv",
-          "s1": "La commessa apre il bottega nel pomeriggio.",
-          "s2": "Rg qokeijsd ujpl ej hiihwdr jna oqnfieeelm."
+          "cond": "regular",
+          "s1": "La commessa apre la bottega nel pomeriggio.",
+          "s2": "Ld rplkkqws sctf fn romgtql ndf mcnalqprgh."
         },
         {
           "item": "123",
@@ -2788,9 +2788,9 @@
         },
         {
           "item": "124",
-          "cond": "syntv",
-          "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Ib ejxqkzvf xgplceuywlIl jy xzghlqvt fijc nzi."
+          "cond": "semv",
+          "s1": "La gazzella bruca il cucciolo allo zoo.",
+          "s2": "Mt sqzszpko mxbsf kr zolsotdm gddu avz."
         },
         {
           "item": "125",
@@ -2806,33 +2806,33 @@
         },
         {
           "item": "127",
-          "cond": "semv",
-          "s1": "La papera attraversa il pane nel lago.",
-          "s2": "Sf bvlaen mcnqurlkke ry ldjr wnj mlrp."
+          "cond": "syntv",
+          "s1": "La papera mangia la pane nel lago.",
+          "s2": "Bl nckris nhjypo fk kofw ebr nlpw."
         },
         {
           "item": "128",
-          "cond": "regular",
-          "s1": "La pensionata ritira la pensione in posta.",
-          "s2": "Ks fykonhlpxs gvmrpl hk fdcjnitz df itmgw."
+          "cond": "semv",
+          "s1": "La pensionata rammenda la pensione in posta.",
+          "s2": "Rh mbgrfvyznq bdhbrtuw jc upfcethr rl sscfl."
         },
         {
           "item": "129",
-          "cond": "semv",
-          "s1": "La psicologa accoglie il sedativo al paziente.",
-          "s2": "Ov wfesdvany vdbhdnha ku wfuyszbk ox bbsvcczf."
+          "cond": "regular",
+          "s1": "La psicologa prescrive il sedativo al paziente.",
+          "s2": "Vt wkmeiokii hprvnaxbo fn pdasopvu sc vvwdehbh."
         },
         {
           "item": "132",
-          "cond": "regular",
-          "s1": "Un falco osserva la preda dal cielo.",
-          "s2": "Uf ugsmw zvfnedt tb djqfv cjo lnkyk."
+          "cond": "syntv",
+          "s1": "Un falco osserva il preda dal cielo.",
+          "s2": "Mw xlehv qscgcny nr nftak eck zdmrv."
         },
         {
           "item": "133",
-          "cond": "syntv",
-          "s1": "Un meccanico cambia il ruota della macchina.",
-          "s2": "Bh cnfheipqw dvflfe sm ealvr ltmyn wgdfvbks."
+          "cond": "semv",
+          "s1": "Un meccanico scrive la ruota della macchina.",
+          "s2": "Lk znbvhtdct naeeid jv ngtrd pqlsn rsbptncc."
         },
         {
           "item": "134",
@@ -2842,27 +2842,27 @@
         },
         {
           "item": "135",
-          "cond": "syntv",
-          "s1": "Un uomo allaccia il cintura in auto.",
-          "s2": "Rh rlih fhwpcsni ks cwnjodf kd gvbh."
+          "cond": "regular",
+          "s1": "Un uomo allaccia la cintura in auto.",
+          "s2": "Qs etwg cvanempy fr vciwedl bt actt."
         },
         {
           "item": "136",
-          "cond": "regular",
-          "s1": "Un vitello beve il latte della madre.",
-          "s2": "Zm ixruxhj bjln lu vuvrb vmrpj bprmk."
+          "cond": "semv",
+          "s1": "Un vitello rumina il latte della madre.",
+          "s2": "Bk rgdfoia ujmjwo vf abuny nukpm uokop."
         },
         {
           "item": "137",
-          "cond": "regular",
-          "s1": "Una scimmia graffia la schiena della compagna.",
-          "s2": "Jpd ozuulhq olwhip fr knegpta swfvk encjdkbt."
+          "cond": "semv",
+          "s1": "Una scimmia mangia la schiena della compagna.",
+          "s2": "Rnt lamfqji retrtb kw jkwkxcs sikst cmrtdgao."
         },
         {
           "item": "138",
-          "cond": "regular",
-          "s1": "Uno spettatore guarda la trasmissione con noia.",
-          "s2": "Vhd rmvocfwlkb nwdfes sb liezphjqgkol sjr rxds."
+          "cond": "syntv",
+          "s1": "Uno spettatore guarda il trasmissione con noia.",
+          "s2": "Gbf hjfbdqznpy rdzqpa rx tuvgomcrznav zmq ytpo."
         }
       ],
       "pract": [

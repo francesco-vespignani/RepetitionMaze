@@ -855,7 +855,7 @@ title: Maze Task Material
 136|**semv**|Un|vitello|rumina|il|latte|della|madre.|
 136|*D-gramm*|La|cognata|comprò|le|carte|dagli|altri.|
 136|*D-salad*|Il|abbassi|pagaci|un|debba|gatto|avuto.|
-136|*D-pseudo*|ga|sarista|gagota|de|asemi|balta|fiane.|
+136|*D-pseudo*|Ga|sarista|gagota|de|asemi|balta|fiane.|
 136|*D-nonwrd*|Bk|rgdfoia|ujmjwo|vf|abuny|nukpm|uokop.|
 
    |      |   |   |   |   |   |   |   |
