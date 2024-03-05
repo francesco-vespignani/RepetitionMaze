@@ -4,7 +4,7 @@ Repository for Repetition Maze Experiment both born open-source (jsPsych on gith
 
 ##  Aim
 
-todo
+We want to test whether mentally repeating correct or wrong sentences makes a difference in speed of retrival.
 
 ## Material
 
