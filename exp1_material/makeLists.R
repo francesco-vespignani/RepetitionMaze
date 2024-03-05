@@ -67,6 +67,10 @@ it = levels(out$item)
 pract = c("139", "130", "131")
 exp = it[!(it %in% pract)]
 
+# randomly assign items to three groups, used set.seed for reproducibility
+
+set.seed(99353)
+
 gr_pract = data.frame(item = sample(pract), group=c(rep('G1',1),rep('G2',1),rep('G3',1)))
 gr_exp = data.frame(item = sample(exp), group=c(rep('G1',12),rep('G2',12),rep('G3',12)))
 
