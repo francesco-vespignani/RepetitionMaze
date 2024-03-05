@@ -365,8 +365,11 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     stimulus: function() {
       if (saverror.success == true) {
         return "<p id='istr'> I dati sono stati salvati ("+
-          subject_id +
-          "), ora puoi chiudere la finestra del browser. Grazie! </p>";
+          subject_id + ")." +
+          "Ora puoi chiudere la finestra del browser oppure andare al link" +
+          " sotto per una spiegazione dell'esperimento. Grazie! </p>" +
+          "<br>" + 
+          "<a href=\"https://francesco-vespignani.github.io/RepetitionMaze/run/debriefing\"> Spiegazione </a>";
       } else {
         return "<p id='istrR'> I dati non sono stati salvati." +
           "<br>" + 
@@ -374,7 +377,10 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
           "<br>" + 
           "Message:" + saverror.message +
           "<br>" + 
-          "Ora puoi chiudere la finestra del browser. Grazie! </p>";
+          "Ora puoi chiudere la finestra del browser oppure andare al link" +
+          " sotto per una spiegazione dell'esperimento. Grazie! </p>" +
+          "<br>" + 
+          "<a href=\"https://francesco-vespignani.github.io/RepetitionMaze/run/debriefing\"> Spiegazione </a>";
       }
     },
   };
