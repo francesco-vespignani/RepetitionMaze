@@ -52,11 +52,14 @@ Data will be automatically saved in this ofs component (pilot):
 
 [https://osf.io/568sh/?view_only=](https://osf.io/568sh/?view_only=)
 
-##  Funding
+##  Credits
 
-This work has been funded by the research project REPLAI (Repetition Experiments as Probes on Linguistics Analysis and Integration). MIUR PRIN-2022 - 2022JT5N3J as a part of NextGenerationEU of the European commission.
+This work has been done at the Depatment of Devepomental Psychology and Socializatio on the University of Padua and has been funded by the research project REPLAI (Repetition Experiments as Probes on Linguistics Analysis and Integration). MIUR PRIN-2022 - 2022JT5N3J as a part of NextGenerationEU of the European commission.
 
-[<img src="logo/nextgeneu_en.jpg" width="150">](https://next-generation-eu.europa.eu/index_en)
+[<img src="logo/logodpss.png" heigth="150">](https://www.dpss.unipd.it/)
+[<img src="logo/logounipd.png" heigth="150">](https://www.unipd.it/)
+[<img src="logo/MUR.png" heigth="150">](https://www.mur.gov.it/it))
+[<img src="logo/nextgeneu_en.jpg" heigth="150">](https://next-generation-eu.europa.eu/index_en)
 
 
 
