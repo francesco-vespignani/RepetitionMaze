@@ -86,14 +86,14 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
         type: jsPsychHtmlKeyboardResponse,
         choices: [' '],
         stimulus: function(){
-          if(anyerror>0){
-          n = anyerror;
-          anyerror =0;
           var out = "";
-          if (n>1) {
-            out = " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione.</p>"; 
-          } else {
-            out = " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione.";
+          if(anyerror>0){
+            n = anyerror;
+            anyerror =0;
+            if (n>1) {
+              out = " <p id='istrR'> Hai fatto " + n + " errori, fai maggiore attenzione.</p>"; 
+            } else {
+              out = " <p id='istrR'> Hai fatto un errore, fai maggiore attenzione.";
             } 
           } 
           return out + "<p id='istr'>Con questa frase abbiamo finito, quando sei prontə per la prossima premi spazio.</p>";
