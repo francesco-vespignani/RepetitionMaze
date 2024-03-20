@@ -1,6 +1,6 @@
 # Repetition Maze
 
-Repository for Repetition Maze Experiment both born open-source (jsPsych on github) and born open-data (datapipe, osf).
+Repository for Repetition Maze Experiment both born open-source (jsPsych on github) and born open-data (datapipe, osf). The repository is [https://github.com/francesco-vespignani/RepetitionMaze/](https://github.com/francesco-vespignani/RepetitionMaze/)
 
 ##  Aim
 
