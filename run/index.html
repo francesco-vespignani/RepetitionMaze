@@ -174,6 +174,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var id = null; 
   var n = null;
   var repo = "pilot";
+  var pcc = null;
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -198,7 +199,9 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   if (urlParams.has('repo')) {
     repo = urlParams.get('repo');
   }
-
+  if (urlParams.has('pcc')) {
+    pcc = urlParams.get('pcc');
+  }
   //  select list and condition
  
   pract = alllists[distr][list]['pract'];
@@ -397,14 +400,23 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     choices: [' '],
     stimulus: function() {
       if (saverror.success == true) {
+        if (pcc==null) {
         return "<p id='istr'> I dati sono stati salvati ("+
           subject_id + ")." +
           "Ora puoi chiudere la finestra del browser oppure andare al link" +
           " sotto per una spiegazione dell'esperimento. Grazie! </p>" +
           "<br>" + 
           "<a href=\"https://francesco-vespignani.github.io/RepetitionMaze/run/debriefing\"> Spiegazione </a>";
+        } else {
+          return "<p id='istr'> I dati sono stati salvati" +
+          "<br>" +   
+          "Per essere reindirizzato alla pagina di conferma di prolific premi il link sotto" + 
+          "<br>" + 
+          "<a href=\"https://app.prolific.com/submissions/complete?cc=" + pcc +"\"> Prolific </a>";
+        }
       } else {
-        return "<p id='istrR'> I dati non sono stati salvati." +
+        if (pcc==null) {
+         return "<p id='istrR'> I dati non sono stati salvati." +
           "<br>" + 
           "Error:" + saverror.error +
           "<br>" + 
@@ -414,8 +426,21 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
           " sotto per una spiegazione dell'esperimento. Grazie! </p>" +
           "<br>" + 
           "<a href=\"https://francesco-vespignani.github.io/RepetitionMaze/run/debriefing\"> Spiegazione </a>";
-      }
-    },
+         } else {
+          return "<p id='istrR'> I dati non sono stati salvati." +
+          "<br>" + 
+          "Error:" + saverror.error +
+          "<br>" + 
+          "Message:" + saverror.message +
+          "<br>" + 
+          "Se l'errore è dovuto a un malfunzionamento del nostro software la tua partecipazione sarà comunque retribuita." 
+          "<br>" + 
+          "Per essere reindirizzato alla pagina di conferma di prolific premi il link sotto." +
+          "<br>" + 
+          "<a href=\"https://app.prolific.com/submissions/complete?cc=" + pcc + "\"> Prolific </a>";
+      };
+    };
+   }
   };
 
   // create and fill main experiment timeline
