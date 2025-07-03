@@ -18,6 +18,6 @@ It allows you to input sentences, automatically generate distractor words, assig
 ## 📦 How to Run
 
 ###  Locally in R studio downloading /app.R
-### via [this link]()
+### via [this link](https://pnslhg-giulia-calignano.shinyapps.io/repetitionmaze_distractorgenerator/)
 
 
