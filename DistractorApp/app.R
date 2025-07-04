@@ -1,5 +1,7 @@
+
 library(shiny)
 library(dplyr)
+library(stringr)
 
 # --- Helpers ---
 is_vowel <- function(letter) {
@@ -7,15 +9,24 @@ is_vowel <- function(letter) {
 }
 
 generate_distractor <- function(word) {
+  is_capital <- grepl("^[A-Z]", word)
   letters_only <- unlist(strsplit(tolower(word), split = ""))
+  alphabet <- letters
+  
   vowels <- letters_only[sapply(letters_only, is_vowel)]
   consonants <- letters_only[!sapply(letters_only, is_vowel)]
   
-  new_vowels <- sample(c("a", "e", "i", "o", "u"), length(vowels), replace = TRUE)
-  new_consonants <- sample(setdiff(letters, c("a", "e", "i", "o", "u")), length(consonants), replace = TRUE)
+  new_vowels <- if (length(vowels) > 0) sample(c("a", "e", "i", "o", "u"), length(vowels), replace = TRUE) else character(0)
+  new_consonants <- if (length(consonants) > 0) sample(setdiff(alphabet, c("a", "e", "i", "o", "u")), length(consonants), replace = TRUE) else character(0)
   
   all_letters <- sample(c(new_vowels, new_consonants))
-  paste(all_letters, collapse = "")
+  distractor <- paste(all_letters, collapse = "")
+  
+  if (is_capital && nchar(distractor) > 0) {
+    substr(distractor, 1, 1) <- toupper(substr(distractor, 1, 1))
+  }
+  
+  return(distractor)
 }
 
 generate_side_triplets <- function(n_targets) {
@@ -26,7 +37,7 @@ generate_side_triplets <- function(n_targets) {
 
 # --- UI ---
 ui <- fluidPage(
-  titlePanel("Repetion Maze Distractor Generator"),
+  titlePanel("Repetition Maze Distractor Generator"),
   
   tags$head(
     tags$style(HTML("
@@ -63,18 +74,16 @@ ui <- fluidPage(
           tags$li("Counting the number of vowels and consonants in the target word."),
           tags$li("Sampling the same number of vowels (from a, e, i, o, u) and consonants (from all other letters), with replacement."),
           tags$li("Randomly shuffling all sampled letters to create a non-word distractor."),
-          tags$li("This ensures phonological/orthographic balance without semantic interference.")
+          tags$li("Capitalization of the initial letter is preserved if present.")
         ),
-        tags$p("This process is automatic and unconstrained—manual checking is recommended to filter out real words or unintended similarities."),
+        tags$p("Manual checking is recommended to filter out real words or unintended similarities."),
         
         h4("Side assignment logic (left/right)"),
         tags$p("Each word receives 3 randomly generated side values (side1, side2, side3), one per distractor version."),
         tags$ul(
           tags$li("Each value is either 0 (target on right) or 1 (target on left), chosen with equal probability."),
-          tags$li("The assigned side determines spatial layout in visual presentation."),
-          tags$li("This supports counterbalanced lateralized stimulus presentation in line with visual search and psycholinguistic paradigms.")
+          tags$li("The assigned side determines spatial layout in visual presentation.")
         ),
-        tags$p("You can select which distractor version (dist1, dist2, dist3) and its associated side to visualize in the interface."),
         tags$hr()
       )
     ),
@@ -111,7 +120,7 @@ server <- function(input, output, session) {
         target = words[i],
         dist1 = generate_distractor(words[i]),
         side1 = side_df$side1[i],
-        dist2 = generate_distractor(words[i]),
+        dist2 = generate_distractor(words[i]),  # CORRETTO QUI
         side2 = side_df$side2[i],
         dist3 = generate_distractor(words[i]),
         side3 = side_df$side3[i],
