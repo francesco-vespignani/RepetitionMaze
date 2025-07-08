@@ -62,7 +62,7 @@ ui <- fluidPage(
   ),
   sidebarLayout(
     sidebarPanel(
-      textInput("sentence", "Enter a sentence:", "L’astronomo osserva le piante"),
+      textInput("sentence", "Enter a sentence:", "La mente deraglia per scelta"),
       actionButton("add", "Add Sentence"),
       actionButton("addSand", "Importa frasi SAND"),
       fileInput("fileInput", "Carica file .txt con frasi separate da virgole", accept = ".txt"),
