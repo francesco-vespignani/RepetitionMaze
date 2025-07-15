@@ -173,7 +173,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
   var casual = true;
   var id = null; 
   var n = null;
-  var repo = "pilot";
+  var repo = "exp";
   var pcc = null;
 
   const queryString = window.location.search;
@@ -373,7 +373,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     type: jsPsychPipe,
     action: "save",
     experiment_id: function(){
-      if(repo=='pilot'){
+      if(repo=='test'){
         return "40TBkMVAzRJD"
       } else {
         return "FMImiSAr7SnZ" 
