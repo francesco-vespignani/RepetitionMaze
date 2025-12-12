@@ -18,8 +18,9 @@ cat('', file=allitemsMD, append=F)
 #  create readme file
 
 cat('# Items and Lists for RepeatitionMaze Experiment\n\n', file = readMeMD, append=T)
-cat('The file *composed.csv* contains ... \n', file = readMeMD, append=T)
-cat('*allitems* contains all items for easy visualization\n', file = readMeMD, append=T)
+cat('The file *composed.csv* contains the originally composed versions of sentences and distracters. \n', file = readMeMD, append=T)
+cat('The R program makeLists.R generates this readme file and checks and adapts the stimuli for different uses.\n', file = readMeMD, append=T)
+cat('The file *allitems.pdf* contains all items for easy visualization\n', file = readMeMD, append=T)
 cat('*material.json* contains all lists for jsPsych\n', file = readMeMD, append=T)
 
 
