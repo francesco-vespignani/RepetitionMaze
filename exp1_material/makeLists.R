@@ -28,10 +28,37 @@ cat('*material.json* contains all lists for jsPsych\n', file = readMeMD, append=
 
 d = read.csv('composed.csv', header=F)
 
+colnames(d) = c('item','cond','sentence','wp','word','nl','distgramm','distword','distpseudo','distnw')
+
+# trim whitespaces
+
+for (c in colnames(d)) {
+  d[[c]] = trimws(d[[c]])
+}
+
+# overwrite word length
+
+d[['nl']] = nchar(d[['word']])
+
+# check material
+
+distnames = c ('distgramm','distword','distpseudo','distnw')
+
+for (dty in distnames) {
+   print(paste('checking', dty))
+   chksame = d [ d[['word']] == d[[dty]], c('item','cond')]
+   diffl = d[['nl']] != nchar(d[[dty]])
+   if (nrow(chksame))  {
+     print (paste('some distractors match targets in', dty, 'condition'))
+     print (chksame)
+   }
+   if (any(diffl)) {
+      print ('some distractor has different number of letters:')
+      print (d[diffl, c('item', 'cond')])
+   }
+}
+
 # create pretty item lists
-
-
-colnames(d) = c('item','cond','sentence','wp','word','nl','distgramm','distword','distpseudo','disnw')
 
 cat("---\ntitle: Maze Task Material\n...\n", file=allitemsMD, fill=T, append=F)
 headerMD = "   |      |   |   |   |   |   |   |   |\n:-:|-----:|:--|:--|:--|:--|:--|:--|:--|"
@@ -44,7 +71,7 @@ for (i in levels(d$item)) {
       tmp$gramm = paste(d$distgramm[d$item==i & d$cond==c], sep=' ', collapse =' ')
       tmp$word = paste(d$distword[d$item==i & d$cond==c], sep=' ', collapse =' ')
       tmp$pseudo = paste(d$distpseudo[d$item==i & d$cond==c], sep=' ', collapse =' ')
-      tmp$nw = paste(d$disnw[d$item==i & d$cond==c], sep=' ', collapse =' ')
+      tmp$nw = paste(d$distnw[d$item==i & d$cond==c], sep=' ', collapse =' ')
       out = rbind(out, tmp)
       cat(headerMD,file =allitemsMD, fill=T, append=T) 
       cat(sprintf('%s|**%s**|%s|', i, c, gsub(' ','|', tmp$sentence)), file=allitemsMD, fill=T, append=T)

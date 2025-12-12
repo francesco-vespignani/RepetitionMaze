@@ -90,7 +90,7 @@
           "item": "115",
           "cond": "semv",
           "s1": "Il pittore versa il quadro molto costoso.",
-          "s2": "La nobile amerà un attore senza dignità."
+          "s2": "La prelato amerà un attore senza dignità."
         },
         {
           "item": "116",
@@ -108,7 +108,7 @@
           "item": "118",
           "cond": "semv",
           "s1": "Il pubblico sventola la rovesciata del giocatore.",
-          "s2": "La risposta inusuale fa dispiacere gli iscritti."
+          "s2": "La risposta inusuale fa dispiacere gli ignoranti."
         },
         {
           "item": "119",
@@ -144,6 +144,12 @@
           "item": "124",
           "cond": "syntv",
           "s1": "La gazzella partorisce la cucciolo allo zoo.",
+          "s2": "Il mecenate intervenga al discorso come può."
+        },
+        {
+          "item": "124",
+          "cond": "syntv",
+          "s1": "ejxqkzvf",
           "s2": "Il mecenate intervenga al discorso come può."
         },
         {
@@ -192,7 +198,7 @@
           "item": "134",
           "cond": "semv",
           "s1": "Un mendicante beve il pane nel negozio.",
-          "s2": "Il ginecologo diceva di fare più ascolti."
+          "s2": "Il ginecologo dice di fare più ascolti."
         },
         {
           "item": "135",
@@ -300,7 +306,7 @@
           "item": "110",
           "cond": "semv",
           "s1": "Il falegname critica il chiodo con forza.",
-          "s2": "Un dittatore grattava la regina del mondo."
+          "s2": "Un dittatore detesta la regina del mondo."
         },
         {
           "item": "111",
@@ -396,7 +402,7 @@
           "item": "126",
           "cond": "semv",
           "s1": "La maestra firma la classe troppo spesso.",
-          "s2": "Il pastore canta in  chiesa appena arriva."
+          "s2": "Il pastore canta in chiesa appena arriva."
         },
         {
           "item": "127",
@@ -414,19 +420,19 @@
           "item": "129",
           "cond": "regular",
           "s1": "La psicologa prescrive il sedativo al paziente.",
-          "s2": "Il fornitore rassicura un mercante in  stazione."
+          "s2": "Il fornitore rassicura un mercante in stazione."
         },
         {
           "item": "132",
           "cond": "syntv",
           "s1": "Un falco osserva il preda dal cielo.",
-          "s2": "La virtù conduce un padre nel cielo."
+          "s2": "La donna picchia un ladro nel prato."
         },
         {
           "item": "133",
           "cond": "regular",
           "s1": "Un meccanico cambia la ruota della macchina.",
-          "s2": "Un individuo faceva il gesto anche parlando."
+          "s2": "La ragazzina faceva il gesto anche parlando."
         },
         {
           "item": "134",
@@ -504,7 +510,7 @@
           "item": "104",
           "cond": "regular",
           "s1": "Il cane morde la catena con rabbia.",
-          "s2": "La pace apra al legame tra popoli."
+          "s2": "La pace tende al legame tra popoli."
         },
         {
           "item": "105",
@@ -528,7 +534,7 @@
           "item": "108",
           "cond": "semv",
           "s1": "Il direttore convoca la bozza del giornalista.",
-          "s2": "La fortunata sposina si mostri più interessata."
+          "s2": "La fortunata sposina si rechi dal cancelliere."
         },
         {
           "item": "109",
@@ -630,7 +636,7 @@
           "item": "125",
           "cond": "semv",
           "s1": "La ginnasta solleva il salto senza errori.",
-          "s2": "Il patriota guiderà la nostra gente libera."
+          "s2": "Il patriota guiderà la ampia folla libera."
         },
         {
           "item": "126",
@@ -642,7 +648,7 @@
           "item": "127",
           "cond": "semv",
           "s1": "La papera attraversa il pane nel lago.",
-          "s2": "Il tenore conosceva la spia che morì."
+          "s2": "Il tenore incontrava la spia che morì."
         },
         {
           "item": "128",
@@ -672,7 +678,7 @@
           "item": "134",
           "cond": "syntv",
           "s1": "Un mendicante prende la pane nel negozio.",
-          "s2": "La sentinella vide un lupo più cattivo."
+          "s2": "La sentinella scoprì un lupo più cattivo."
         },
         {
           "item": "135",
@@ -869,6 +875,12 @@
           "s2": "Un unicorni bombolette lo corrotto aria ala."
         },
         {
+          "item": "124",
+          "cond": "syntv",
+          "s1": "ejxqkzvf",
+          "s2": "Un unicorni bombolette lo corrotto aria ala."
+        },
+        {
           "item": "125",
           "cond": "regular",
           "s1": "La ginnasta esegue il salto senza errori.",
@@ -896,7 +908,7 @@
           "item": "129",
           "cond": "semv",
           "s1": "La psicologa accoglie il sedativo al paziente.",
-          "s2": "Un ippodromo finiscimi lo ostilità in edificio."
+          "s2": "Un ippodromo chiedeva lo ostilità in edificio."
         },
         {
           "item": "132",
@@ -926,7 +938,7 @@
           "item": "136",
           "cond": "regular",
           "s1": "Un vitello beve il latte della madre.",
-          "s2": "Un scusato taci la venti pugno degli."
+          "s2": "Le scusato taci la venti pugno degli."
         },
         {
           "item": "137",
@@ -952,7 +964,7 @@
           "item": "131",
           "cond": "regular",
           "s1": "Un corridore supera il traguardo di corsa.",
-          "s2": "La antipasti spugna il convivere al suono."
+          "s2": "La antipasti spugna di convivere al suono."
         },
         {
           "item": "139",
@@ -1010,7 +1022,7 @@
           "item": "108",
           "cond": "syntv",
           "s1": "Il direttore corregge il bozza del giornalista.",
-          "s2": "Ad sfogando ventitrè su vinse era condividere."
+          "s2": "Ad affogando ventitrè su vinse era condividere."
         },
         {
           "item": "109",
@@ -1148,7 +1160,7 @@
           "item": "133",
           "cond": "regular",
           "s1": "Un meccanico cambia la ruota della macchina.",
-          "s2": "Un economica finora la pozzo anche indietro."
+          "s2": "Le economica finora il pozzo anche indietro."
         },
         {
           "item": "134",
@@ -1166,7 +1178,7 @@
           "item": "136",
           "cond": "syntv",
           "s1": "Un vitello beve la latte della madre.",
-          "s2": "Di potersi lotta un genio fatto preso."
+          "s2": "Di potersi cuce un genio fatto preso."
         },
         {
           "item": "137",
@@ -1280,7 +1292,7 @@
           "item": "113",
           "cond": "syntv",
           "s1": "Il militare scorta la capo di Stato.",
-          "s2": "Un orecchie ferro su guanti in Prima."
+          "s2": "Un orecchie retino su cane in Prima."
         },
         {
           "item": "114",
@@ -1591,6 +1603,12 @@
           "s2": "Bi pravisti alterisano pi lermella safe oti."
         },
         {
+          "item": "124",
+          "cond": "syntv",
+          "s1": "ejxqkzvf",
+          "s2": "Bi pravisti alterisano pi lermella safe oti."
+        },
+        {
           "item": "125",
           "cond": "regular",
           "s1": "La ginnasta esegue il salto senza errori.",
@@ -1618,7 +1636,7 @@
           "item": "129",
           "cond": "semv",
           "s1": "La psicologa accoglie il sedativo al paziente.",
-          "s2": "Be baltiscia beccinato bi pernatto gu darmente."
+          "s2": "Be baltiscia becinato bi pernatto gu darmente."
         },
         {
           "item": "132",
@@ -1674,7 +1692,7 @@
           "item": "131",
           "cond": "regular",
           "s1": "Un corridore supera il traguardo di corsa.",
-          "s2": "Ba Ditagnava begito vo raterisco co drino."
+          "s2": "Ba ditagnava begito vo raterisco co drino."
         },
         {
           "item": "139",
@@ -1774,7 +1792,7 @@
           "item": "115",
           "cond": "regular",
           "s1": "Il pittore vende il quadro molto costoso.",
-          "s2": "Pi fratende tisci ta lesoma treta seviaga."
+          "s2": "Pi fatende tisci ta lesoma treta seviaga."
         },
         {
           "item": "116",
@@ -1876,7 +1894,7 @@
           "item": "134",
           "cond": "regular",
           "s1": "Un mendicante prende il pane nel negozio.",
-          "s2": "Ro trampollati glisca pe tuno den trivolo."
+          "s2": "Ro trampolati glisca pe tuno den trivolo."
         },
         {
           "item": "135",
@@ -1908,7 +1926,7 @@
           "item": "130",
           "cond": "semv",
           "s1": "Lo scrittore minaccia il libro in tv.",
-          "s2": "Pa mercotto piracchia ve talma ni ge."
+          "s2": "Pa merciotto piraccia ve talma ni ge."
         },
         {
           "item": "131",
@@ -1920,7 +1938,7 @@
           "item": "139",
           "cond": "regular",
           "s1": "Il pompiere spegne il fuoco senza paura.",
-          "s2": "Gi porriere svotto pa ameti billa sanco."
+          "s2": "Gi vorriere svotto pa ameti billa sanco."
         }
       ]
     },
@@ -2002,7 +2020,7 @@
           "item": "113",
           "cond": "syntv",
           "s1": "Il militare scorta la capo di Stato.",
-          "s2": "En benidera lonni de leta ol Dredo."
+          "s2": "En benidera ilonni de leta ol Dredo."
         },
         {
           "item": "114",
@@ -2134,7 +2152,7 @@
           "item": "137",
           "cond": "regular",
           "s1": "Una scimmia graffia la schiena della compagna.",
-          "s2": "Ofe menarri scennio pa gherne cobbe perterna."
+          "s2": "Ofe menarri scennio pa ceberne cobbe perterna."
         },
         {
           "item": "138",
@@ -2154,7 +2172,7 @@
           "item": "131",
           "cond": "semv",
           "s1": "Un corridore riduce il traguardo di corsa.",
-          "s2": "Pi midastro brusto na sigimente fe tiona."
+          "s2": "Pi midiastro brusto na sigimente fe tiona."
         },
         {
           "item": "139",
@@ -2184,7 +2202,7 @@
           "item": "103",
           "cond": "semv",
           "s1": "Il camionista mangia il furgone nella nebbia.",
-          "s2": "Lv duhnceijnw zajekm rk mrtepdk svenr uthgnbj."
+          "s2": "Lv duhnceijnw zajekm rk mrtepdk svenr uthgnb."
         },
         {
           "item": "104",
@@ -2226,13 +2244,13 @@
           "item": "110",
           "cond": "syntv",
           "s1": "Il falegname martella la chiodo con forza.",
-          "s2": "Sc wcergfbhu jcvdftwv dk qdverj sij eaxwrq."
+          "s2": "Sc wcergfbhu jcvdftwv dk qdverj sij eaxwr."
         },
         {
           "item": "111",
           "cond": "syntv",
           "s1": "Il gatto mangia il quaglia in giardino.",
-          "s2": "Xt sqkip vrnniu bn buosxq rv rvkbjrvh."
+          "s2": "Xt sqkip vrnniu bn buosixq rv rvkbjrvh."
         },
         {
           "item": "112",
@@ -2268,7 +2286,7 @@
           "item": "117",
           "cond": "syntv",
           "s1": "Il postino ritira il posta a mezzogiorno.",
-          "s2": "Nj edhtpqak ndoepa yw msleo q nnchepqaurk."
+          "s2": "Nj edhtqak ndoepa yw msleo q nnchepqaurk."
         },
         {
           "item": "118",
@@ -2286,7 +2304,7 @@
           "item": "120",
           "cond": "semv",
           "s1": "Il regista gira il copione nel camerino.",
-          "s2": "Hv mdsnrhjd edft dk wygwgck jiv rcwejioy."
+          "s2": "Hv mdsnrhd edft dk wygwgck jiv rcwejioy."
         },
         {
           "item": "121",
@@ -2310,13 +2328,19 @@
           "item": "124",
           "cond": "syntv",
           "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Ib ejxqkzvf xgplceuywlIl jy xzghlqvt fijc nzi."
+          "s2": "Ib ejxqkzvf xgplceuywl jy xzghlqvt fijc nzi."
+        },
+        {
+          "item": "124",
+          "cond": "syntv",
+          "s1": "ejxqkzvf",
+          "s2": "Ib ejxqkzvf xgplceuywl jy xzghlqvt fijc nzi."
         },
         {
           "item": "125",
           "cond": "regular",
           "s1": "La ginnasta esegue il salto senza errori.",
-          "s2": "Gr aicjwcre xxllje uq tiecfn vrgbh oekleb."
+          "s2": "Gr aicjwcre xxllje uq tiecf vrgbh oekleb."
         },
         {
           "item": "126",
@@ -2376,13 +2400,13 @@
           "item": "137",
           "cond": "syntv",
           "s1": "Una scimmia graffia il schiena della compagna.",
-          "s2": "Gzy mgepalg fnheokp pw jndeyta krht acvjejgf."
+          "s2": "Gzy mgepalg fnheokp pw jndeyta krhto acvjejgf."
         },
         {
           "item": "138",
           "cond": "semv",
           "s1": "Uno spettatore fornisce la trasmissione con noia.",
-          "s2": "Ljn xklstegaiu psjbftxk wb dhzwrsqgfne kxg gmfn."
+          "s2": "Ljn xklstegaiu psjbftxk wb dhzwirsqgfne kxg gmfn."
         }
       ],
       "pract": [
@@ -2598,7 +2622,7 @@
           "item": "134",
           "cond": "regular",
           "s1": "Un mendicante prende il pane nel negozio.",
-          "s2": "Cm efcjxoipko tvyybv oj wecf yrb xwdliovr."
+          "s2": "Cm efcjxoipko tvyybv oj wecf yrb xdliovr."
         },
         {
           "item": "135",
@@ -2610,7 +2634,7 @@
           "item": "136",
           "cond": "syntv",
           "s1": "Un vitello beve la latte della madre.",
-          "s2": "Ml vwygiuh rcoi ek vvuh qvdcr iilsd."
+          "s2": "Ml vwygiuh rcoi ek vivuh qvdcr iilsd."
         },
         {
           "item": "137",
@@ -2642,7 +2666,7 @@
           "item": "139",
           "cond": "regular",
           "s1": "Il pompiere spegne il fuoco senza paura.",
-          "s2": "Sr eirndfit edcjpw vk fwme jvscp qwqck."
+          "s2": "Sr eirndfit edcjpw vk fwime jvscp qwqck."
         }
       ]
     },
@@ -2796,7 +2820,7 @@
           "item": "125",
           "cond": "semv",
           "s1": "La ginnasta solleva il salto senza errori.",
-          "s2": "Ts mdfresul  hmzrfom ky othwv dwggd gxkrtn."
+          "s2": "Ts mdfresul hmzrfom ky othwv dwggd gxkrtn."
         },
         {
           "item": "126",
@@ -2856,7 +2880,7 @@
           "item": "137",
           "cond": "regular",
           "s1": "Una scimmia graffia la schiena della compagna.",
-          "s2": "Jpd ozuulhq olwhip fr knegpta swfvk encjdkbt."
+          "s2": "Jpd ozuulhq olwhipx fr knegpta swfvk encjdkbt."
         },
         {
           "item": "138",

@@ -64,7 +64,7 @@ title: Maze Task Material
 103|*D-gramm*|La|presidenza|prenda|un|collega|dalle|camere.|
 103|*D-salad*|Un|sospendere|ferita|la|seguire|parte|ometto.|
 103|*D-pseudo*|Ga|megistrino|pamigi|zo|pernito|rusci|folime.|
-103|*D-nonwrd*|Lv|duhnceijnw|zajekm|rk|mrtepdk|svenr|uthgnbj.|
+103|*D-nonwrd*|Lv|duhnceijnw|zajekm|rk|mrtepdk|svenr|uthgnb.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -77,7 +77,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 104|**regular**|Il|cane|morde|la|catena|con|rabbia.|
-104|*D-gramm*|La|pace|apra|al|legame|tra|popoli.|
+104|*D-gramm*|La|pace|tende|al|legame|tra|popoli.|
 104|*D-salad*|Di|voce|agita|il|sporca|sul|eccomi.|
 104|*D-pseudo*|Pi|guba|minza|el|madile|sal|gabari.|
 104|*D-nonwrd*|Dr|lbqn|wsxmp|os|nbtrrk|pmg|jpfrpl.|
@@ -181,7 +181,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 108|**semv**|Il|direttore|convoca|la|bozza|del|giornalista.|
-108|*D-gramm*|La|fortunata|sposina|si|mostri|più|interessata.|
+108|*D-gramm*|La|fortunata|sposina|si|rechi|dal|cancelliere.|
 108|*D-salad*|Si|contrario|versata|un|dilla|con|reputazione.|
 108|*D-pseudo*|Fo|diloccare|fagnote|co|marlo|tan|vernitaglio.|
 108|*D-nonwrd*|Rx|rlsykkotd|lgendee|ef|ffvwf|uvl|qtlblaykpdv.|
@@ -190,7 +190,7 @@ title: Maze Task Material
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 108|**syntv**|Il|direttore|corregge|il|bozza|del|giornalista.|
 108|*D-gramm*|La|questione|deluderà|le|firme|più|interessate.|
-108|*D-salad*|Ad|sfogando|ventitrè|su|vinse|era|condividere.|
+108|*D-salad*|Ad|affogando|ventitrè|su|vinse|era|condividere.|
 108|*D-pseudo*|Ro|noperonte|sullacce|fi|renza|can|moschestato.|
 108|*D-nonwrd*|Xe|zbsgqegma|ttylokmu|vb|gfejb|dlt|gbdkoeuvbll.|
 
@@ -229,7 +229,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 110|**semv**|Il|falegname|critica|il|chiodo|con|forza.|
-110|*D-gramm*|Un|dittatore|grattava|la|regina|del|mondo.|
+110|*D-gramm*|Un|dittatore|detesta|la|regina|del|mondo.|
 110|*D-salad*|La|ricominci|venirmi|un|matura|cui|sotto.|
 110|*D-pseudo*|Ta|screcchio|casteto|ge|bovesa|cai|dusse.|
 110|*D-nonwrd*|Kf|rtfnsmuiw|cmfhqlp|sn|meeppo|keo|crnir.|
@@ -240,7 +240,7 @@ title: Maze Task Material
 110|*D-gramm*|La|poveretta|rovesciò|un|budino|sul|letto.|
 110|*D-salad*|Un|tropicale|adotterà|di|ideali|hai|degli.|
 110|*D-pseudo*|Ri|dalaterni|locchimo|ze|grisca|gri|sipro.|
-110|*D-nonwrd*|Sc|wcergfbhu|jcvdftwv|dk|qdverj|sij|eaxwrq.|
+110|*D-nonwrd*|Sc|wcergfbhu|jcvdftwv|dk|qdverj|sij|eaxwr.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -264,7 +264,7 @@ title: Maze Task Material
 111|*D-gramm*|La|magia|bianca|si|celebra|di|continuo.|
 111|*D-salad*|La|starò|capace|un|atterri|lo|potreste.|
 111|*D-pseudo*|Ni|ralsa|strone|ro|frazali|fi|pantarma.|
-111|*D-nonwrd*|Xt|sqkip|vrnniu|bn|buosxq|rv|rvkbjrvh.|
+111|*D-nonwrd*|Xt|sqkip|vrnniu|bn|buosixq|rv|rvkbjrvh.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -310,8 +310,8 @@ title: Maze Task Material
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 113|**syntv**|Il|militare|scorta|la|capo|di|Stato.|
 113|*D-gramm*|La|felicità|fatica|ad|aver|un|Detto.|
-113|*D-salad*|Un|orecchie|ferro|su|guanti|in|Prima.|
-113|*D-pseudo*|En|benidera|lonni|de|leta|ol|Dredo.|
+113|*D-salad*|Un|orecchie|retino|su|cane|in|Prima.|
+113|*D-pseudo*|En|benidera|ilonni|de|leta|ol|Dredo.|
 113|*D-nonwrd*|Lm|gbdnccur|kgwapv|cn|mfar|ds|Wfhtr.|
 
    |      |   |   |   |   |   |   |   |
@@ -343,13 +343,13 @@ title: Maze Task Material
 115|**regular**|Il|pittore|vende|il|quadro|molto|costoso.|
 115|*D-gramm*|La|bussola|serve|al|saggio|delle|colline.|
 115|*D-salad*|Un|manderà|prato|la|pancia|anche|fulmine.|
-115|*D-pseudo*|Pi|fratende|tisci|ta|lesoma|treta|seviaga.|
+115|*D-pseudo*|Pi|fatende|tisci|ta|lesoma|treta|seviaga.|
 115|*D-nonwrd*|Ft|cnehdxd|ejufp|wq|ergdkg|cirrm|prkseem.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 115|**semv**|Il|pittore|versa|il|quadro|molto|costoso.|
-115|*D-gramm*|La|nobile|amerà|un|attore|senza|dignità.|
+115|*D-gramm*|La|prelato|amerà|un|attore|senza|dignità.|
 115|*D-salad*|Un|dicesti|palmo|la|brucia|hanno|cemento.|
 115|*D-pseudo*|Ba|polesca|cripe|go|brinfo|trila|neorumo.|
 115|*D-nonwrd*|Gb|acfspuo|fgrnl|rm|xdrtgh|alpnt|accdfel.|
@@ -408,7 +408,7 @@ title: Maze Task Material
 117|*D-gramm*|Un|critico|ripete|di|amare|i|particolari.|
 117|*D-salad*|La|privati|navale|un|dissi|i|adolescenti.|
 117|*D-pseudo*|Pe|surendo|oddace|mu|gaste|u|mellifascia.|
-117|*D-nonwrd*|Nj|edhtpqak|ndoepa|yw|msleo|q|nnchepqaurk.|
+117|*D-nonwrd*|Nj|edhtqak|ndoepa|yw|msleo|q|nnchepqaurk.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -421,7 +421,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 118|**semv**|Il|pubblico|sventola|la|rovesciata|del|giocatore.|
-118|*D-gramm*|La|risposta|inusuale|fa|dispiacere|gli|iscritti.|
+118|*D-gramm*|La|risposta|inusuale|fa|dispiacere|gli|ignoranti.|
 118|*D-salad*|Un|comprato|cresceva|il|brasiliana|mio|parlargli.|
 118|*D-pseudo*|Gi|tenestro|coripeli|co|termitosco|bal|sestegato.|
 118|*D-nonwrd*|Db|lancuehr|qiejncgs|fv|bmsndnrsla|ygd|szdcjarpm.|
@@ -472,7 +472,7 @@ title: Maze Task Material
 120|*D-gramm*|La|bambola|urla|in|facoltà|con|crudeltà.|
 120|*D-salad*|Un|ripreso|gola|di|lettura|sua|pomodori.|
 120|*D-pseudo*|Ni|dattiva|nara|ba|schiano|imo|sogliedo.|
-120|*D-nonwrd*|Hv|mdsnrhjd|edft|dk|wygwgck|jiv|rcwejioy.|
+120|*D-nonwrd*|Hv|mdsnrhd|edft|dk|wygwgck|jiv|rcwejioy.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -572,11 +572,16 @@ title: Maze Task Material
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
-124|**syntv**|La|gazzella|partorisce|la|cucciolo|allo|zoo.|
+124|**syntv**|La|gazzella|partorisce|la|cucciolo|allo|zoo.| 
+124|**syntv**|ejxqkzvf|
+124|*D-gramm*|Il|mecenate|intervenga|al|discorso|come|può.| 
 124|*D-gramm*|Il|mecenate|intervenga|al|discorso|come|può.|
+124|*D-salad*|Un|unicorni|bombolette|lo|corrotto|aria|ala.| 
 124|*D-salad*|Un|unicorni|bombolette|lo|corrotto|aria|ala.|
+124|*D-pseudo*|Bi|pravisti|alterisano|pi|lermella|safe|oti.| 
 124|*D-pseudo*|Bi|pravisti|alterisano|pi|lermella|safe|oti.|
-124|*D-nonwrd*|Ib|ejxqkzvf|xgplceuywlIl|jy|xzghlqvt|fijc|nzi.|
+124|*D-nonwrd*|Ib|ejxqkzvf|xgplceuywl|jy|xzghlqvt|fijc|nzi.| 
+124|*D-nonwrd*|Ib|ejxqkzvf|xgplceuywl|jy|xzghlqvt|fijc|nzi.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -584,15 +589,15 @@ title: Maze Task Material
 125|*D-gramm*|Il|folletto|creerà|un|abito|dalla|pietra.|
 125|*D-salad*|Un|decidete|scarse|la|penna|amico|stammi.|
 125|*D-pseudo*|Pe|fammisca|caleta|fo|scumo|gonti|maiota.|
-125|*D-nonwrd*|Gr|aicjwcre|xxllje|uq|tiecfn|vrgbh|oekleb.|
+125|*D-nonwrd*|Gr|aicjwcre|xxllje|uq|tiecf|vrgbh|oekleb.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 125|**semv**|La|ginnasta|solleva|il|salto|senza|errori.|
-125|*D-gramm*|Il|patriota|guiderà|la|nostra|gente|libera.|
+125|*D-gramm*|Il|patriota|guiderà|la|ampia|folla|libera.|
 125|*D-salad*|Il|soffiato|isolata|un|buffo|gente|manchi.|
 125|*D-pseudo*|Na|tiscendi|gisetta|bo|zarba|galta|cofire.|
-125|*D-nonwrd*|Ts|mdfresul||hmzrfom|ky|othwv|dwggd|gxkrtn.|
+125|*D-nonwrd*|Ts|mdfresul|hmzrfom|ky|othwv|dwggd|gxkrtn.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -613,7 +618,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 126|**semv**|La|maestra|firma|la|classe|troppo|spesso.|
-126|*D-gramm*|Il|pastore|canta|in||chiesa|appena|arriva.|
+126|*D-gramm*|Il|pastore|canta|in|chiesa|appena|arriva.|
 126|*D-salad*|In|lampada|rossi|un|pagato|dentro|triste.|
 126|*D-pseudo*|Pe|lavente|lanta|en|ruceto|attena|ossive.|
 126|*D-nonwrd*|Ju|mfhdyee|mdhse|gj|cvetsf|iiuqbd|sksklr.|
@@ -637,7 +642,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 127|**semv**|La|papera|attraversa|il|pane|nel|lago.|
-127|*D-gramm*|Il|tenore|conosceva|la|spia|che|morì.|
+127|*D-gramm*|Il|tenore|incontrava|la|spia|che|morì.|
 127|*D-salad*|Il|patito|lamentarti|un|coda|sta|olio.|
 127|*D-pseudo*|Ba|purilo|mantolasci|ca|vafe|sal|fiti.|
 127|*D-nonwrd*|Sf|bvlaen|mcnqurlkke|ry|ldjr|wnj|mlrp.|
@@ -677,7 +682,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 129|**regular**|La|psicologa|prescrive|il|sedativo|al|paziente.|
-129|*D-gramm*|Il|fornitore|rassicura|un|mercante|in||stazione.|
+129|*D-gramm*|Il|fornitore|rassicura|un|mercante|in|stazione.|
 129|*D-salad*|Un|irrisolti|inventori|la|avanzare|ne|carriera.|
 129|*D-pseudo*|Ba|ascandare|bigiscada|fi|remolato|bi|teddando.|
 129|*D-nonwrd*|Vt|wkmeiokii|hprvnaxbo|fn|pdasopvu|sc|vvwdehbh.|
@@ -686,8 +691,8 @@ title: Maze Task Material
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 129|**semv**|La|psicologa|accoglie|il|sedativo|al|paziente.|
 129|*D-gramm*|Il|supplente|visitava|la|piramide|in|pubblico.|
-129|*D-salad*|Un|ippodromo|finiscimi|lo|ostilità|in|edificio.|
-129|*D-pseudo*|Be|baltiscia|beccinato|bi|pernatto|gu|darmente.|
+129|*D-salad*|Un|ippodromo|chiedeva|lo|ostilità|in|edificio.|
+129|*D-pseudo*|Be|baltiscia|becinato|bi|pernatto|gu|darmente.|
 129|*D-nonwrd*|Ov|wfesdvany|vdbhdnha|ku|wfuyszbk|ox|bbsvcczf.|
 
    |      |   |   |   |   |   |   |   |
@@ -711,7 +716,7 @@ title: Maze Task Material
 130|**semv**|Lo|scrittore|minaccia|il|libro|in|tv.|
 130|*D-gramm*|La|sicurezza|contiene|un|senso|di|te.|
 130|*D-salad*|Da|giocavano|licenzia|se|primo|la|ne.|
-130|*D-pseudo*|Pa|mercotto|piracchia|ve|talma|ni|ge.|
+130|*D-pseudo*|Pa|merciotto|piraccia|ve|talma|ni|ge.|
 130|*D-nonwrd*|Pl|pdlinfrhu|losltngd|ht|natrb|fg|ol.|
 
    |      |   |   |   |   |   |   |   |
@@ -726,8 +731,8 @@ title: Maze Task Material
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 131|**regular**|Un|corridore|supera|il|traguardo|di|corsa.|
 131|*D-gramm*|Il|sedicenne|riuscì|ad|accettare|il|gatto.|
-131|*D-salad*|La|antipasti|spugna|il|convivere|al|suono.|
-131|*D-pseudo*|Ba|Ditagnava|begito|vo|raterisco|co|drino.|
+131|*D-salad*|La|antipasti|spugna|di|convivere|al|suono.|
+131|*D-pseudo*|Ba|ditagnava|begito|vo|raterisco|co|drino.|
 131|*D-nonwrd*|Gp|rjvdulzyc|kgbmnu|kt|icftgwkan|hu|cvfrk.|
 
    |      |   |   |   |   |   |   |   |
@@ -735,7 +740,7 @@ title: Maze Task Material
 131|**semv**|Un|corridore|riduce|il|traguardo|di|corsa.|
 131|*D-gramm*|Il|neurologo|ignora|lo|psicologo|su|tutto.|
 131|*D-salad*|La|cambiasse|pacchi|un|diecimila|al|odore.|
-131|*D-pseudo*|Pi|midastro|brusto|na|sigimente|fe|tiona.|
+131|*D-pseudo*|Pi|midiastro|brusto|na|sigimente|fe|tiona.|
 131|*D-nonwrd*|Hv|kbmwtsqji|yjxlfw|pb|xzphynofe|fd|ybhmn.|
 
    |      |   |   |   |   |   |   |   |
@@ -765,7 +770,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 132|**syntv**|Un|falco|osserva|il|preda|dal|cielo.|
-132|*D-gramm*|La|virtù|conduce|un|padre|nel|cielo.|
+132|*D-gramm*|La|donna|picchia|un|ladro|nel|prato.|
 132|*D-salad*|Il|copre|versato|lo|corre|sul|zitto.|
 132|*D-pseudo*|Ge|velpo|spercio|ro|tosce|sio|latre.|
 132|*D-nonwrd*|Mw|xlehv|qscgcny|nr|nftak|eck|zdmrv.|
@@ -773,8 +778,8 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 133|**regular**|Un|meccanico|cambia|la|ruota|della|macchina.|
-133|*D-gramm*|Un|individuo|faceva|il|gesto|anche|parlando.|
-133|*D-salad*|Un|economica|finora|la|pozzo|anche|indietro.|
+133|*D-gramm*|La|ragazzina|faceva|il|gesto|anche|parlando.|
+133|*D-salad*|Le|economica|finora|il|pozzo|anche|indietro.|
 133|*D-pseudo*|Ve|mendatini|chigna|el|regri|sello|prelasco.|
 133|*D-nonwrd*|Ae|izytfgvrc|bgaemr|qs|uyhev|mkxcd|dmehqolt.|
 
@@ -799,13 +804,13 @@ title: Maze Task Material
 134|**regular**|Un|mendicante|prende|il|pane|nel|negozio.|
 134|*D-gramm*|Il|ciarlatano|visita|la|gola|dei|clienti.|
 134|*D-salad*|La|quantomeno|destra|un|gara|noi|maestro.|
-134|*D-pseudo*|Ro|trampollati|glisca|pe|tuno|den|trivolo.|
-134|*D-nonwrd*|Cm|efcjxoipko|tvyybv|oj|wecf|yrb|xwdliovr.|
+134|*D-pseudo*|Ro|trampolati|glisca|pe|tuno|den|trivolo.|
+134|*D-nonwrd*|Cm|efcjxoipko|tvyybv|oj|wecf|yrb|xdliovr.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 134|**semv**|Un|mendicante|beve|il|pane|nel|negozio.|
-134|*D-gramm*|Il|ginecologo|diceva|di|fare|più|ascolti.|
+134|*D-gramm*|Il|ginecologo|dice|di|fare|più|ascolti.|
 134|*D-salad*|Il|paragonato|vola|la|gara|già|scusami.|
 134|*D-pseudo*|Go|intarnerei|leno|ro|vipo|sco|beresco.|
 134|*D-nonwrd*|Hr|qntxdytwoh|ypkv|qv|xhuy|muf|krcyrzc.|
@@ -813,7 +818,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 134|**syntv**|Un|mendicante|prende|la|pane|nel|negozio.|
-134|*D-gramm*|La|sentinella|vide|un|lupo|più|cattivo.|
+134|*D-gramm*|La|sentinella|scoprì|un|lupo|più|cattivo.|
 134|*D-salad*|Lo|vendicarti|serata|un|zero|mai|rischio.|
 134|*D-pseudo*|Ri|pagnerelli|agenne|gi|gari|fei|ragondi.|
 134|*D-nonwrd*|Sh|wvfrxmigei|bqbhnq|hx|ohcd|mrt|dsphkcd.|
@@ -846,7 +851,7 @@ title: Maze Task Material
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 136|**regular**|Un|vitello|beve|il|latte|della|madre.|
 136|*D-gramm*|Il|sovrano|crea|la|spada|nella|notte.|
-136|*D-salad*|Un|scusato|taci|la|venti|pugno|degli.|
+136|*D-salad*|Le|scusato|taci|la|venti|pugno|degli.|
 136|*D-pseudo*|Be|seggire|megi|de|furai|galma|barma.|
 136|*D-nonwrd*|Zm|ixruxhj|bjln|lu|vuvrb|vmrpj|bprmk.|
 
@@ -862,17 +867,17 @@ title: Maze Task Material
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 136|**syntv**|Un|vitello|beve|la|latte|della|madre.|
 136|*D-gramm*|La|finanza|apre|un|liceo|tutto|nuovo.|
-136|*D-salad*|Di|potersi|lotta|un|genio|fatto|preso.|
+136|*D-salad*|Di|potersi|cuce|un|genio|fatto|preso.|
 136|*D-pseudo*|Ge|solvare|boci|fi|mutte|onchi|trugo.|
-136|*D-nonwrd*|Ml|vwygiuh|rcoi|ek|vvuh|qvdcr|iilsd.|
+136|*D-nonwrd*|Ml|vwygiuh|rcoi|ek|vivuh|qvdcr|iilsd.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 137|**regular**|Una|scimmia|graffia|la|schiena|della|compagna.|
 137|*D-gramm*|Per|lottare|ricatta|il|padrone|nella|galleria.|
 137|*D-salad*|Per|caspita|sciarpe|il|cavalli|detto|litigare.|
-137|*D-pseudo*|Ofe|menarri|scennio|pa|gherne|cobbe|perterna.|
-137|*D-nonwrd*|Jpd|ozuulhq|olwhip|fr|knegpta|swfvk|encjdkbt.|
+137|*D-pseudo*|Ofe|menarri|scennio|pa|ceberne|cobbe|perterna.|
+137|*D-nonwrd*|Jpd|ozuulhq|olwhipx|fr|knegpta|swfvk|encjdkbt.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -888,7 +893,7 @@ title: Maze Task Material
 137|*D-gramm*|Nel|settore|fornirò|un|compito|detto|standard.|
 137|*D-salad*|Per|rifiuto|ribolle|di|speravo|tutto|permetti.|
 137|*D-pseudo*|Opa|mendira|cammodo|pi|campelo|stota|sformila.|
-137|*D-nonwrd*|Gzy|mgepalg|fnheokp|pw|jndeyta|krht|acvjejgf.|
+137|*D-nonwrd*|Gzy|mgepalg|fnheokp|pw|jndeyta|krhto|acvjejgf.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -904,7 +909,7 @@ title: Maze Task Material
 138|*D-gramm*|Gli|psichiatri|scrivono|al|responsabile|del|faro.|
 138|*D-salad*|Con|manteniamo|calcagna|un|dimenticherò|non|crea.|
 138|*D-pseudo*|Ofe|attersillo|tondicca|ca|cascalircelo|par|repo.|
-138|*D-nonwrd*|Ljn|xklstegaiu|psjbftxk|wb|dhzwrsqgfne|kxg|gmfn.|
+138|*D-nonwrd*|Ljn|xklstegaiu|psjbftxk|wb|dhzwirsqgfne|kxg|gmfn.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
@@ -919,8 +924,8 @@ title: Maze Task Material
 139|**regular**|Il|pompiere|spegne|il|fuoco|senza|paura.|
 139|*D-gramm*|La|reporter|scrive|un|libro|sullo|stato.|
 139|*D-salad*|In|riposati|ghetto|un|passo|porta|scusa.|
-139|*D-pseudo*|Gi|porriere|svotto|pa|ameti|billa|sanco.|
-139|*D-nonwrd*|Sr|eirndfit|edcjpw|vk|fwme|jvscp|qwqck.|
+139|*D-pseudo*|Gi|vorriere|svotto|pa|ameti|billa|sanco.|
+139|*D-nonwrd*|Sr|eirndfit|edcjpw|vk|fwime|jvscp|qwqck.|
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
