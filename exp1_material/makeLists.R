@@ -2,7 +2,7 @@
 # R script to parse the overall RepeatitionMaze material
 # Create random lists, documentation and json file to be used in jsPsych
 # !!! Be careful !!!
-# If you run this script again a different randomization of the items across lists will be created 
+# If you run this script again a different material will be created 
 # to check how it works copy this file and composed.csv in a new folder and rum me on R
 ## 
 
@@ -10,19 +10,8 @@ library(jsonlite)
 
 #  create empty output files
 
-readMeMD = "README.md"
-cat('', file=readMeMD, append=F)
 allitemsMD =  "allitems.md"
 cat('', file=allitemsMD, append=F)
-
-#  create readme file
-
-cat('# Items and Lists for RepeatitionMaze Experiment\n\n', file = readMeMD, append=T)
-cat('The file *composed.csv* contains the originally composed versions of sentences and distracters. \n', file = readMeMD, append=T)
-cat('The R program makeLists.R generates this readme file and checks and adapts the stimuli for different uses.\n', file = readMeMD, append=T)
-cat('The file *allitems.pdf* contains all items for easy visualization\n', file = readMeMD, append=T)
-cat('*material.json* contains all lists for jsPsych\n', file = readMeMD, append=T)
-
 
 # read the hand-composed material
 

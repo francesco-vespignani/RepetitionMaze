@@ -572,15 +572,10 @@ title: Maze Task Material
 
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
-124|**syntv**|La|gazzella|partorisce|la|cucciolo|allo|zoo.| 
-124|**syntv**|ejxqkzvf|
-124|*D-gramm*|Il|mecenate|intervenga|al|discorso|come|può.| 
+124|**syntv**|La|gazzella|partorisce|la|cucciolo|allo|zoo.|
 124|*D-gramm*|Il|mecenate|intervenga|al|discorso|come|può.|
-124|*D-salad*|Un|unicorni|bombolette|lo|corrotto|aria|ala.| 
 124|*D-salad*|Un|unicorni|bombolette|lo|corrotto|aria|ala.|
-124|*D-pseudo*|Bi|pravisti|alterisano|pi|lermella|safe|oti.| 
 124|*D-pseudo*|Bi|pravisti|alterisano|pi|lermella|safe|oti.|
-124|*D-nonwrd*|Ib|ejxqkzvf|xgplceuywl|jy|xzghlqvt|fijc|nzi.| 
 124|*D-nonwrd*|Ib|ejxqkzvf|xgplceuywl|jy|xzghlqvt|fijc|nzi.|
 
    |      |   |   |   |   |   |   |   |
