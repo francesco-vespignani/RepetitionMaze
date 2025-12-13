@@ -147,12 +147,6 @@
           "s2": "Il mecenate intervenga al discorso come può."
         },
         {
-          "item": "124",
-          "cond": "syntv",
-          "s1": "ejxqkzvf",
-          "s2": "Il mecenate intervenga al discorso come può."
-        },
-        {
           "item": "125",
           "cond": "regular",
           "s1": "La ginnasta esegue il salto senza errori.",
@@ -872,12 +866,6 @@
           "item": "124",
           "cond": "syntv",
           "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Un unicorni bombolette lo corrotto aria ala."
-        },
-        {
-          "item": "124",
-          "cond": "syntv",
-          "s1": "ejxqkzvf",
           "s2": "Un unicorni bombolette lo corrotto aria ala."
         },
         {
@@ -1603,12 +1591,6 @@
           "s2": "Bi pravisti alterisano pi lermella safe oti."
         },
         {
-          "item": "124",
-          "cond": "syntv",
-          "s1": "ejxqkzvf",
-          "s2": "Bi pravisti alterisano pi lermella safe oti."
-        },
-        {
           "item": "125",
           "cond": "regular",
           "s1": "La ginnasta esegue il salto senza errori.",
@@ -2328,12 +2310,6 @@
           "item": "124",
           "cond": "syntv",
           "s1": "La gazzella partorisce la cucciolo allo zoo.",
-          "s2": "Ib ejxqkzvf xgplceuywl jy xzghlqvt fijc nzi."
-        },
-        {
-          "item": "124",
-          "cond": "syntv",
-          "s1": "ejxqkzvf",
           "s2": "Ib ejxqkzvf xgplceuywl jy xzghlqvt fijc nzi."
         },
         {
