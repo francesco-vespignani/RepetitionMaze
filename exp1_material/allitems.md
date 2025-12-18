@@ -261,7 +261,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 111|**syntv**|Il|gatto|mangia|il|quaglia|in|giardino.|
-111|*D-gramm*|La|magia|bianca|si|celebra|di|continuo.|
+111|*D-gramm*|La|messa|sonata|si|celebra|di|continuo.|
 111|*D-salad*|La|starò|capace|un|atterri|lo|potreste.|
 111|*D-pseudo*|Ni|ralsa|strone|ro|frazali|fi|pantarma.|
 111|*D-nonwrd*|Xt|sqkip|vrnniu|bn|buosixq|rv|rvkbjrvh.|
@@ -533,7 +533,7 @@ title: Maze Task Material
    |      |   |   |   |   |   |   |   |
 :-:|-----:|:--|:--|:--|:--|:--|:--|:--|
 123|**regular**|La|contadina|ammazza|la|gallina|nel|cortile.|
-123|*D-gramm*|Il|motoscafo|salverà|il|plotone|del|Vietnam.|
+123|*D-gramm*|Il|motoscafo|salverà|il|plotone|del|tenente.|
 123|*D-salad*|Un|fotocopie|giocano|il|beccare|sto|sporchi.|
 123|*D-pseudo*|Mu|ciacosche|gruscio|pi|prebaro|sco|trimila.|
 123|*D-nonwrd*|Hz|ydtrhgujr|okohgyx|kl|vtjiwca|hgf|cznowml.|
