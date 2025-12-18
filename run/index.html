@@ -212,9 +212,31 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
     indexes = jsPsych.randomization.repeat(indexes, 1);
   }
   
+  // TODO: better customize repos and durations to give more clear instructions
+  // this information should go outside from the main program as a function 
+  // of experiment (n item nrep) and repository (now allowed type are "exp1" and "test").
+
+  switch (distr) {
+    case 'nw':
+      expDur = 15;
+      break;
+    case 'pseudo':
+      expDur = 15;
+      break;
+    case 'word':
+      expDur = 20;
+      break;
+    case 'gramm':
+      expDur = 25;
+      break;
+    default:
+      expDur = 20;
+   }
+
+  
   //  timeline for instructions and practice
   
-    const instructions = {
+    const instructionsTest = {
       type: jsPsychInstructions,
       button_label_previous: 'Indietro',
       button_label_next: "Avanti",
@@ -224,7 +246,7 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
         '<p id="istr" align="left"> ' +
         '<i>Titolo dello Studio:</i> Ripetizione di frasi, pilot  online'+
         '<br>' +
-        '<i>Durata dello Studio:</i> L\'interazione totale non supererà i 25 minuti.'+
+        '<i>Durata dello Studio:</i> L\'interazione totale è stimata in circa '+ expDur + ' minuti.'+
         '<br>' +
         '<i>Descrizione dello Studio:</i>'+
         ' Il presente studio si propone di esaminare gli effetti della ripetizione di frasi online.'+
@@ -285,6 +307,91 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
       show_clickable_nav: true,
       data: {type: 'break', log_type: 'practice'},
     }
+
+    const instructionsExp1 = {
+      type: jsPsychInstructions,
+      button_label_previous: 'Indietro',
+      button_label_next: "Avanti",
+      pages: [
+        '<p id="istr" align="center"> ' +
+        '<b>CONSENSO INFORMATO PER LA PARTECIPAZIONE ALLA RICERCA</b> </p>' +
+        '<p id="istr" align="left"> ' +
+        '<i>Titolo dello Studio:</i> Ripetizione di frasi - Maze task'+
+        '<br>' +
+        '<i>Durata dello Studio:</i> L\'interazione totale è stimata in circa '+ expDur + ' minuti.'+
+        '<br>' +
+        '<i>Descrizione dello Studio:</i>'+
+        ' Il presente studio online si propone di esaminare gli effetti della ripetizione di frasi.'+
+        ' Come partecipante, ti verrà chiesto di premere dei tasti per ripetere le parole di alcune frasi '+
+        ' visualizzate sullo schermo.' +
+        '<br>' +
+        '<i>Confidenzialità dei Dati:</i>'+
+        ' I dati comportamentali (tempi di reazione e accuratezze) saranno automaticamente pubblicati in forma anonima'+
+        ' in un repository OSF (Open Science Framework). I dati sensibili raccolti dal tuo Prolific ID (sesso, età, madrelingua)'+
+        ' saranno invece conservati in un server dell\'Università degli Studi di Padova.'+
+        ' Questi dati saranno condivisi con la comunità scientifica al termine della raccolta dati in forma aggregata o comunque in modo pseudoanonimizzato, di modo che i dati non possano essere ricondotti alla tua identità.'+
+        '<br>' +
+        '<i>Contributo alla Ricerca:</i>'+
+        ' La tua partecipazione è estremamente preziosa per la nostra ricerca. Ti chiediamo di essere il più accurato possibile, minimizzando gli errori ma al contempo svolgere il compito velocemente.'+
+        '<br>' +
+        '<i>Diritto di Recesso:</i>'+
+        ' La tua partecipazione a questo studio è completamente volontaria.'+
+        ' Sei libera/o di ritirarti in qualsiasi momento  semplicemente chiudendo la finestra del browser senza dover fornire una motivazione e senza alcuna'+
+        ' conseguenza negativa. In tal caso non sarà possibile la retibuzione tramite prolific. I dati della sessione interrotta (pratica o esperimento) non verranno in tale caso salvati.'+
+        '<br>' +
+        '<br>' +
+        '<i>Consenso:</i>'+
+        ' <b>Premendo Avanti confermi di aver compreso le informazioni riguardanti'+
+        ' lo studio e acconsenti volontariamente a partecipare. In casop contrario è sufficiente chiudere questa finestra. </b>'+
+        '<br>' +
+        'Per qualsiasi domanda o chiarimento, non esitare a contattare francesco.vespignani@unipd.it' +
+        '</p>',
+        '<p id="istr"> Grazie ancora per la tua partecipazione!' +
+        '<br>' + 
+        'Ti chiediamo di trovare un posto tranquillo e una posizione comoda per svolgere la prova' +
+        ' senza distrazioni nel modo più accurato e veloce possibile </p>',
+        '<p id="istr"> Ogni prova consiste di due fasi' +
+        '<br>' + 
+        'FASE 1: vedrai delle frasi che dovrai leggere, saranno presentate una parola alla volta,'+
+        ' per procedere dovrai premere la <b>BARRA SPAZIATRICE</b>' +
+        '<br>' + 
+        'FASE 2: vedrai una sequenza di coppie di parole, una sulla destra e una sulla sinistra' +
+        ' e dovrai scegliere le parole che formano la frase appena letta,' +
+        ' premendo i tasti  <b>J</b> (destra) o <b>F</b> (sinistra) </p>',
+        '<p id="istr"> Fase 1: lettura </p>' +
+        '<br>' + 
+        '<p align="center"><iframe src="selfpaced.html" width="670" height="600" style="border:none;""></iframe></p>',
+        '<p id="istr"> Fase 2: ripetizione </p>' +
+        '<br>' + 
+        '<p align="center"><iframe src="maze_'+distr+'.html" width="670" height="600" style="border:none;""></iframe></p>',
+        '<p id="istr"> La Fase 2 sarà ripetuta più volte per ogni singola frase.' +
+        '<br>' + 
+        'Alcune frasi contengono errori ma vanno ripetute così come viste.' +
+        '<br>' + 
+        'Prima di iniziare con l\'esperimento ci sarà una breve pratica.' +
+        '<br>' +
+        '<p id="istr"> Non chiudere il browser o ricaricare la pagina web fino a quando' +
+        ' l\'esperimento non è finito' +
+        ' altrimenti i tuoi dati saranno persi </p> ',
+      ],
+      show_clickable_nav: true,
+      data: {type: 'break', log_type: 'practice'},
+    }
+
+    var instructions;
+    console.log(repo)
+    switch (repo) {
+    case 'test':
+      instructions = instructionsTest;
+      break;
+    case 'exp1':
+      instructions = instructionsExp1;
+      break;
+    default:
+      instructions = instructionsTest;
+   }
+
+  console.log(instructions)
 
   const startpract = {
     type: jsPsychHtmlKeyboardResponse,
@@ -443,8 +550,9 @@ function make_maze_block(itemID, cond, sentence1, sentence2, nrep, log_type) {
    }
   };
   
-    
-  window.history.pushState({page: 1}, "Repetition Maze", "go");
+  //  uncomment this to change url and make CC invisible  
+  // window.history.pushState({page: 1}, "Repetition Maze", "go");
+  
   // create and fill main experiment timeline
 
   var timeline= [];
